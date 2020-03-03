@@ -49,8 +49,8 @@ The **New-AzFirewall** cmdlet creates an Azure Firewall.
 
 ## EXAMPLES
 
-### 1:  Create a Firewall attached to a virtual network
-```
+### Example 1: 1:  Create a Firewall attached to a virtual network
+```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
 $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
@@ -61,8 +61,8 @@ This example creates a Firewall attached to virtual network "vnet" in the same r
 Since no rules were specified, the firewall will block all traffic (default behavior).
 Threat Intel will also run in default mode - Alert - which means malicious traffic will be logged, but not denied.
 
-### 2:  Create a Firewall which allows all HTTPS traffic
-```
+### Example 2: 2:  Create a Firewall which allows all HTTPS traffic
+```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
 $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
@@ -75,8 +75,8 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 This example creates a Firewall which allows all HTTPS traffic on port 443.
 Threat Intel will run in default mode - Alert - which means malicious traffic will be logged, but not denied.
 
-### 3:  DNAT - redirect traffic destined to 10.1.2.3:80 to 10.2.3.4:8080
-```
+### Example 3: 3:  DNAT - redirect traffic destined to 10.1.2.3:80 to 10.2.3.4:8080
+```powershell
 $rule = New-AzFirewallNatRule -Name "natRule" -Protocol "TCP" -SourceAddress "*" -DestinationAddress "10.1.2.3" -DestinationPort "80" -TranslatedAddress "10.2.3.4" -TranslatedPort "8080"
 $ruleCollection = New-AzFirewallNatRuleCollection -Name "NatRuleCollection" -Priority 1000 -Rule $rule
 New-AzFirewall -Name "azFw" -ResourceGroupName "rg" -Location centralus -NatRuleCollection $ruleCollection -ThreatIntelMode Off
@@ -85,8 +85,8 @@ New-AzFirewall -Name "azFw" -ResourceGroupName "rg" -Location centralus -NatRule
 This example created a Firewall which translated the destination IP and port of all packets destined to 10.1.2.3:80 to 10.2.3.4:8080
 Threat Intel is turned off in this example.
 
-### 4:  Create a Firewall with no rules and with Threat Intel in Alert mode
-```
+### Example 4: 4:  Create a Firewall with no rules and with Threat Intel in Alert mode
+```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
 $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
@@ -96,8 +96,8 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 This example creates a Firewall which blocks all traffic (default behavior) and has Threat Intel running in Alert mode.
 This means alerting logs are emitted for malicious traffic before applying the other rules (in this case just the default rule - Deny All)
 
-### 5:  Create a Firewall which allows all HTTP traffic on port 8080, but blocks malicious domains identified by Threat Intel
-```
+### Example 5: 5:  Create a Firewall which allows all HTTP traffic on port 8080, but blocks malicious domains identified by Threat Intel
+```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
 $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
@@ -110,8 +110,8 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 This example creates a Firewall which allows all HTTP traffic on port 8080 unless it is considered malicious by Threat Intel.
 When running in Deny mode, unlike Alert, traffic considered malicious by Threat Intel is not just logged, but also blocked.
 
-### 6:  Create a Firewall with no rules and with availability zones
-```
+### Example 6: 6:  Create a Firewall with no rules and with availability zones
+```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
 $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"
@@ -120,8 +120,8 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 
 This example creates a Firewall with all available availability zones.
 
-### 7: Create a Firewall with two or more Public IP Addresses
-```
+### Example 7: 7: Create a Firewall with two or more Public IP Addresses
+```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -Name "vnet" -ResourceGroupName $rgName
 $pip1 = New-AzPublicIpAddress -Name "AzFwPublicIp1" -ResourceGroupName "rg" -Sku "Standard" -Location "centralus" -AllocationMethod Static
@@ -131,8 +131,8 @@ New-AzFirewall -Name "azFw" -ResourceGroupName $rgName -Location centralus -Virt
 
 This example creates a Firewall attached to virtual network "vnet" with two public IP addresses.
 
-### 8: Create a Firewall which allows MSSQL traffic to specific SQL database
-```
+### Example 8: 8: Create a Firewall which allows MSSQL traffic to specific SQL database
+```powershell
 $rgName = "resourceGroupName"
 $vnet = Get-AzVirtualNetwork -ResourceGroupName $rgName -Name "vnet"
 $pip = Get-AzPublicIpAddress -ResourceGroupName $rgName -Name "publicIpName"

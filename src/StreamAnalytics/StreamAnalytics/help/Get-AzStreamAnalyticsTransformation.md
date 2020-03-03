@@ -23,8 +23,8 @@ The **Get-AzStreamAnalyticsTransformation** cmdlet gets information about a tran
 
 ## EXAMPLES
 
-### EXAMPLE 1: Get information about a Stream Analytics transformation
-```
+### Example 1: EXAMPLE 1: Get information about a Stream Analytics transformation
+```powershell
 PS C:\>Get-AzStreamAnalyticsTransformation -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -Name "StreamingJob"
 ```
 

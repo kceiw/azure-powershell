@@ -30,6 +30,13 @@ The **Get-AzResourceProvider** cmdlet gets an Azure resource provider.
 
 ## EXAMPLES
 
+### Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzResourceProvider -ProviderNamespace Microsoft.Compute
+```
+
+
+
 ## PARAMETERS
 
 ### -ApiVersion

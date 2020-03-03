@@ -28,7 +28,7 @@ You can provide each cluster with a list of script actions to run in a specified
 ## EXAMPLES
 
 ### Example 1: Add a script action to the cluster configuration object
-```
+```powershell
 PS C:\># Primary storage account info
 PS C:\> $storageAccountResourceGroupName = "Group"
 PS C:\> $storageAccountName = "yourstorageacct001"
@@ -77,6 +77,13 @@ PS C:\> New-AzHDInsightClusterConfig  `
 ```
 
 This command adds a script action for the Head and Worker nodes of the your-hadoop-001 cluster, to be run at the end of cluster creation.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzHDInsightScriptAction -Name $scriptActionName -NodeType HeadNode -Parameters {Parameters} -Uri {Uri}
+```
+
+
 
 ## PARAMETERS
 

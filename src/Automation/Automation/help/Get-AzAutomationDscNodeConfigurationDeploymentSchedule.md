@@ -31,7 +31,7 @@ The **Get-AzAutomationDscNodeConfigurationDeployment** cmdlet deploys an APS Des
 ## EXAMPLES
 
 ### Example 1: Get all the deployment schedules
-```
+```powershell
 PS C:\> Get-AzAutomationDscNodeConfigurationDeploymentSchedule `
             -AutomationAccountName "Contoso01"  `
             -ResourceGroupName "ResourceGroup01"
@@ -50,7 +50,7 @@ RunbookName           : Deploy-NodeConfigurationToAutomationDscNodesV1
 ```
 
 ### Example 2: Get a deployment schedule
-```
+```powershell
 PS C:\> $js= Get-AzAutomationDscNodeConfigurationDeploymentSchedule `
                  -AutomationAccountName "Contoso01" `
                  -ResourceGroupName "ResourceGroup01" `
@@ -77,6 +77,13 @@ HybridWorker          :
 ```
 
 The above command deploys the DSC node configuration named "Config01.Node1" to the given two-dimensional array of Node Names. The deployment happens in a staged manner.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzAutomationDscNodeConfigurationDeploymentSchedule -AutomationAccountName Contoso01 -ResourceGroupName MyResourceGroup
+```
+
+
 
 ## PARAMETERS
 

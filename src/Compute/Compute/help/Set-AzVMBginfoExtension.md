@@ -25,13 +25,20 @@ The **Set-AzVMBGInfoExtension** cmdlet adds the BGInfo extension to a virtual ma
 ## EXAMPLES
 
 ### Example 1: Add the BGInfo extension for a virtual machine
-```
+```powershell
 PS C:\> Set-AzVMBgInfoExtension -ResourceGroupName "ContosoRG" -VMName "ContosoVM" -Name "ExtensionName" -TypeHandlerVersion "2.1" -Location "West Europe"
 ```
 
 This command adds the BGInfo extension to virtual machine named ContosoVM.
 The command specifies the resource group and location of the virtual machine.
 The command specifies the name and version of the extension.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzVMBginfoExtension -Location westus -Name AgentPool01 -ResourceGroupName MyResourceGroup -TypeHandlerVersion $typeVersion -VMName VM01
+```
+
+
 
 ## PARAMETERS
 

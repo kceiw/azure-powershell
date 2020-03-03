@@ -27,14 +27,14 @@ The **Add-AzVmssExtension** cmdlet adds an extension to the Virtual Machine Scal
 ## EXAMPLES
 
 ### Example 1: Add an extension to the VMSS
-```
+```powershell
 PS C:\> Add-AzVmssExtension -VirtualMachineScaleSet $VMSS -Name $ExtName -Publisher $Publisher -Type $ExtType -TypeHandlerVersion $ExtVer -AutoUpgradeMinorVersion $True
 ```
 
 This command adds an extension to the VMSS.
 
 ### Example 2: Add an extension to the VMSS with settings and protected settings
-```
+```powershell
 PS C:\> $Settings = @{"fileUris" = "[]"; "commandToExecute" = ""};
 PS C:\> $ProtectedSettings = @{"storageAccountName" = $stoname; "storageAccountKey" = $stokey};
 
@@ -44,6 +44,13 @@ PS C:\> Add-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $vmssExtensionNa
 ```
 
 This command adds an extension to the VMSS with a sample bash script on a blob storage, specify the url of blob storage and executable command in settings and security access in protected settings. 
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzVmssExtension -AutoUpgradeMinorVersion $True -Name $ExtName -ProtectedSetting {ProtectedSetting} -Publisher $Publisher -Setting {Setting} -Type $ExtType -TypeHandlerVersion $ExtVer -VirtualMachineScaleSet $VMSS
+```
+
+
 
 ## PARAMETERS
 

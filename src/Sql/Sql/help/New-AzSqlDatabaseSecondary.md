@@ -38,8 +38,8 @@ the primary to the secondary database.
 
 ## EXAMPLES
 
-### 1: Establish Active Geo-Replication
-```
+### Example 1: 1: Establish Active Geo-Replication
+```powershell
 $database = Get-AzSqlDatabase -DatabaseName $databasename -ResourceGroupName $primaryresourcegroupname -ServerName $primaryservername
 $database | New-AzSqlDatabaseSecondary -PartnerResourceGroupName $secondaryresourcegroupname -PartnerServerName $secondaryservername -AllowConnections "All"
 ```

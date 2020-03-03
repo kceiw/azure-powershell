@@ -37,7 +37,7 @@ enabled for use.
 ## EXAMPLES
 
 ### Example 1: Add an authorization to the specified ExpressRoute circuit
-```
+```powershell
 $Circuit = Get-AzExpressRouteCircuit -Name "ContosoCircuit" -ResourceGroupName "ContosoResourceGroup"
 Add-AzExpressRouteCircuitAuthorization -Name "ContosoCircuitAuthorization" -Circuit $Circuit
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $Circuit
@@ -50,6 +50,13 @@ In the second command, the **Add-AzExpressRouteCircuitAuthorization** cmdlet is 
 new authorization (ContosoCircuitAuthorization) to the ExpressRoute circuit. This command adds the
 authorization but does not activate that authorization. Activating an authorization requires the
 **Set-AzExpressRouteCircuit** shown in the final command in the example.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzExpressRouteCircuitAuthorization -ExpressRouteCircuit $circuit_init -Name ContosoCircuitAuthorization
+```
+
+
 
 ## PARAMETERS
 

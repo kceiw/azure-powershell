@@ -23,8 +23,8 @@ The **Set-AzFirewall** cmdlet updates an Azure Firewall.
 
 ## EXAMPLES
 
-### 1:  Update priority of a Firewall application rule collection
-```
+### Example 1: 1:  Update priority of a Firewall application rule collection
+```powershell
 $azFw = Get-AzFirewall -Name "AzureFirewall" -ResourceGroupName "rg"
 $ruleCollection = $azFw.GetApplicationRuleCollectionByName("ruleCollectionName")
 $ruleCollection.Priority = 101
@@ -37,8 +37,8 @@ Assuming Azure Firewall "AzureFirewall" in resource group "rg" contains an appli
 Azure Firewall afterwards. Without the Set-AzFirewall command, all operations performed on the local $azFw 
 object are not reflected on the server.
 
-### 2:  Create a Azure Firewall and set an application rule collection later
-```
+### Example 2: 2:  Create a Azure Firewall and set an application rule collection later
+```powershell
 $azFw = New-AzFirewall -Name "AzureFirewall" -ResourceGroupName "rg" -VirtualNetworkName "vnet-name" -PublicIpName "pip-name"
 
 $rule = New-AzFirewallApplicationRule -Name R1 -Protocol "http:80","https:443" -TargetFqdn "*google.com", "*microsoft.com" -SourceAddress "10.0.0.0"
@@ -52,8 +52,8 @@ In this example, a Firewall is created first without any application rule collec
 and Application Rule Collection are created, then the Firewall object is modified in memory, without affecting 
 the real configuration in cloud. For changes to be reflected in cloud, Set-AzFirewall must be called.
 
-### 3:  Update Threat Intel operation mode of Azure Firewall
-```
+### Example 3: 3:  Update Threat Intel operation mode of Azure Firewall
+```powershell
 $azFw = Get-AzFirewall -Name "AzureFirewall" -ResourceGroupName "rg"
 $azFw.ThreatIntelMode = "Deny"
 Set-AzFirewall -Firewall $azFw
@@ -62,8 +62,8 @@ Set-AzFirewall -Firewall $azFw
 This example updates the Threat Intel operation mode of Azure Firewall "AzureFirewall" in resource group "rg".
 Without the Set-AzFirewall command, all operations performed on the local $azFw object are not reflected on the server.
 
-### 4: Deallocate and allocate the Firewall
-```
+### Example 4: 4: Deallocate and allocate the Firewall
+```powershell
 $firewall=Get-AzFirewall -ResourceGroupName rgName -Name azFw
 $firewall.Deallocate()
 $firewall | Set-AzFirewall
@@ -81,7 +81,7 @@ The new VNet and Public IP must be in the same resource group as the Firewall. A
 Set-AzFirewall must be called.
 
 ### 5:	Add a Public IP address to an Azure Firewall
-```
+```powershell
 $pip = New-AzPublicIpAddress -Name "azFwPublicIp1" -ResourceGroupName "rg" -Sku "Standard" -Location "centralus" -AllocationMethod Static
 $azFw = Get-AzFirewall -Name "AzureFirewall" -ResourceGroupName "rg"
 $azFw.AddPublicIpAddress($pip)
@@ -92,7 +92,7 @@ $azFw | Set-AzFirewall
 In this example, the Public IP Address "azFwPublicIp1" as attached to the Firewall.
 
 ### 6:	Remove a Public IP address from an Azure Firewall
-```
+```powershell
 $pip = Get-AzPublicIpAddress -Name "azFwPublicIp1" -ResourceGroupName "rg"
 $azFw = Get-AzFirewall -Name "AzureFirewall" -ResourceGroupName "rg"
 $azFw.RemovePublicIpAddress($pip)

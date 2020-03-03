@@ -27,16 +27,16 @@ If you specify the *Force* parameter and specify an existing job name, the job d
 
 ## EXAMPLES
 
-### EXAMPLE 1: Create a job
-```
+### Example 1: EXAMPLE 1: Create a job
+```powershell
 PS C:\>New-AzStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US" -File "C:\JobDefinition.json"
 ```
 
 This command creates a job from the definition in JobDefinition.json.
 If an existing job with the specified name in the job definition file is already defined, the cmdlet will ask whether or not to replace it.
 
-### EXAMPLE 2: Replace a job definition
-```
+### Example 2: EXAMPLE 2: Replace a job definition
+```powershell
 PS C:\>New-AzStreamAnalyticsJob -ResourceGroupName "StreamAnalytics-Default-West-US" -File "C:\JobDefinition.json" -Name "StreamingJob" -Force
 ```
 

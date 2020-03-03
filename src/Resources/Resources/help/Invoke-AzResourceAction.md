@@ -42,6 +42,13 @@ To get a list of supported actions, use the Azure Resource Explorer tool.
 
 ## EXAMPLES
 
+### Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Invoke-AzResourceAction -Action Poweroff -Force  -ResourceGroupName testGroup -ResourceName testVM -ResourceType Microsoft.Compute/virtualMachines/
+```
+
+
+
 ## PARAMETERS
 
 ### -Action
