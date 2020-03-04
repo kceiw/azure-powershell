@@ -53,7 +53,7 @@ cmdlet to activate the configuration.
 ## EXAMPLES
 
 ### Example 1: Add a peer to an existing ExpressRoute circuit
-```
+```powershell
 $circuit = Get-AzExpressRouteCircuit -Name $CircuitName -ResourceGroupName $rg
 $parameters = @{
     Name = 'AzurePrivatePeering'
@@ -67,6 +67,13 @@ $parameters = @{
 Add-AzExpressRouteCircuitPeeringConfig @parameters
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $circuit
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzExpressRouteCircuitPeeringConfig -ExpressRouteCircuit $ExpressRouteCircuit -Name AzurePrivatePeering -PeerASN 100 -PeeringType AzurePrivatePeering -PrimaryPeerAddressPrefix 123.0.0.0/30 -SecondaryPeerAddressPrefix 123.0.0.4/30 -VlanId 300
+```
+
+The Add-AzExpressRouteCircuitPeeringConfig cmdlet adds a peering configuration to an
 
 ## PARAMETERS
 

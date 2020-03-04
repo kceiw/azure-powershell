@@ -28,7 +28,7 @@ Commit your changes to the profile for Traffic Manager by using the Set-AzTraffi
 ## EXAMPLES
 
 ### Example 1: Remove custom header information from a profile
-```
+```powershell
 PS C:\> $TrafficManagerProfile = Get-AzTrafficManagerProfile -Name "ContosoProfile" -ResourceGroupName "ResourceGroup11"
 PS C:\> Remove-AzTrafficManagerCustomHeaderFromEndpoint -TrafficManagerProfile $TrafficManagerProfile -Name "host"
 PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfile
@@ -37,6 +37,13 @@ PS C:\> Set-AzTrafficManagerProfile -TrafficManagerProfile $TrafficManagerProfil
 The first command gets an Azure Traffic Manager profile by using the **Get-AzTrafficManagerProfile** cmdlet.
 The second command removes custom header information from the profile stored in $TrafficManagerProfile.
 The final command updates the profile in Traffic Manager to match the local value in $TrafficManagerProfile.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzTrafficManagerCustomHeaderFromProfile -Name host -TrafficManagerProfile $TrafficManagerProfile
+```
+
+
 
 ## PARAMETERS
 

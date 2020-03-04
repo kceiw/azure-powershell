@@ -29,8 +29,8 @@ For an introduction to Azure IoT Hub Device Provisioning Service, see https://do
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzIoTDeviceProvisioningService
 
 ResourceGroupName	Name		Location	ServiceOperationsHostName					IotHubs	AllocationPolicy	Tags	State
@@ -42,8 +42,8 @@ myresourcegroup1    myiotdps2	westus		myiotdps2.azure-devices-provisioning.net	4
 
 List all Azure IoT Hub device provisioning services in a subscription.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzIoTDeviceProvisioningService -ResourceGroupName "myresourcegroup"
 
 ResourceGroupName	Name		Location	ServiceOperationsHostName					IotHubs	AllocationPolicy	Tags	State
@@ -54,8 +54,8 @@ myresourcegroup     myiotdps2	westus		myiotdps2.azure-devices-provisioning.net	4
 
 List all Azure IoT Hub device provisioning services in the resource group 'myresourcegroup'.
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> Get-AzIoTDeviceProvisioningService -ResourceGroupName "myresourcegroup" -Name "myiotdps"
 
 ResourceGroupName			: myresourcegroup

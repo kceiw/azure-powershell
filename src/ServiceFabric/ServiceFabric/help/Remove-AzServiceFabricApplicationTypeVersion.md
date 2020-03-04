@@ -36,7 +36,7 @@ This cmdlet will remove Service fabric an application type version from the clus
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"
@@ -46,6 +46,13 @@ PS C:\> Remove-AzServiceFabricApplicationTypeVersion -ResourceGroupName $resourc
 ```
 
 This example will remove the version "v1" under the type "testAppType". It there are any applications under this resource the command will throw an exception.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzServiceFabricApplicationTypeVersion -ClusterName $clusterName -Force  -Name $appTypeName -PassThru  -ResourceGroupName $resourceGroupName -Version $version
+```
+
+
 
 ## PARAMETERS
 

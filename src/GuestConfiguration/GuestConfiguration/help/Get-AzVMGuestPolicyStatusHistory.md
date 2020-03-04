@@ -32,7 +32,7 @@ Use Get-AzVMGuestPolicyStatus cmdlet to get details of a single compliance statu
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeId "/providers/Microsoft.Authorization/policySetDefinitions/3fa7cbf5-c0a4-4a59-85a5-cca4d996d5af" -ShowOnlyChange
 ```
@@ -41,7 +41,7 @@ Gets compliance status history by initiative Id.
 ShowOnlyChange switch shows only historical status changes.
 Skips statuses that have not changed between two compliance checks.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeName "b5a822e0-ba98-4e54-9278-5d9833aa9b17" -ShowOnlyChange
 ```
@@ -50,7 +50,7 @@ Gets compliance status history by initiative name.
 ShowOnlyChange switch shows only historical status changes.
 Skips statuses that have not changed between two compliance checks.
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -ShowOnlyChange
 ```
@@ -59,27 +59,27 @@ Gets compliance status history for all guest configuration policies assigned to 
 ShowOnlyChange switch shows only historical status changes.
 Skips statuses that have not changed between two compliance checks.
 
-### Example 4
+### Example 4: 4
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeId "/providers/Microsoft.Authorization/policySetDefinitions/3fa7cbf5-c0a4-4a59-85a5-cca4d996d5af"
 ```
 
 Gets compliance status history by initiative Id.
 
-### Example 5
+### Example 5: 5
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeName "b5a822e0-ba98-4e54-9278-5d9833aa9b17"
 ```
 
 Gets compliance status history by initiative name.
 
-### Example 6
+### Example 6: 6
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName"
 ```
 Gets compliance status history for all guest configuration policies assigned to the VM.
 
-### Example 7
+### Example 7: 7
 ```powershell
 PS C:\>$x = Get-AzVMGuestPolicyStatusHistory -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName"
 PS C:\>$x[10].ReportId

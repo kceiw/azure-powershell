@@ -24,19 +24,26 @@ If the name of a consumer group is not provided, a list of consumer groups in th
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName
 ```
 
 Gets the consumer group \`MyConsumerGroupName\` in the Event Hub \`MyEventHubName\`, which exists in the namespace \`MyNamespaceName\` with resource group \`MyResourceGroupName\`.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName
 ```
 
 Gets a list of consumer groups in the Event Hub \`MyEventHubName\`, which exists in the namespace \`MyNamespaceName\` with resource group \`MyResourceGroupName\`.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventHubConsumerGroup -EventHub MyEventHubName -Namespace MyNamespaceName -ResourceGroupName MyResourceGroupName
+```
+
+
 
 ## PARAMETERS
 

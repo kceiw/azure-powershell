@@ -35,14 +35,14 @@ The **Remove-AzFrontDoorWafPolicy** cmdlet removes a WAF policy under the curren
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Remove-AzFrontDoorWafPolicy -Name $policyName -ResourceGroupName $resourceGroupName
 ```
 
 Remove the WAF policy called $policyName in $resourceGroupName.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Get-AzFrontDoorWafPolicy -ResourceGroupName $resourceGroupName | Remove-AzFrontDoorWafPolicy
 ```

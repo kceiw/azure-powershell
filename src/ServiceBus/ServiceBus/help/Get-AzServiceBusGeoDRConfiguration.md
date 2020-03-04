@@ -35,7 +35,7 @@ The **Get-AzServiceBusGeoDRConfiguration** Retrieves Alias(Disaster Recovery con
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzServiceBusGeoDRConfiguration -ResourceGroupName "SampleResourceGroup" -Namespace "SampleNamespace_Primary" -Name "SampleDRConfigName"
 

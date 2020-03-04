@@ -22,7 +22,7 @@ The **New-AzApplicationGatewayFirewallExclusionConfig** cmdlet a new exclusion r
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $exclusion1 = New-AzApplicationGatewayFirewallExclusionConfig -Variable "RequestHeaderNames" -Operator "StartsWith" -Selector "xyz"
 ```

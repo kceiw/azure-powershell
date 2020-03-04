@@ -35,7 +35,7 @@ This cmdlet gets the application details in the specified resource group and clu
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"
@@ -45,7 +45,7 @@ PS C:\> Get-AzServiceFabricApplication -ResourceGroupName $resourceGroupName -Cl
 
 This example gets the application resource details for the application "testApp".
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"

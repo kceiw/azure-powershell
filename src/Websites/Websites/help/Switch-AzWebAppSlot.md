@@ -32,8 +32,8 @@ The **Switch-AzWebAppSlot** switches two slots associated with an Azure Web App.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Switch-AzWebAppSlot -SourceSlotName "sourceslot" -DestinationSlotName "destinationslot" -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp"
 ```
 

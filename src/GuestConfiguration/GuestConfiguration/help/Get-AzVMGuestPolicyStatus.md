@@ -43,7 +43,7 @@ This cmdlet gets compliance statuses of the VM and reasons why it is non-complia
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatus -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName"
 ```
@@ -52,7 +52,7 @@ Get all latest guest configuration policy statuses for a VM.
 The status includes compliance status of the VM for each policy in all initiatives of type "Guest Configuration", compliance reasons, time of the compliance check, resource information which was checked for compliance.
 The results include latest statuses, does not include previous historical statuses.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatus -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeId "/providers/Microsoft.Authorization/policySetDefinitions/3fa7cbf5-c0a4-4a59-85a5-cca4d996d5af"
 ```
@@ -61,7 +61,7 @@ Get the latest guest configuration policy statuses by initiative Id.
 The status includes compliance status of the VM for each policy in the initiative, compliance reasons, time of the compliance check, resource information which was checked for compliance.
 The results does not include previous statuses generated, it just includes latest status for each policy in the initiative.
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatus -ResourceGroupName "MyResourceGroupName" -VMName "MyVMName" -InitiativeName "b5a822e0-ba98-4e54-9278-5d9833aa9b17"
 ```
@@ -70,7 +70,7 @@ Get the latest guest configuration policy statuses by initiative name.
 The status includes compliance status of the VM for each policy in the initiative, compliance reasons, time of the compliance check, resource information which was checked for compliance.
 The results does not include previous statuses generated, it just includes latest status for each policy in the initiative.
 
-### Example 4
+### Example 4: 4
 ```powershell
 PS C:\> Get-AzVMGuestPolicyStatus -ReportId "/subscriptions/4e6c6ed2-0bf6-41d7-9d21-a452c2cc7920/resourceGroups/MyResourceGroupName/providers/Microsoft.Compute/virtualMachines/MyVMName/providers/Microsoft.GuestConfiguration/guestConfigurationAssignments/MaximumPasswordAge/reports/c271f845-2c0a-4456-a441-e48fc332d0ac"
 ```

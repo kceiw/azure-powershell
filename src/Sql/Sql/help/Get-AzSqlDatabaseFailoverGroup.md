@@ -23,22 +23,22 @@ Either server in the Failover Group may be used to execute the command. The retu
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $failoverGroups = Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName server
 ```
 
 Lists all Failover Groups on a server.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> $failoverGroup = Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName server -FailoverGroupName fg
 ```
 
 Get a specific Failover Group.
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> $failoverGroup = Get-AzSqlDatabaseFailoverGroup -ResourceGroupName rg -ServerName server -FailoverGroupName fg*
 ```
 

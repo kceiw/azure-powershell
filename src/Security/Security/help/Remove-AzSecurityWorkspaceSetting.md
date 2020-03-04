@@ -36,7 +36,7 @@ This action will make the newly installed security agents to report to the defau
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Remove-AzSecurityWorkspaceSetting -Name "default"
 ```

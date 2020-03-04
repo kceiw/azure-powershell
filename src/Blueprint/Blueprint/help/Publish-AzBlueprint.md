@@ -22,7 +22,7 @@ Publish a new version of a blueprint definition.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Publish-AzBlueprint -Blueprint $bp -Version 1.0 
 

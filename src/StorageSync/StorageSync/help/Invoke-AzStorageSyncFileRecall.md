@@ -36,12 +36,19 @@ When cloud tiering is enabled on a server endpoint (a specific location on a reg
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Invoke-AzStorageSyncFileRecall -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -ServerEndpointName "myServerEndpointName"
 ```
 
 This command recursively recalls all tiered files located under the root path of the specified server endpoint.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Invoke-AzStorageSyncFileRecall -Name myServerEndpointName -ResourceGroupName myResourceGroup -StorageSyncServiceName myStorageSyncServiceName -SyncGroupName mySyncGroupName
+```
+
+
 
 ## PARAMETERS
 

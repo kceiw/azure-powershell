@@ -23,8 +23,8 @@ Use **Update-AzServiceFabricReliability** to update reliability of the primary n
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS c:> Update-AzServiceFabricReliability -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -ReliabilityLevel Silver
 ```
 

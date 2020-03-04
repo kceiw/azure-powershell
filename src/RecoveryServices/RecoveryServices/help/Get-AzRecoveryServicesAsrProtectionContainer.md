@@ -37,15 +37,15 @@ Replication policies define replication settings for protected items and can be 
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $ProtectionContainers = Get-AzRecoveryServicesAsrProtectionContainer -Fabric $fabric
 ```
 
 List of protection container in fabric $fabric.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzRecoveryServicesAsrProtectionContainer -Name xxxxx  -Fabric $fabric
 FriendlyName                : xxxxxxxx
 Name                        : xxxxx
@@ -60,8 +60,8 @@ ProtectionContainerMappings : {pcmmapping, v2aPowerold, 636569dc-79bc-4f50-b83d-
 
 Protection container in fabric $fabric with name.
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> Get-AzRecoveryServicesAsrProtectionContainer -FriendlyName xxxxxxxx  -Fabric $fabric
 FriendlyName                : xxxxxxxx
 Name                        : xxxxx

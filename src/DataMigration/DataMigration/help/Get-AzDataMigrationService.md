@@ -35,15 +35,15 @@ The Get-AzDataMigrationService cmdlet retrieves the properties associated with a
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzDataMigrationService -ResourceGroupName testResourceGroup -Name testService
 ```
 
 The above example retrieves the properties of the Azure Database Migration Service instance called testService. 
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzDataMigrationService -ResourceGroupName testResourceGroup
 ```
 

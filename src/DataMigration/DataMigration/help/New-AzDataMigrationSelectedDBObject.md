@@ -32,8 +32,8 @@ The New-AzDataMigrationSelectedDB cmdlet creates a database info object that con
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> New-AzDataMigrationSelectedDB -MigrateSqlServerSqlDb -Name "HR" -TargetDatabaseName "HR_PSTEST" -TableMap $tableMap
 
 Name TargetDatabaseName MakeSourceDbReadOnly TableMap
@@ -41,14 +41,21 @@ Name TargetDatabaseName MakeSourceDbReadOnly TableMap
 HR   HR_PSTEST                         False {[HR.COUNTRIES, HR.COUNTRIES]}
 ```
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> New-AzDataMigrationSelectedDB -MigrateSqlServerSqlDbMi -Name "HR" -TargetDatabaseName "HR_PSTEST" -BackupFileShare $backupFileShare
 
 Name RestoreDatabaseName BackupFileShare
 ---- ------------------- ---------------
 HR   HRTest              Microsoft.Azure.Management.DataMigration.Models.FileShare
 ```
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzDataMigrationSelectedDBObject -BackupFileShare {BackupFileShare} -MigrateSqlServerSqlDbMi  -SourceDatabaseName AdventureWorks2016 -TargetDatabaseName <String>
+```
+
+
 
 ## PARAMETERS
 

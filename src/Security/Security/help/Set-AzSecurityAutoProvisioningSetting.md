@@ -37,7 +37,7 @@ The security agent will monitor your VM to create security alerts and monitor th
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Set-AzSecurityAutoProvisioningSetting -Name "default" -EnableAutoProvision
 Id                                                                                                                Name    AutoProvision
@@ -47,7 +47,7 @@ Id                                                                              
 
 Turns on automatic provisioning setting for a subscription.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Set-AzSecurityAutoProvisioningSetting -Name "default"
 Id                                                                                                                Name 

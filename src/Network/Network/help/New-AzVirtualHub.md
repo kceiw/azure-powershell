@@ -33,7 +33,7 @@ Creates an Azure VirtualHub resource.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
@@ -54,7 +54,7 @@ ProvisioningState         : Succeeded
 
 The above will create a resource group "testRG", a Virtual WAN and a Virtual Hub in West US in that resource group in Azure. The virtual hub will have the address space "10.0.1.0/24".
 
-### Example 2
+### Example 2: 2
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
@@ -77,7 +77,7 @@ The above will create a resource group "testRG", a Virtual WAN and a Virtual Hub
 
 This example is similar to Example 1, but uses a resource Id to reference the Virtual WAN that is required to create the virtual Hub.
 
-### Example 3
+### Example 3: 3
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"

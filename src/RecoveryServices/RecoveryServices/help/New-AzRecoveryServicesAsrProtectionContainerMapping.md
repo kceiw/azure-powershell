@@ -31,8 +31,8 @@ The **New-AzRecoveryServicesAsrProtectionContainerMapping** cmdlet creates an Az
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> New-AzRecoveryServicesAsrProtectionContainerMapping -Name $ContainerMappingName -Policy $ProtectionProfile -PrimaryProtectionContainer $PrimaryContainer -RecoveryProtectionContainer $RecoveryContainer
 
 Name             : 1f32fee1-05d0-4c11-a997-1618e14b4dab
@@ -55,8 +55,8 @@ Errors           : {}
 
 Starts the creation of the protection container mapping with the specified parameters, and returns the ASR job used to track the operation.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> New-AzRecoveryServicesAsrProtectionContainerMapping -Name $PrimaryProtectionContainerMapping -policy $Policy1 -PrimaryProtectionContainer $pc
 
 Name             : 1f32fee1-05d0-4c11-a997-1618e14b4dab

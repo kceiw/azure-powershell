@@ -35,8 +35,8 @@ The **Get-AzRecoveryServicesAsrvCenter** cmdlet gets details of the vCenter serv
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzRecoveryServicesAsrvCenter -Fabric $Fabric -Name $Name
 
 FriendlyName          : inmtest81
@@ -53,8 +53,8 @@ LastHeartbeat         :
 
 Get azure site recovery vCenter by fabric name and name of vCenter.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzRecoveryServicesAsrvCenter -Fabric $Fabric
 ```
 

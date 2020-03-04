@@ -35,7 +35,7 @@ Removes an Azure Virtual WAN.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 
 ```powershell
 PS C:\> New-AzResourceGroup -Name "TestResourceGroup" -Location "Central US"
@@ -46,7 +46,7 @@ PS C:\> Remove-AzVirtualWan -Name "MyVirtualWan" -ResourceGroupName "TestResourc
 This example creates a Virtual WAN in a resource group and then immediately deletes it. 
 To suppress the prompt when deleting the Virtual WAN, use the -Force flag.
 
-### Example 2
+### Example 2: 2
 
 ```powershell
 PS C:\> New-AzResourceGroup -Name "TestResourceGroup" -Location "Central US"
@@ -57,7 +57,7 @@ PS C:\> Remove-AzVirtualWan -InputObject $virtualWan -Passthru
 This example creates a Virtual WAN in a resource group and then immediately deletes it. This deletion happens using the virtual wan object returned by New-AzVirtualWan.
 To suppress the prompt when deleting the Virtual WAN, use the -Force flag.
 
-### Example 3
+### Example 3: 3
 
 ```powershell
 PS C:\> New-AzResourceGroup -Name "TestResourceGroup" -Location "Central US"

@@ -26,7 +26,7 @@ A metastore is a SQL Database that can used to store metadata for Hive, Oozie, o
 ## EXAMPLES
 
 ### Example 1: Add a SQL database metastore to the cluster configuration object
-```
+```powershell
 PS C:\># Primary storage account info
 PS C:\> $storageAccountResourceGroupName = "Group"
 PS C:\> $storageAccountName = "yourstorageacct001"
@@ -80,6 +80,13 @@ PS C:\> New-AzHDInsightClusterConfig  `
 ```
 
 This command adds a SQL database metastore to the cluster named your-hadoop-001.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzHDInsightMetastore -Credential {Credential} -DatabaseName {DatabaseName} -MetastoreType HiveMetastore -SqlAzureServerName $hiveSqlServer.database.contoso.net
+```
+
+
 
 ## PARAMETERS
 

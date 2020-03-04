@@ -22,7 +22,7 @@ The **Get-AzApplicationGatewayIdentity** cmdlet gets identity assigned to the ap
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $gw = Get-AzApplicationGateway -Name $appgwName -ResourceGroupName $resgpName
 PS C:\> $identity = Get-AzApplicationGatewayIdentity -ApplicationGateway $gw

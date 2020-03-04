@@ -35,7 +35,7 @@ The **New-AzSearchQueryKey** cmdlet creates a new query key for the Azure Search
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> New-AzSearchQueryKey -ResourceGroupName "TestAzureSearchPsGroup" -ServiceName "pstestazuresearch01" -Name "NewQueryKey1" -Force
 
@@ -45,6 +45,13 @@ NewQueryKey1 65FBCF561228C5F0E01F8F2114C80459
 ```
 
 The example creates a new query key for the Azure Search service.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzSearchQueryKey -Name NewQueryKey1 -ResourceGroupName TestAzureSearchPsGroup -ServiceName pstestazuresearch01
+```
+
+
 
 ## PARAMETERS
 

@@ -35,8 +35,8 @@ Get information on the endpoint.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzIotHubRoutingEndpoint -ResourceGroupName "myresourcegroup" -Name "myiothub"
 
 Name EndpointType			AzureResource
@@ -48,8 +48,8 @@ S1   AzureStorageContainer	mystorage1/container
 
 Get all the endpoints from "myiothub" IoT Hub.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzIotHubRoutingEndpoint -ResourceGroupName "myresourcegroup" -Name "myiothub" -EndpointType EventHub
 
 ResourceGroupName SubscriptionId                       EndpointName
@@ -60,8 +60,8 @@ resourcegroup1    91d12343-a3de-345d-b2ea-135792468abc E2
 
 Get all the endpoints of type EventHub from "myiothub" IoT Hub. 
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> Get-AzIotHubRoutingEndpoint -ResourceGroupName "myresourcegroup" -Name "myiothub" -EndpointType EventHub
 
 ResourceGroupName : resourcegroup1
@@ -72,8 +72,8 @@ ConnectionString  : Endpoint=sb://myeventhub1.servicebus.windows.net:5671/;Share
 
 Get all the endpoints of type EventHub from "myiothub" IoT Hub.
 
-### Example 4
-```
+### Example 4: 4
+```powershell
 PS C:\> Get-AzIotHubRoutingEndpoint -ResourceGroupName "myresourcegroup" -Name "myiothub" -EndpointName E1
 
 ResourceGroupName : resourcegroup1

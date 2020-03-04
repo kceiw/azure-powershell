@@ -21,8 +21,8 @@ The **Test-AzRelayName** Cmdlet Check Availability of the NameSpace Name
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Test-AzRelayName -Namespace TestingtheAvailability
 
 NameAvailable Reason Message
@@ -30,8 +30,8 @@ NameAvailable Reason Message
          True   None
 ```
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Test-AzRelayName -Namespace Testi
 
 NameAvailable      Reason Message
@@ -39,8 +39,8 @@ NameAvailable      Reason Message
         False InvalidName The specified service namespace is invalid.
 ```
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> Test-AzRelayName -Namespace Test123
 
 NameAvailable    Reason Message

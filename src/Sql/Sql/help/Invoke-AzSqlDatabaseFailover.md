@@ -23,7 +23,7 @@ The Invoke-AzSqlDatabaseFailover cmdlet failovers an Azure SQL database. If the 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Invoke-AzSqlDatabaseFailover -ResourceGroupName "ResourceGroup01" -ServerName "Server01" -DatabaseName "Database01"
 ```

@@ -22,7 +22,7 @@ The New-AzAttestation cmdlet creates an attestation in the specified resource gr
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> New-AzAttestation -Name example -ResourceGroupName rg1 
 Id                  : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/rg1/providers/Microsoft.Attestation/attestationProviders/example
@@ -35,6 +35,13 @@ SubscriptionId      : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx
 ```
 
 Create a new Attestation "example" in current Subscription, Resource Group "rg1"
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzAttestation -AttestationPolicy SgxDisableDebugMode -Name example -ResourceGroupName rg1
+```
+
+
 
 ## PARAMETERS
 

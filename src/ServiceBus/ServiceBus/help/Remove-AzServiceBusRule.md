@@ -30,34 +30,34 @@ The **Remove-AzServiceBusRule** cmdlet removes the rule of a subscription of giv
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Remove-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription -Name SBRule
 ```
 
 Removes the rule `SBRule` of subscription `SBSubscription` of specified topic `SBTopic`.
 
-### Example 2.1 - InputObject - Using Variable:
-```
+### Example 2: 2.1 - InputObject - Using Variable:
+```powershell
 PS C:\> $inputobject = Get-AzServiceBusRule <params>
 PS C:\> Remove-AzServiceBusRule -InputObject $inputobject
 ```
 
 Removes the rule provided through $inputobject for -InputObject parameter
 
-### Example 2.2 - InputObject - Using Piping:
-```
+### Example 3: 2.2 - InputObject - Using Piping:
+```powershell
 PS C:\> Get-AzServiceBusRule <params> | Remove-AzServiceBusRule
 ```
 
-### Example 3.1 - ResourceId - Using Variable
-```
+### Example 4: 3.1 - ResourceId - Using Variable
+```powershell
 PS C:\> $resourceid = Get-AzServiceBusRule <params>
 PS C:\> Remove-AzServiceBusRule -ResourceId $resourceid.Id
 ```
 
-### Example 3.1 - ResourceId - Using string value
-```
+### Example 5: 3.1 - ResourceId - Using string value
+```powershell
 PS C:\> Remove-AzServiceBusRule -ResourceId "/subscriptions/xxx-xxxxx-xxxxxx-xxxxxx/resourceGroups/ResourceGroupName/providers/Microsoft.ServiceBus/namespaces/NamespaceName/topics/TopicName/subscriptions/SubscriptionName/rules/RuleName"
 ```
 

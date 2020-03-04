@@ -73,35 +73,35 @@ Removes an Azure Event Grid event subscription for an Azure Event Grid topic, a 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Remove-AzEventGridSubscription -ResourceGroup MyResourceGroup -TopicName Topic1 -EventSubscriptionName EventSubscription1
 ```
 
 Removes the event subscription \`EventSubscription1\` to an Azure Event Grid topic \`Topic1\` in resource group \`MyResourceGroupName\`.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Remove-AzEventGridSubscription -ResourceGroupName MyResourceGroupName -EventSubscriptionName EventSubscription1
 ```
 
 Removes the event subscription \`EventSubscription1\` to a resource group \`MyResourceGroupName\`.
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\> Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
 Removes the event subscription \`EventSubscription1\` to the default Azure subscription.
 
-### Example 4
+### Example 4: 4
 ```powershell
 PS C:\> Get-AzResource -ResourceId "/subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.EventHub/namespaces/$namespaceName" | Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```
 
 Removes the event subscription \`EventSubscription1\` to an Event Hub namespace.
 
-### Example 5
+### Example 5: 5
 ```powershell
 PS C:\> Get-AzEventGridTopic -ResourceGroup MyResourceGroup -TopicName Topic1 | Remove-AzEventGridSubscription -EventSubscriptionName EventSubscription1
 ```

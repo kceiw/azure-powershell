@@ -22,7 +22,7 @@ Remove-AzApplicationGatewayIdentity -ApplicationGateway <PSApplicationGateway>
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $appgw = Remove-AzApplicationGatewayIdentity -ApplicationGateway $appgw
 PS C:\> $updatedgateway = Set-AzApplicationGateway -ApplicationGateway $appgw

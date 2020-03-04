@@ -22,8 +22,8 @@ The Remove-AzRecoveryServicesAsrProtectionContainer cmdlet deletes the specified
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzRecoveryServicesAsrProtectionContainer -Name xxxxx  -Fabric $fabric
 PS C:\> Remove-AzRecoveryServicesAsrProtectionContainer -InputObject $protectionContainer
 ```

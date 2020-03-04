@@ -49,21 +49,21 @@ After executing this cmdlet, you will need to login again using Connect-AzAccoun
 ## EXAMPLES
 
 ### Logout of the current account
-```
+```powershell
 PS C:\> Disconnect-AzAccount
 ```
 
 Logs out of the Azure account associated with the current context.
 
 ### Logout of the account associated with a particular context
-```
+```powershell
 PS C:\> Get-AzContext "Work" | Disconnect-AzAccount -Scope CurrentUser
 ```
 
 Logs out the account associated with the given context (named 'Work'). Because this uses the 'CurrentUser' scope, all credentials and contexts will be permanently deleted.
 
 ### Log out a particular user
-```
+```powershell
 PS C:\> Disconnect-AzAccount -Username 'user1@contoso.org'
 ```
 

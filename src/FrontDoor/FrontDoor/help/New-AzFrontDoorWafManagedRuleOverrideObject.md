@@ -22,7 +22,7 @@ Create PSAzureManagedRuleOverride Object for managed WAF rule group override obj
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 Create a managed rule override object for rule 942250 (which is in SQLI group).
 
 ```powershell

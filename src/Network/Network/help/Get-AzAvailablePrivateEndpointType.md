@@ -23,7 +23,7 @@ The **Get-AzAvailablePrivateEndpointType** cmdlet returns all available private 
 ## EXAMPLES
 
 ### Example
-```
+```powershell
 Get-AzAvailablePrivateEndpointType -Location eastus
 
 [

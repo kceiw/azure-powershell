@@ -36,14 +36,14 @@ For more on this setting and how to enable it, see New-AzDeployment and Debuggin
 ## EXAMPLES
 
 ### Get deployment operations given a deployment name
-```
+```powershell
 PS C:\>Get-AzDeploymentOperation -DeploymentName test
 ```
 
 Gets deployment operation with name "test" at the current subscription scope.
 
 ### Get a deployment and get its deployment operations
-```
+```powershell
 PS C:\>Get-AzDeployment -Name "test" | Get-AzDeploymentOperation
 ```
 

@@ -24,8 +24,8 @@ The **Start-AzRecoveryServicesAsrApplyRecoveryPoint** changes the recovery point
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $currentJob = Start-AzRecoveryServicesAsrApplyRecoveryPoint -RecoveryPoint $RecoveryPoint -ReplicationProtectedItem $RPI
 ```
 

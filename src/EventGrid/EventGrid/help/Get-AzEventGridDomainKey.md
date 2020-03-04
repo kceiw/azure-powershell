@@ -35,7 +35,7 @@ Gets the shared access keys used to publish events to an Event Grid domain.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 
 Gets the shared access keys of Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\`.
 
@@ -47,7 +47,7 @@ Key1                                         Key2
 <Key1 value>                                <Key 2 value>
 ```
 
-### Example 2
+### Example 2: 2
 
 Gets the shared access keys of Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\`.
 
@@ -58,6 +58,13 @@ Key1                                         Key2
 ----                                         ----
 <Key1 value>                                <Key 2 value>
 ```
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventGridDomainKey -Name Domain1 -ResourceGroupName MyResourceGroupName
+```
+
+
 
 ## PARAMETERS
 

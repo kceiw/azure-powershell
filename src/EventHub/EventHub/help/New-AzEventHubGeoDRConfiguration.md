@@ -38,8 +38,8 @@ The **New-AzEventHubGeoDRConfiguration** cmdlet Creates a new Alias(Disaster Rec
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> New-AzEventHubGeoDRConfiguration -ResourceGroupName "SampleResourceGroup" -Namespace "SampleNamespace_Primary" -Name "SampleDRConfigName" -PartnerNamespace "SampleNamespace_Secondary"
 
 Name              : SampleDRConfigName

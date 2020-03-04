@@ -38,14 +38,14 @@ The returned rollout object contains the services, service units and steps that 
 
 ## EXAMPLES
 
-### Example 1 Get the rollout
+### Example 1: Get the rollout
 ```powershell
 PS C:\> Get-AzDeploymentManagerRollout -ResourceGroupName ContosoResourceGroup -Name ContosoRollout
 ```
 
 This command gets a rollout named ContosoRollout in the ContosoResourceGroup. 
 
-### Example 2 Get and display the rollout details
+### Example 2: Get and display the rollout details
 ```powershell
 PS C:\> Get-AzDeploymentManagerRollout -ResourceGroupName ContosoResourceGroup -Name ContosoRollout -Verbose
 ```

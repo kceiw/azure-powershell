@@ -22,8 +22,8 @@ The Test-AzAnalysisServicesServer cmdlet tests the existence of an instance of A
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Test-AzAnalysisServicesServer -Name "testserver" -ResourceGroupName "testgroup"
 ```
 

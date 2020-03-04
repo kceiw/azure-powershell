@@ -22,7 +22,7 @@ The **Get-AzFrontDoorWafPolicy** cmdletGet gets WAF policy in a resource group u
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzFrontDoorWafPolicy -Name $policyName -ResourceGroupName $resourceGroupName
 
@@ -33,7 +33,7 @@ Name         PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redirec
 
 Get a WAF policy called $policyName in $resourceGroupName
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Get-AzFrontDoorWafPolicy -ResourceGroupName $resourceGroupName
 

@@ -46,6 +46,13 @@ myresourcegroup    mystorageaccount  2018-03-28            False
 
 This command gets the Blob services property of a specified Storage Account.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzStorageBlobServiceProperty -ResourceGroupName myresourcegroup -StorageAccountName mystorageaccount
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

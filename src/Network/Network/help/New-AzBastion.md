@@ -80,7 +80,7 @@ Creates a bastion resource.This will need a Public Ip Address and a VirtualNetwo
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 $subnetName = "AzureBastionSubnet"
 $subnet = New-AzVirtualNetworkSubnetConfig -Name $subnetName -AddressPrefix 10.0.0.0/24
@@ -121,7 +121,7 @@ There must be a subnet with name AzureBastionSubnet in this vnet.
 The Ip Address must be created with Sku Standard.
 ```
 
-### Example 2
+### Example 2: 2
 ```powershell
 $vnet = Get-AzVirtualNetwork -ResourceGroupName "BastionPowershellTest" -Name "testVnet2"
 Add-AzVirtualNetworkSubnetConfig -Name "AzureBastionSubnet" -VirtualNetwork $vnet -AddressPrefix "10.0.0.0/24"
@@ -156,6 +156,13 @@ Name                 : testBastion2
 Etag                 : W/"7460e5f6-ad41-438b-a595-a63346ed8f16"
 Id                   : /subscriptions/359a08a9-ff1b-463c-92d7-6df8d946f25c/resourceGroups/BastionPowershellTest/providers/Microsoft.Network/bastionHosts/testBastion2
 ```
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzBastion -Name testBastion2 -PublicIpAddress $publicip -ResourceGroupName BastionPowershellTest -VirtualNetwork $vnet
+```
+
+
 
 ## PARAMETERS
 

@@ -22,8 +22,8 @@ The Remove-AzAnalysisServicesServer cmdlet  deletes an instance of Analysis Serv
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Remove-AzAnalysisServicesServer -Name "testserver" -ResourceGroupName "testgroup"
 ```
 

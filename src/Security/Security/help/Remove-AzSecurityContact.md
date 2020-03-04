@@ -35,7 +35,7 @@ Deletes a security contact.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Remove-AzSecurityContact -Name "default1"
 ```

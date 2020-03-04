@@ -41,7 +41,7 @@ The Get-AzBatchPoolNodeCount cmdlet allows customers to get back node counts per
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 
 ```powershell
 PS C:\> $batchContext = Get-AzBatchAccountKeys -AccountName "contosobatch"
@@ -55,7 +55,7 @@ contosopool2                   Idle: 1, Rebooting: 1, Total: 2                  
 
 List node counts per node state for pools under current batch account context.
 
-### Example 2
+### Example 2: 2
 
 ```powershell
 PS C:\> Get-AzBatchPoolNodeCount -BatchContext $batchContext -PoolId "contosopool1"

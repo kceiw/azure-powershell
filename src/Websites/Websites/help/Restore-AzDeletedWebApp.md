@@ -33,14 +33,14 @@ The **Restore-AzDeletedWebApp** cmdlet restores a deleted web app. The web app s
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -TargetAppServicePlanName ContosoPlan
 ```
 
 Restores a deleted app named ContosoApp belonging to the resource group Default-Web-WestUS. A new app with the same name and resource group will be created in the App Service Plan named ContosoPlan, and the deleted app's files and settings will be restored to it.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Restore-AzDeletedWebApp -ResourceGroupName Default-Web-WestUS -Name ContosoApp -Slot Staging -TargetResourceGroupName Default-Web-EastUS -TargetName ContosoRestore -RestoreContentOnly
 ```

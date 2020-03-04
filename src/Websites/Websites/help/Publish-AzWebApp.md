@@ -29,21 +29,21 @@ The **Publish-AzWebApp** cmdlet uploads content to an existing Azure Web App. Th
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Publish-AzWebApp -ResourceGroupName Default-Web-WestUS -Name MyApp -ArchivePath C:\project\app.zip
 ```
 
 Uploads the contents of app.zip to the web app named MyApp belonging to the resource group Default-Web-WestUS.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Publish-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp -Slot Staging -ArchivePath C:\project\javaproject.war
 ```
 
 Uploads the contents of javaproject.war to the Staging slot of the web app named ContosoApp belonging to the resource group ContosoRG.
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\> $app = Get-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp
 PS C:\> Publish-AzWebApp -WebApp $app -ArchivePath C:\project\app.zip -AsJob
@@ -51,7 +51,7 @@ PS C:\> Publish-AzWebApp -WebApp $app -ArchivePath C:\project\app.zip -AsJob
 
 Uploads the contents of app.zip to the web app named ContosoApp belonging to the resource group ContosoRG. The cmdlet will be run in a background job.
 
-### Example 4
+### Example 4: 4
 ```powershell
 PS C:\> $app = Get-AzWebApp -ResourceGroupName ContosoRG -Name ContosoApp
 PS C:\> $app | Publish-AzWebApp -ArchivePath C:\project\java_app.jar

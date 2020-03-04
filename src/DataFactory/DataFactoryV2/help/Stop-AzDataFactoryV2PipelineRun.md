@@ -36,8 +36,8 @@ The **Stop-AzDataFactoryV2PipelineRun** cmdlet stops a pipeline run in a data fa
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Stop-AzDataFactoryV2PipelineRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineRunId b9730a13-aa12-4926-a8b3-8e3a974ab0bd
 
 Confirm

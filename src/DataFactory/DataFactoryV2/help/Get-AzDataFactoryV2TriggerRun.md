@@ -32,7 +32,7 @@ The **Get-AzDataFactoryV2TriggerRun** command returns detailed information about
 ## EXAMPLES
 
 ### Example 1: Get information about trigger run
-```
+```powershell
 PS C:\> Get-AzDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -TriggerName "WikiTrigger" -TriggerRunStartedAfter "2017-09-01" -TriggerRunStartedBefore "2019-09-30"
 
     ResourceGroupName   : ADF
@@ -45,6 +45,13 @@ PS C:\> Get-AzDataFactoryV2TriggerRun -ResourceGroupName "ADF" -DataFactoryName 
 ```
 
 This command shows information about runs for "WikiTrigger" in the factory "WikiADF" that started between "2017-09-01" and "2019-09-30".
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataFactoryV2TriggerRun -DataFactoryName WikiADF -Name WikiTrigger -ResourceGroupName ADF -TriggerRunStartedAfter 2017-09-01 -TriggerRunStartedBefore 2019-09-30
+```
+
+
 
 ## PARAMETERS
 

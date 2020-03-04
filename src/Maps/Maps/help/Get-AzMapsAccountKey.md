@@ -38,7 +38,7 @@ Use New-AzMapsAccountKey (New-AzMapsAccountKey.md)to regenerate a key.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzMapsAccountKey -ResourceGroupName MyResourceGroup -Name MyAccount
 
@@ -49,7 +49,7 @@ PrimaryKey                                  SecondaryKey
 
 Returns the keys for the account named MyAccount in the resource group MyResourceGroup.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Get-AzMapsAccountKey -ResourceId /subscriptions/21a9967a-e8a9-4656-a70b-96ff1c4d05a0/resourceGroups/MyResourceGroup/providers/Microsoft.Maps/accounts/MyAccount
 
