@@ -31,7 +31,7 @@ Rename an Azure context.  By default contexts are named by user account and subs
 ## EXAMPLES
 
 ### Rename a context using named parameters
-```
+```powershell
 PS C:\> Rename-AzContext -SourceName "[user1@contoso.org; 12345-6789-2345-3567890]" -TargetName "Work"
 ```
 
@@ -39,7 +39,7 @@ Rename the context for 'user1@contoso.org' with subscription '12345-6789-2345-35
 'Select-AzContext Work'.  Note that you can tab through the values for 'SourceName' using tab completion.
 
 ### Rename a context using positional parameters
-```
+```powershell
 PS C:\> Rename-AzContext "My context" "Work"
 ```
 
