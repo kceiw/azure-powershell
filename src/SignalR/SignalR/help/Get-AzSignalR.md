@@ -33,8 +33,8 @@ Get a specific SignalR service or all the SignalR services in a resource group o
 
 ## EXAMPLES
 
-### Get all SignalR services in the subscription
-```
+### Example 1: Get all SignalR services in the subscription
+```powershell
 PS C:\> Get-AzSignalR
 
 
@@ -45,8 +45,8 @@ mysignalr2.service.signalr.net                     eastus         5002       500
 mysignalr3.service.signalr.net                     eastus         5002       5001       Creating          1.0
 ```
 
-### Get all SignalR services in a resource group
-```
+### Example 2: Get all SignalR services in a resource group
+```powershell
 PS C:\> Get-AzSignalR -ResourceGroupName myResourceGroup
 
 HostName                                           Location       ServerPort PublicPort ProvisioningState Version
@@ -55,8 +55,8 @@ mysignalr1.service.signalr.net                     eastus         5002       500
 mysignalr2.service.signalr.net                     eastus         5002       5001       Succeeded         1.0
 ```
 
-### Get a specific SignalR service
-```
+### Example 3: Get a specific SignalR service
+```powershell
 PS C:\> Get-AzSignalR -ResourceGroupName myResourceGroup -Name mysignalr1
 
 HostName                                           Location       ServerPort PublicPort ProvisioningState Version
@@ -64,8 +64,8 @@ HostName                                           Location       ServerPort Pub
 mysignalr1.service.signalr.net                     eastus         5002       5001       Succeeded         1.0
 ```
 
-### Get a specific SignalR service from the default resource group
-```
+### Example 4: Get a specific SignalR service from the default resource group
+```powershell
 PS C:\> Get-AzSignalR -Name mysignalr2
 
 HostName                                           Location       ServerPort PublicPort ProvisioningState Version

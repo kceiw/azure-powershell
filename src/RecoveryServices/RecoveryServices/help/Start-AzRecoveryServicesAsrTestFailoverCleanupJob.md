@@ -36,18 +36,25 @@ The **Start-AzRecoveryServicesAsrTestFailoverCleanupJob** cmdlet starts the test
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Start-AzRecoveryServicesAsrTestFailoverCleanupJob -ReplicationProtectedItem $rpi -Comments "testing done"
 ```
 
 Job to track test failover Cleanup of an Azure Site Recovery replication protected item.
 
 ### Example 2
-```
+```powershell
 PS C:\> Start-AzRecoveryServicesAsrTestFailoverCleanupJob -RecoveryPlan $recoveryPlan -Comment "testing done"
 ```
 
 Job to track test failover Cleanup of an Azure Site Recovery recoveryPlan.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Start-AzRecoveryServicesAsrTestFailoverCleanupJob -ReplicationProtectedItem $rpi
+```
+
+
 
 ## PARAMETERS
 

@@ -39,7 +39,7 @@ Set pricing plan and daily data volume information for an application insights r
 ## EXAMPLES
 
 ### Example 1 Set pricing plan and daily data volume information for an application insights resource
-```
+```powershell
 PS C:\> Set-AzApplicationInsightsDailyCap -ResourceGroupName "testgroup" -Name "test" -PricingPlan "Basic" -DailyCapGB 400
 
  Cap ResetTime StopSendNotificationWhenHitCap PricingPlan
@@ -48,6 +48,13 @@ PS C:\> Set-AzApplicationInsightsDailyCap -ResourceGroupName "testgroup" -Name "
 ```
 
 Set the pricing plan to "Basic", set the daily data volume cap to 400GB per day and stop send notification when hit cap for resource "test" in resource group "testgroup"
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzApplicationInsightsPricingPlan -DailyCapGB 400 -Name test -PricingPlan Basic -ResourceGroupName MyResourceGroup
+```
+
+
 
 ## PARAMETERS
 

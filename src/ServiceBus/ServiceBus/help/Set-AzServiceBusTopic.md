@@ -24,7 +24,7 @@ The **Set-AzServiceBusTopic** cmdlet updates a description object for a Service 
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $topicObj = Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-ExampleStandard -TopicName SB-Topic_exampl1
 
 PS C:\> $topicObj.EnableExpress = $True
@@ -53,6 +53,13 @@ UpdatedAt                           : 10/12/2018 12:01:29 AM
 ```
 
 Updates the specified topic with a new description in the specified namespace. This example updates the **EnableExpress** property to **true**. 
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzServiceBusTopic -InputObject $topicObj -Name SB-Topic_exampl1 -Namespace SB-ExampleStandard -ResourceGroupName Default-ServiceBus-WestUS
+```
+
+
 
 ## PARAMETERS
 

@@ -32,6 +32,13 @@ servicesAzureManagedInstance /subscriptions/61dc4623-b5f8-41a0-acfc-29537dcf6e5d
 
 ```
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzAvailableServiceAlias -Location westus
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile
