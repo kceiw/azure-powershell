@@ -43,6 +43,13 @@ PS C:\> Invoke-AzStorageSyncFileRecall -ResourceGroupName "myResourceGroup" -Sto
 
 This command recursively recalls all tiered files located under the root path of the specified server endpoint.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Invoke-AzStorageSyncFileRecall -Name myServerEndpointName -ResourceGroupName myResourceGroup -StorageSyncServiceName myStorageSyncServiceName -SyncGroupName mySyncGroupName
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

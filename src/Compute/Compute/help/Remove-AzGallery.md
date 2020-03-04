@@ -42,6 +42,13 @@ PS C:\> Remove-AzGallery -ResourceGroupName $rgname -GalleryName $galleryName
 
 Delete the given gallery.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzGallery -Name $galleryName -ResourceGroupName $rgname
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

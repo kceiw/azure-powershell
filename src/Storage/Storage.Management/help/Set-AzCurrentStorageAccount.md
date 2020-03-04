@@ -32,11 +32,18 @@ The current Storage account is used as the default when you access Storage witho
 ## EXAMPLES
 
 ### Example 1: Set the current Storage account
-```
+```powershell
 PS C:\>Set-AzCurrentStorageAccount -ResourceGroupName "RG01" -AccountName "mystorageaccount"
 ```
 
 This command sets the default Storage account for the specified subscription.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzCurrentStorageAccount -Name mystorageaccount -ResourceGroupName RG01
+```
+
+
 
 ## PARAMETERS
 

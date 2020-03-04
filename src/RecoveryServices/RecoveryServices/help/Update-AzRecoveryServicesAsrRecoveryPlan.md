@@ -30,11 +30,18 @@ The **Update-AzRecoveryServicesAsrRecoveryPlan** cmdlet updates the contents of 
 ## EXAMPLES
 
 ### Example 1: Update a recovery plan
-```
+```powershell
 PS C:\> $currentJob = Update-AzRecoveryServicesAsrRecoveryPlan -RecoveryPlan $RP
 ```
 
 Start the operation of updating a recovery plan using the contents of the specified ASR recovery plan object and returns the ASR job used to track the operation.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzRecoveryServicesAsrRecoveryPlan -InputObject $RP
+```
+
+
 
 ## PARAMETERS
 

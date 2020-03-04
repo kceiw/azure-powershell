@@ -24,7 +24,7 @@ The **Set-AzServiceBusSubscription** cmdlet updates the description of the subsc
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $subscriptionObj = Get-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1 -SubscriptionName SB-TopicSubscription-Example1
 
 PS C:\> $subscriptionObj.DeadLetteringOnMessageExpiration = $True
@@ -48,6 +48,13 @@ PS C:\> Set-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -N
 ```
 
 Updates the description for the specified subscription to the given topic. This example updates the **DeadLetteringOnMessageExpiration** property to **true** and **MaxDeliveryCount** to 9.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzServiceBusSubscription -InputObject $subscriptionObj -Namespace SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS -Topic SB-Topic_exampl1
+```
+
+
 
 ## PARAMETERS
 
