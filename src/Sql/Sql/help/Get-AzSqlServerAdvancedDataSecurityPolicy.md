@@ -45,6 +45,13 @@ ServerName		             : Server01
 IsEnabled		             : True
 ```
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzSqlServerAdvancedDataSecurityPolicy -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

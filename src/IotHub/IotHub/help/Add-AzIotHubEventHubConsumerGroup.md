@@ -24,11 +24,18 @@ Creates a consumer group in the Eventhub associated with the specified IotHub.
 ## EXAMPLES
 
 ### Example 1: Add a consumer group to the telemetry eventhub
-```
+```powershell
 PS C:\> Add-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubEndpointName "events" -EventHubConsumerGroupName "myconsumergroup"
 ```
 
 Adds a new consumergroup named "myconsumergroup" to the eventhub for telemetry events in the iothub named "myiothub"
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Add-AzIotHubEventHubConsumerGroup -EventHubConsumerGroupName myconsumergroup -Name myiothub -ResourceGroupName myresourcegroup
+```
+
+
 
 ## PARAMETERS
 

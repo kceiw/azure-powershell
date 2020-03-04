@@ -24,11 +24,18 @@ The **Get-AzOperationalInsightsIntelligencePack** cmdlet gets the available Inte
 ## EXAMPLES
 
 ### Example 1: Get Intelligence Packs
-```
+```powershell
 PS C:\>Get-AzOperationalInsightsStorageInsight -ResourceGroupName "ContosoResourceGroup" -WorkspaceName "ContosoWorkspace"
 ```
 
 This command gets the available Intelligence Packs.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzOperationalInsightsIntelligencePack -ResourceGroupName MyResourceGroup -WorkspaceName ContosoWorkspace
+```
+
+
 
 ## PARAMETERS
 
