@@ -35,6 +35,13 @@ PS C:\> New-AzServiceFabricApplicationTypeVersion -ResourceGroupName $resourceGr
 
 This example will create an application type version "v1" under type "testAppType". The version in the application manifest contained in the package should have the same version as the one specified in -Version.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzServiceFabricApplicationTypeVersion -ClusterName $clusterName -Name $appName -PackageUrl $packageUrl -ResourceGroupName $resourceGroupName -Version $version
+```
+
+
+
 ## PARAMETERS
 
 ### -ClusterName

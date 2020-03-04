@@ -31,15 +31,15 @@ Get the identity provider configuration details.
 
 ### Example 1: Get all Identity Providers
 
-```
+```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementIdentityProvider -Context $apimContext
 ```
 
 Get all the identity provider Configuration on the service.
 
-### Get the AAD Type Identity Provider
-```
+### Example 2: Get the AAD Type Identity Provider
+```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Get-AzApiManagementIdentityProvider -Context $apimContext -Type Aad
 ```

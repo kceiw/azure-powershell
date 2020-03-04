@@ -47,6 +47,13 @@ ManagedInstanceName		     : ManagedInstance01
 IsEnabled		             : True
 ```
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Enable-AzSqlInstanceAdvancedDataSecurity -InstanceName ContosoManagedInstanceName -ResourceGroupName MyResourceGroup
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

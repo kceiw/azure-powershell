@@ -61,7 +61,7 @@ Creates a new azure active directory application. Below are the permissions need
 
 ### Example 1 - Create new AAD application.
 
-```
+```powershell
 PS C:\> New-AzADApplication -DisplayName "NewApplication" -HomePage "http://www.microsoft.com" -IdentifierUris "http://NewApplication"
 ```
 
@@ -69,13 +69,20 @@ Creates a new azure active directory application without any credentials.
 
 ### Example 2 - Create new AAD application with password.
 
-```
+```powershell
 PS C:\> $SecureStringPassword = ConvertTo-SecureString -String "password" -AsPlainText -Force
 PS C:\> New-AzADApplication -DisplayName "NewApplication" -HomePage "http://www.microsoft.com" -IdentifierUris "http:
 //NewApplication" -Password $SecureStringPassword
 ```
 
 Creates a new azure active directory application and associates password credentials with it.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzADApplication -DisplayName NewApplication -HomePage http://www.microsoft.com -IdentifierUris http://NewApplication -Password $SecureStringPassword
+```
+
+
 
 ## PARAMETERS
 

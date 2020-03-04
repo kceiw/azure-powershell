@@ -37,7 +37,7 @@ The Set-AzSqlElasticJobCredential cmdlet updates a job credential
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $cred = Get-AzSqlElasticJobCredential -ResourceGroupName rg -ServerName elasticjobserver -AgentName agent -Name cred1
 $cred | Set-AzSqlElasticJobCredential -Name cred1 -Credential (Get-Credential)
 
@@ -47,6 +47,13 @@ cred1          user2
 ```
 
 Updates a job credential
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzSqlElasticJobCredential -AgentName agent -Credential <PSCredential> -Name cred1 -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
+
 
 ## PARAMETERS
 

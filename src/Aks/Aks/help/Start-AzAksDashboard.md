@@ -35,8 +35,8 @@ Create a Kubectl SSH tunnel to the managed cluster's dashboard. The SSH tunnel i
 
 ## EXAMPLES
 
-### Start an SSH tunnel and open a browser to the Kubernetes dashboard
-```
+### Example 1: Start an SSH tunnel and open a browser to the Kubernetes dashboard
+```powershell
 PS C:\> Start-AzAksDashboard -ResourceGroupName group -Name myCluster
 ```
 

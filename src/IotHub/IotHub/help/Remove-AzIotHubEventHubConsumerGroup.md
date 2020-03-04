@@ -24,11 +24,18 @@ Deletes an eventhub consumergroup.
 ## EXAMPLES
 
 ### Example 1 Remove eventhub consumergroup from the telemetry eventhub
-```
+```powershell
 PS C:\> Remove-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubEndpointName "events" -EventHubConsumerGroupName myconsumergroup
 ```
 
 Removes the consumergroup named myconsumergroup from the IotHub named "myiothub"
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzIotHubEventHubConsumerGroup -EventHubConsumerGroupName myconsumergroup -Name myiothub -ResourceGroupName myresourcegroup
+```
+
+
 
 ## PARAMETERS
 

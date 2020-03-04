@@ -24,11 +24,18 @@ The **Get-AzDataLakeStoreItemOwner** cmdlet gets the owner of a file or folder i
 ## EXAMPLES
 
 ### Example 1: Get the owner for a directory
-```
+```powershell
 PS C:\>Get-AzDataLakeStoreItemOwner -AccountName "ContosoADL" -Path / -Type User
 ```
 
 This command gets the user owner for the root directory of the ContosoADL account.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeStoreItemOwner -Account ContosoADL -Path / -Type User
+```
+
+
 
 ## PARAMETERS
 

@@ -23,11 +23,18 @@ The **Get-AzStorageAccountNetworkRuleSet** cmdlet gets the NetworkRule property 
 ## EXAMPLES
 
 ### Example 1: Get NetworkRule property of a specified Storage account
-```
+```powershell
 PS C:\> Get-AzStorageAccountNetworkRuleSet  -ResourceGroupName "rg1" -AccountName "mystorageaccount"
 ```
 
 This command gets NetworkRule property of a specified Storage account
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzStorageAccountNetworkRuleSet -Name myStorageAccount -ResourceGroupName myResourceGroup
+```
+
+
 
 ## PARAMETERS
 

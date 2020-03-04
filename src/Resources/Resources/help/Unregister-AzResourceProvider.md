@@ -23,6 +23,13 @@ The **Unregister-AzResourceProvider** cmdlet unregisters an Azure resource provi
 
 ## EXAMPLES
 
+### Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Unregister-AzResourceProvider -ProviderNamespace Microsoft.support
+```
+
+
+
 ## PARAMETERS
 
 ### -ApiVersion

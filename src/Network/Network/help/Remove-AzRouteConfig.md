@@ -24,7 +24,7 @@ The **Remove-AzRouteConfig** cmdlet removes a route from an Azure route table.
 ## EXAMPLES
 
 ### Example 1: Remove a route
-```
+```powershell
 PS C:\>Get-AzRouteTable -ResourceGroupName "ResourceGroup11" -Name "RouteTable01" | Remove-AzRouteConfig -Name "Route02" | Set-AzRouteTable
 Name              : RouteTable01
 ResourceGroupName : ResourceGroup11
@@ -53,6 +53,13 @@ This command gets the route table named RouteTable01 by using the **Get-AzRouteT
 The command passes that table to the current cmdlet by using the pipeline operator.
 The current cmdlet remove the route named Route02, and the passes the result to the **Set-AzRouteTable** cmdlet, which updates the table to reflect your changes.
 The table no longer contains the route named Route02.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzRouteConfig -Name cert01
+```
+
+
 
 ## PARAMETERS
 
