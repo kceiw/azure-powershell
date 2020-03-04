@@ -48,6 +48,13 @@ PS C:\> Get-AzEventGridTopic -ResourceGroup MyResourceGroupName -Name Topic1 | G
 
 Gets the shared access keys of Event Grid topic \`Topic1\` in resource group \`MyResourceGroupName\`.
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzEventGridTopicKey -Name Topic1 -ResourceGroupName MyResourceGroupName
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

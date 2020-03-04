@@ -24,7 +24,7 @@ The **Get-AzServiceBusNamespace** cmdlet gets a description for the specified Se
 
 ### Example 1
 
-```
+```powershell
 PS C:\> Get-AzServiceBusNamespace -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1
 
 Name               : SB-Example1
@@ -38,6 +38,13 @@ CreatedAt          : 1/20/2017 1:40:01 AM
 UpdatedAt          : 1/20/2017 1:40:24 AM
 ServiceBusEndpoint : https://SB-Example1.servicebus.windows.net:443/
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzServiceBusNamespace -Name SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS
+```
+
+
 
 ## PARAMETERS
 

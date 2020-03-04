@@ -25,7 +25,7 @@ Creates a new Kusto cluster.
 
 ### Example 1 - Create a new Kusto cluster
 
-```
+```powershell
 PS C:\> New-AzKustoCluster -ResourceGroupName testrg -Name mykustocluster -Location 'Central US' -Sku D13_v2 -Capacity 10
 
 Type              : Microsoft.Kusto/Clusters
@@ -43,6 +43,13 @@ DataIngestionUri  : https://ingest-mykustocluster.centralus.kusto.windows.net
 ```
 
 The above command creates a new Kusto cluster named "mykustocluster" in the resource group "testrg".
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzKustoCluster -Location Central US -Name mykustocluster -ResourceGroupName testrg -Sku D13_v2
+```
+
+
 
 ## PARAMETERS
 

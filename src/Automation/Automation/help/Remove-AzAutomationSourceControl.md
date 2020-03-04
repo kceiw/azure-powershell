@@ -34,6 +34,13 @@ PS C:\> Remove-AzAutomationSourceControl -ResourceGroupName "rg1" `
                                               -Force
 ```
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationSourceControl -AutomationAccountName AutomationAccount01 -Name Configuration01 -ResourceGroupName rg1
+```
+
+
+
 ## PARAMETERS
 
 ### -AutomationAccountName

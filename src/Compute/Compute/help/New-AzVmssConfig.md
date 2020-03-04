@@ -72,7 +72,7 @@ object. Other cmdlets are needed to configure the VMSS object. These cmdlets are
 ## EXAMPLES
 
 ### Example 1: Create a VMSS configuration object
-```
+```powershell
 PS C:\> $VMSS = New-AzVmssConfig -Location $Loc -SkuCapacity 2 -SkuName "Standard_A0" -UpgradePolicyMode "Automatic" -NetworkInterfaceConfiguration $NetCfg `
             | Add-AzVmssNetworkInterfaceConfiguration -Name "Test" -Primary $True -IPConfiguration $IPCfg `
             | Set-AzVmssOSProfile -ComputerNamePrefix "Test" -AdminUsername $adminUsername -AdminPassword $AdminPassword `
@@ -89,6 +89,13 @@ This example creates a VMSS configuration object. The first command uses the
 **New-AzVmssConfig** cmdlet to create a VMSS configuration object and stores the result in the
 variable named $VMSS. The second command uses the **New-AzVmss** cmdlet to create a VMSS that
 uses the VMSS configuration object created in the first command.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzVmssConfig -Location $LOC -Overprovision False -SkuCapacity 2 -SkuName Standard_A0 -UpgradePolicyMode Automatic
+```
+
+The New-AzVmssConfig cmdlet creates a configurable local Virtual Manager Scale Set (VMSS)
 
 ## PARAMETERS
 

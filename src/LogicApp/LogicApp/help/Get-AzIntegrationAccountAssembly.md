@@ -72,6 +72,13 @@ Tags       :
 
 Get all assemblies located in the integration account "sampleIntegrationAccount" which is contained in the resource group "sampleResourceGroup".
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzIntegrationAccountAssembly -ParentName sampleIntegrationAccount -ResourceGroupName sampleResourceGroup
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

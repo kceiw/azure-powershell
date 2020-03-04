@@ -25,11 +25,18 @@ This operation causes replication to stop for the protected item.
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $currentJob = Remove-AzRecoveryServicesAsrReplicationProtectedItem -ReplicationProtectedItem $ReplicationProtectedItem
 ```
 
 Starts the disable replication operation for the specified replication protected item and returns the ASR job used to track the operation.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzRecoveryServicesAsrReplicationProtectedItem -InputObject $ReplicationProtectedItem
+```
+
+
 
 ## PARAMETERS
 

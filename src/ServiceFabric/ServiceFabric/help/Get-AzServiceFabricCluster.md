@@ -41,6 +41,13 @@ PS C:\> Get-AzServiceFabricCluster -ResourceGroupName 'Group1' -ClusterName 'Con
 
 This command will get the cluster resource details for cluster 'myCluster'.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzServiceFabricCluster -Name Contoso01SFCluster -ResourceGroupName Group1
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

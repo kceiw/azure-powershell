@@ -33,6 +33,13 @@ PS C:\> Remove-AzAutomationHybridWorkerGroup -ResourceGroupName "rg1" `
                                                   -Force
 ```
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationHybridWorkerGroup -AutomationAccountName AutomationAccount01 -Name Configuration01 -ResourceGroupName rg1
+```
+
+
+
 ## PARAMETERS
 
 ### -AutomationAccountName

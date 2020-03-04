@@ -61,7 +61,7 @@ Removes a user from an AD group.
 
 ### Example 1 - Remove a user from a group by object id
 
-```
+```powershell
 PS C:\> Remove-AzADGroup -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4A3405 -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE
 ```
 
@@ -69,11 +69,18 @@ Removes the user with object id 'D9076BBC-D62C-4105-9C78-A7F5BC4A3405' from the 
 
 ### Example 2 - Remove a user from a group by piping
 
-```
+```powershell
 PS C:\> Get-AzADGroup -ObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE | Remove-AzADGroupMember -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4A3405
 ```
 
 Gets the group with object id '85F89C90-780E-4AA6-9F4F-6F268D322EEE' and pipes it to the Remove-AzADGroupMember cmdlet to remove the user to that group.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzADGroupMember -GroupObjectId 85F89C90-780E-4AA6-9F4F-6F268D322EEE -MemberObjectId D9076BBC-D62C-4105-9C78-A7F5BC4A3405
+```
+
+
 
 ## PARAMETERS
 

@@ -32,6 +32,13 @@ PS C:\>Remove-AzApiManagementOperation -Context $apimContext -ApiId "0123456789"
 
 This command removes an existing API Operation.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzApiManagementOperation -ApiId 0123456789 -Context $apimContext -OperationId 9876543210
+```
+
+
+
 ## PARAMETERS
 
 ### -ApiId
