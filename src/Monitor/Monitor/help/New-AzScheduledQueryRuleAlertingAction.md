@@ -24,7 +24,7 @@ This object is to be passed to the command that creates Log Alert Rule
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $alertingAction = New-AzScheduledQueryRuleAlertingAction -AznsAction $aznsActionGroup -Severity "1" -Trigger $triggerCondition
 ```

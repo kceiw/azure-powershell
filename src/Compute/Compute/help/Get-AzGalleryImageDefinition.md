@@ -29,7 +29,7 @@ Get or list gallery image definitions.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Get-AzGalleryImageDefinition -ResourceGroupName rg1 -GalleryName gallery1 -GalleryImageDefinitionName image1
 
@@ -68,7 +68,7 @@ Tags                : {}
 
 Get the gallery image definition.
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> Get-AzGalleryImageDefinition -ResourceGroupName rg1 -GalleryName gallery1 -GalleryImageDefinitionName image*
 
@@ -139,7 +139,7 @@ Tags                : {}
 
 Get the gallery image definition that starts with "image".
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\> Get-AzGalleryImageDefinition -ResourceGroupName rg1 -GalleryName gallery1
 

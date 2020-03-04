@@ -28,7 +28,7 @@ A given match value matches if the target string contains it using case insensit
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Get-AzPolicyAlias
 
@@ -50,7 +50,7 @@ PS C:\>
 
 Lists all provider resource types that have an alias.
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> Get-AzPolicyAlias -ListAvailable
 
@@ -71,7 +71,7 @@ PS C:\>
 
 Lists all provider resource types, including those without aliases.
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\> Get-AzPolicyAlias -NamespaceMatch 'compute'
 
@@ -89,7 +89,7 @@ PS C:\>
 
 Lists all provider resource types whose namespace matches 'compute' and contain an alias.
 
-### Example 4
+### Example 4: 
 ```powershell
 PS C:\> Get-AzPolicyAlias -ResourceTypeMatch 'virtual'
 
@@ -111,7 +111,7 @@ PS C:\>
 
 Lists all provider resource types whose resource type matches 'virtual' and contain an alias.
 
-### Example 5
+### Example 5: 
 ```powershell
 PS C:\> Get-AzPolicyAlias -ResourceTypeMatch 'virtual' -ListAvailable
 
@@ -133,7 +133,7 @@ PS C:\>
 
 Lists all provider resource types whose resource type matches 'virtual', including those without aliases.
 
-### Example 6
+### Example 6: 
 ```powershell
 PS C:\> Get-AzPolicyAlias -NamespaceMatch 'compute' -ResourceTypeMatch 'virtual'
 
@@ -151,7 +151,7 @@ PS C:\>
 Lists all provider resource types whose namespace matches 'compute' and resource type matches 'virtual' and contain an alias.
 Note: -NamespaceMatch and -ResourceTypeMatch provide exclusive matches, whereas the others are inclusive.
 
-### Example 7
+### Example 7: 
 ```powershell
 PS C:\> Get-AzPolicyAlias -AliasMatch 'virtual'
 
@@ -177,7 +177,7 @@ PS C:\>
 
 Lists all provider resource types that contain an alias matching 'virtual'.
 
-### Example 8
+### Example 8: 
 ```powershell
 PS C:\> Get-AzPolicyAlias -AliasMatch 'virtual' -PathMatch 'network'
 
@@ -205,7 +205,7 @@ PS C:\>
 
 Lists all provider resource types that contain an alias matching 'virtual' or an alias with a path matching 'network'.
 
-### Example 9
+### Example 9: 
 ```powershell
 PS C:\> Get-AzPolicyAlias -ApiVersionMatch 'alpha'
 

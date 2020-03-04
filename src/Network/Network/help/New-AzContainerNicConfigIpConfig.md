@@ -22,7 +22,7 @@ The **New-AzContainerNicConfigIpConfig** cmdlet creates a new container network 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 $subnet = New-AzVirtualNetworkSubnetConfig -Name subnet -AddressPrefix 10.0.1.0/24
 

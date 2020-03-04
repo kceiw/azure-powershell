@@ -35,8 +35,8 @@ For an introduction to Azure IoT Hub Device Provisioning Service, see https://do
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzIoTDeviceProvisioningServiceAccessPolicy -ResourceGroupName "myresourcegroup" -Name "myiotdps"
 
 KeyName		Rights		
@@ -47,8 +47,8 @@ mypolicy2	EnrollmentWrite
 
 List all shared access policies in "myiotdps".
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> Get-AzIoTDeviceProvisioningServiceAccessPolicy -ResourceGroupName "myresourcegroup" -Name "myiotdps" -KeyName "mypolicy"
 
 ResourceGroupName	: myresourcegroup

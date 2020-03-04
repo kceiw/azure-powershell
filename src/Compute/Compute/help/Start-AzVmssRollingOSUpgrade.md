@@ -23,8 +23,8 @@ Instances which are already running the latest available OS version are not affe
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Start-AzVmssRollingOSUpgrade -ResourceGroupName "Group001" -VMScaleSetName "VMSS001"
 ```
 

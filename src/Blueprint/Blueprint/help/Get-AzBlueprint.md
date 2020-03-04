@@ -63,7 +63,7 @@ Get one or more blueprint definitions. Blueprint definitions exist at the manage
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS> Get-AzBlueprint
 
@@ -80,7 +80,7 @@ ResourceGroups       : ResourceGroup
 
 Get the blueprint definitions within the current subscription and the management group hierarchy of the subscription.
 
-### Example 2
+### Example 2: 
 ```powershell
 PS> Get-AzBlueprint -ManagementGroupId "myManagementGroupId"
 
@@ -97,7 +97,7 @@ ResourceGroups       : {ResourceGroup, ResourceGroup2}
 
 Get the blueprint definitions within the specified management group.
 
-### Example 3
+### Example 3: 
 ```powershell
 PS> Get-AzBlueprint -SubscriptionId "00000000-1111-0000-1111-000000000000"
 
@@ -114,21 +114,21 @@ ResourceGroups       : ResourceGroup
 
 Get the blueprint definitions within the specified subscription and the management group hierarchy of the subscription.
 
-### Example 4
+### Example 4: 
 ```powershell
 PS> Get-AzBlueprint -SubscriptionId "00000000-1111-0000-1111-000000000000" -Name "myBlueprintName"
 ```
 
 Get the blueprint definition with the given name within the specified subscription.
 
-### Example 5
+### Example 5: 
 ```powershell
 PS> Get-AzBlueprint -ManagementGroupId "myManagementGroupId" -Name "myBlueprintName" -Version "myBlueprintVersion"
 ```
 
 Get the blueprint definition with the given name and version within the specified management group.
 
-### Example 6
+### Example 6: 
 ```powershell
 PS> Get-AzBlueprint -ManagementGroupId "myManagementGroupId" -Name "myBlueprintName" -LatestPublished
 ```

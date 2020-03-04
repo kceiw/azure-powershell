@@ -30,7 +30,7 @@ Gets an Azure VpnSite resource by name OR lists all VpnSites in a ResourceGroup 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
@@ -59,7 +59,7 @@ Then it creates a VpnSite to represent a customer branch and links it to the Vir
 
 Once the site is created, it gets the site using the Get-AzVpnSite command.
 
-### Example 2
+### Example 2: 
 
 ```powershell
 PS C:\> Get-AzVpnSite -Name test*

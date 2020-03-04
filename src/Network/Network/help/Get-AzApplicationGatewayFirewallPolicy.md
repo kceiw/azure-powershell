@@ -22,7 +22,7 @@ The **Get-AzApplicationGatewayFirewallPolicy** cmdlet gets an application gatewa
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $AppGwFirewallPolicy = Get-AzApplicationGatewayFirewallPolicy -Name "FirewallPolicy1" -ResourceGroupName "ResourceGroup01"
 ```

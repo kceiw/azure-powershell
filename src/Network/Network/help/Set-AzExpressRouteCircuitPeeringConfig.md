@@ -50,7 +50,7 @@ configuration back to Azure.
 ## EXAMPLES
 
 ### Example 1: Change an existing peering configuration
-```
+```powershell
 $circuit = Get-AzExpressRouteCircuit -Name $CircuitName -ResourceGroupName $rg
 $parameters = @{
     Name = 'AzurePrivatePeering'
@@ -64,6 +64,13 @@ $parameters = @{
 Set-AzExpressRouteCircuitPeeringConfig @parameters
 Set-AzExpressRouteCircuit -ExpressRouteCircuit $circuit
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzExpressRouteCircuitPeeringConfig -ExpressRouteCircuit $circuit_init -Name cert01 -PeerASN 100 -PeerAddressType IPv4 -PeeringType AzurePrivatePeering -PrimaryPeerAddressPrefix 123.0.0.0/30 -SecondaryPeerAddressPrefix 123.0.0.4/30 -VlanId 300
+```
+
+The Set-AzExpressRouteCircuitPeeringConfig cmdlets saves a modified ExpressRoute peering
 
 ## PARAMETERS
 

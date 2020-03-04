@@ -23,8 +23,8 @@ The **Update-AzRecoveryServicesAsrMobilityService** cmdlet attempts to push mobi
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Update-AzRecoveryServicesAsrMobilityService -ReplicationProtectedItem $rpi -Account $fabric.fabricSpecificDetails.RunAsAccounts[0]
 ```
 

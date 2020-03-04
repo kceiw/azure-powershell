@@ -35,7 +35,7 @@ Removes an Azure VirtualHub resource.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
@@ -48,7 +48,7 @@ The above will create a resource group "testRG", a Virtual WAN and a Virtual Hub
 
 It then deletes the virtual hub using its ResourceGroupName and ResourceName.
 
-### Example 2
+### Example 2: 
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
@@ -61,7 +61,7 @@ The above will create a resource group "testRG", a Virtual WAN and a Virtual Hub
 
 It then deletes the virtual hub using an input object. The input object is of type PSVirtualHub.
 
-### Example 3
+### Example 3: 
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"

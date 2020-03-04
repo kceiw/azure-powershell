@@ -29,8 +29,8 @@ During preview of the Instance Failover Groups feature, only values greater than
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 C:\> $failoverGroup = New-AzSqlDatabaseInstanceFailoverGroup -Name fgName -Location location -ResourceGroupName rg -PrimaryManagedInstanceName $managedInstance.Name -PartnerRegion $partnerRegion -PartnerManagedInstanceName $partnerManagedInstance.Name -FailoverPolicy Automatic -GracePeriodWithDataLossHours 1
 Output:
 ResourceGroupName                     : rg
@@ -50,8 +50,8 @@ Id                                    : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-x
 
 This command creates a new Instance Failover Group with failover policy 'Automatic' for the Managed Instance pair.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 C:\> $failoverGroup = New-AzSqlDatabaseInstanceFailoverGroup -Name fgName -Location location -ResourceGroupName rg -PrimaryManagedInstanceName $managedInstance.Name -PartnerRegion $partnerRegion -PartnerManagedInstanceName $partnerManagedInstance.Name -FailoverPolicy Manual
 Output:
 ResourceGroupName                     : rg

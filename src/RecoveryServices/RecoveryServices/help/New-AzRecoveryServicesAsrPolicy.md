@@ -60,15 +60,15 @@ The replication policy is used to specify replication settings such as the repli
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> New-AzRecoveryServicesAsrPolicy -Name "abc" -ReplicationProvider HyperVReplicaAzure -ReplicationFrequencyInSeconds 30 -NumberOfRecoveryPointsToRetain 10
 ```
 
 Starts the replication policy creation operation using the specified parameters and returns the ASR job used to track the operation.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> New-AzRecoveryServicesAsrPolicy -Name "abc122" -ReplicationProvider HyperVReplica2012R2 -ReplicationFrequencyInSeconds 300 -ReplicationPort 211
 
 Name             : 1c609a5b-324e-461c-866f-ad58f944df25
@@ -91,8 +91,8 @@ Errors           : {}
 
 Starts the replication policy creation operation using the specified parameters and returns the ASR job used to track the operation.
 
-### Example 3
-```
+### Example 3: 
+```powershell
 PS C:\> New-AzRecoveryServicesAsrPolicy -Name $policyName1 -ReplicationProvider InMageAzureV2 -RecoveryPoints 40  -RPOWarningThresholdInMinutes 5 -ApplicationConsistentSnapshotFrequencyInMinutes 15
 Name             : ed69e451-878b-4f19-9c0f-73184be05eaf
 ID               : /Subscriptions/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/resourceGroups/xxxxxxxxxxxx/providers/Microsoft.RecoveryServices/vaults/xxxxxxxxxxxx/replicationJobs/ed69e451-878b-4f19-9c0f-73184be05eaf
@@ -112,8 +112,8 @@ Tasks            : {}
 Errors           : {}
 ```
 
-### Example 4
-```
+### Example 4: 
+```powershell
 PS C:\>  $Job = New-AzRecoveryServicesAsrPolicy -Name $TestPolicy1 -AzToAzure -RecoveryPointRetentionInHours 10  -ApplicationConsistentSnapshotFrequencyInHours 5 
 PS C:\>  Get-AsrJob -name $Job.id
 ```

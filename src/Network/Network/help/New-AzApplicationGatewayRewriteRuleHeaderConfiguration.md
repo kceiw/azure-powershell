@@ -22,7 +22,7 @@ New-AzApplicationGatewayRewriteRuleHeaderConfiguration -HeaderName <String> [-He
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $hc = New-AzApplicationGatewayRewriteRuleHeaderConfiguration -HeaderName abc -HeaderValue def
 ```

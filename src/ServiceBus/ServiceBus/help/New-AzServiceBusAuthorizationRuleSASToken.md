@@ -23,7 +23,7 @@ The New-AzServiceBusAuthorizationRuleSASToken cmdlet generates a Shared Access S
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $StartTime = Get-Date
 PS C:\> $EndTime = $StartTime.AddHours(2.0)
@@ -32,7 +32,7 @@ PS C:\> $SasToken = New-AzServiceBusAuthorizationRuleSASToken -AuthorizationRule
 
 Generate SAS token for the given authorixation rule for Namespace with start and expiry time..
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> $StartTime = Get-Date
 PS C:\> $EndTime = $StartTime.AddHours(2.0)

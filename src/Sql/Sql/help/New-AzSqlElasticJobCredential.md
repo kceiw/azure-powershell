@@ -37,14 +37,14 @@ The New-AzSqlElasticJobCredential cmdlet creates a new job credential
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> $agent = Get-AzSqlElasticJobAgent -ResourceGroupName rg -ServerName elasticjobserver -Name agent
 $agent | New-AzSqlElasticJobCredential -Name cred1 -Credential (Get-Credential)
 
 CredentialName UserName
 -------------- --------
-cred1          user1
+### Example 1: 
 ```
 
 Creates a new job credential

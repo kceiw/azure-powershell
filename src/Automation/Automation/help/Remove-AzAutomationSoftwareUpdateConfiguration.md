@@ -31,7 +31,7 @@ This cmdlet removed an azure automation software update configuration.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 This example shows how to remove 'MyUpdateConfiguration' from automation account
 
 ```powershell

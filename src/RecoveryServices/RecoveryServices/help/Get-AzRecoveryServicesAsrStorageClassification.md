@@ -35,8 +35,8 @@ The **Get-AzRecoveryServicesAsrStorageClassification** cmdlet gets details of th
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> $StorageClassifications = Get-AzRecoveryServicesAsrStorageClassification -Fabric $Fabric
 ```
 

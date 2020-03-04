@@ -61,7 +61,7 @@ Following is a sample updated role definition json for Set-AzRoleDefinition
 ## EXAMPLES
 
 ### Update using PSRoleDefinitionObject
-```
+```powershell
 PS C:\> $roleDef = Get-AzRoleDefinition "Contoso On-Call"
 PS C:\> $roleDef.Actions.Add("Microsoft.ClassicCompute/virtualmachines/start/action")
 PS C:\> $roleDef.Description = "Can monitor all resources and start and restart virtual machines"
@@ -70,7 +70,7 @@ PS C:\> Set-AzRoleDefinition -Role $roleDef
 ```
 
 ### Create using JSON file
-```
+```powershell
 PS C:\> Set-AzRoleDefinition -InputFile C:\Temp\roleDefinition.json
 ```
 

@@ -23,14 +23,14 @@ The **Set-AzVirtualNetworkGatewayConnectionSharedKey** cmdlet configures the sha
 
 ## EXAMPLES
 
-### Example 1:
-```
+### Example 1: 
+```powershell
 PS C:\Users\alzam> Set-AzVirtualNetworkGatewayConnectionSharedKey -ResourceGroupName VPNGatewayV3 -Name VNet1toVNet2 -Value abcd1234
 
 Confirm
 Are you sure you want to overwrite resource 'VNet1toVNet2'
 [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"): y
-abcd1234
+### Example 1: 
 ```
 
 ## PARAMETERS

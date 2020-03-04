@@ -35,8 +35,8 @@ Get information on the route.You can get all routes from an IoT Hub, get routes 
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzIotHubRoute -ResourceGroupName "myresourcegroup" -Name "myiothub"
 
 RouteName DataSource       EndpointNames IsEnabled
@@ -47,8 +47,8 @@ R2        TwinChangeEvents E1            True
 
 Get all route from "myiothub" IoT Hub.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> Get-AzIotHubRoute -ResourceGroupName "myresourcegroup" -Name "myiothub" -RouteName R1
 
 RouteName     : R1

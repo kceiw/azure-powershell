@@ -22,14 +22,14 @@ The **Set-AzExpressRoutePort** cmdlet saves the modified ExpressRoutePort to Azu
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 $erport = Get-AzExpressRoutePort -Name $PortName -ResourceGroupName $rg
 $erport.Links[0].AdminState = 'Enabled'
 Set-AzExpressRoutePort -ExpressRoutePort $erport
 ```
 
-### Example 2
+### Example 2: 
 ```powershell
 $erport = Get-AzExpressRoutePort -Name $PortName -ResourceGroupName $rg
 $erport.Links[0].AdminState = 'Enabled'

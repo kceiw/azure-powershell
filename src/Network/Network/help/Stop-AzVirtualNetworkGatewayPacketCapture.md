@@ -35,7 +35,7 @@ Stops Packet Capture Operation on a Virtual Network Gateway and will upload the 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $rgname = "testRg"
  $storeName = "teststorage"
@@ -63,7 +63,7 @@ Etag              :
 Id                :
 ```
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> $rgname = "testRg"
  $storeName = "teststorage"

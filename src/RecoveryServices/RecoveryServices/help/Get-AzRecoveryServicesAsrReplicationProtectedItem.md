@@ -41,8 +41,8 @@ The **Get-AzRecoveryServicesAsrReplicationProtectedItem** cmdlet gets the proper
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> $ReplicationProtectedItems = Get-AzRecoveryServicesAsrReplicationProtectedItem -ProtectionContainer $PrimaryContainer
 ```
 

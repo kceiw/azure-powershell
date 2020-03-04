@@ -22,8 +22,8 @@ The **Get-AzSnapshot** cmdlet gets the properties of a snapshot.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzSnapshot
 
 ResourceGroupName  : ResourceGroupName1
@@ -77,8 +77,8 @@ Tags               : {}
 
 This command gets the properties of all snapshots of the subscription.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> Get-AzSnapshot -ResourceGroupName "ResourceGroupName1"
 
 ResourceGroupName  : ResourceGroupName1
@@ -116,8 +116,8 @@ Tags               : {}
 
 This command gets the properties of all snapshots in the resource group named "ResourceGroupName1"
 
-### Example 3
-```
+### Example 3: 
+```powershell
 PS C:\> Get-AzSnapshot -ResourceGroupName "ResourceGroupName1" -SnapshotName "SnapshotName1"
 
 ResourceGroupName  : ResourceGroupName1
@@ -139,8 +139,8 @@ Tags               : {}
 
 This command gets the properties of the snapshot named "SnapshotName1" in the resource group named "ResourceGroupName1"
 
-### Example 4
-```
+### Example 4: 
+```powershell
 PS C:\> Get-AzSnapshot -SnapshotName "SnapshotName*"
 
 ResourceGroupName  : ResourceGroupName1

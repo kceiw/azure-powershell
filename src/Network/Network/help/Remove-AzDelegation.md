@@ -22,7 +22,7 @@ The **Remove-AzDelegation** cmdlet takes in a Subnet with delegations and remove
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 # Add a delegation to an existing subnet
 PS C:\> $vnet = Get-AzVirtualNetwork -Name "myVNet" -ResourceGroupName "myResourceGroup"

@@ -23,7 +23,7 @@ New-AzApplicationGatewayRewriteRuleSet -Name <String>
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $ruleset = New-AzApplicationGatewayRewriteRuleSet -Name ruleset1 -RewriteRule $rule
 ```

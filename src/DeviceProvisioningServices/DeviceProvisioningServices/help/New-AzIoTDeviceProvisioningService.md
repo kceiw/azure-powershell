@@ -23,8 +23,8 @@ For an introduction to Azure IoT Hub Device Provisioning Service, see https://do
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> New-AzIoTDeviceProvisioningService -ResourceGroupName "myresourcegroup" -Name "myiotdps"
 
 ResourceGroupName			: myresourcegroup
@@ -43,8 +43,8 @@ Etag						: AAAAAAAT52k=
 
 Create an Azure IoT Hub device provisioning service with the standard pricing tier S1, in the region of the resource group.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> New-AzIoTDeviceProvisioningService -ResourceGroupName "myresourcegroup" -Name "myiotdps" -Location "eastus"
 
 ResourceGroupName			: myresourcegroup

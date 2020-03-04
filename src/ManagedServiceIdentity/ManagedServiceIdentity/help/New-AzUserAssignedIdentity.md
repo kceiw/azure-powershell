@@ -23,7 +23,7 @@ To add Azure Resource Manager tags to the identity, please use the Set-AzResourc
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 This example cmdlet creates a new User Assigned Identity with name **ID1** under resource group **PSRG** in the location of the ResourceGroup.
 
 ```powershell
@@ -48,7 +48,7 @@ ClientSecretUrl   : https://control-westus.identity.azure.net/subscriptions/586d
 Type              : Microsoft.ManagedIdentity/userAssignedIdentities
 ```
 
-### Example 2
+### Example 2: 
 This example cmdlet creates a new User Assigned Identity with name **ID1** under the resource group **PSRG** in the westus region.
 
 ```powershell

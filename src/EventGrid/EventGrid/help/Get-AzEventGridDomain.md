@@ -44,7 +44,7 @@ Finally, ODataQuery parameter is used to perform filtering for the search result
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 
 Gets the details of Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\`.
 
@@ -61,7 +61,7 @@ ProvisioningState : Succeeded
 Tags              : {[Tag1, Value1], [Tag2, Value2]}
 ```
 
-### Example 2
+### Example 2: 
 
 Gets the details of Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\` using ResourceId option.
 
@@ -78,7 +78,7 @@ ProvisioningState : Succeeded
 Tags              : {[Tag1, Value1], [Tag2, Value2]}
 ```
 
-### Example 3
+### Example 3: 
 
 List all the Event Grid domains in resource group \`MyResourceGroupName\` without pagination (all domains are returned in one shot)
 
@@ -123,7 +123,7 @@ ProvisioningState : Succeeded
 Tags              :
 ```
 
-### Example 4
+### Example 4: 
 
 List the Event Grid domains (if any) in resource group \`MyResourceGroupName\` that satisfies the $odataFilter query 10 domains at a time. If more results are available, the $result.NextLink will not be $null. In order to get next page(s) of domains, user is expected to re-call Get-AzEventGridDomain and uses result.NextLink obtained from the previous call. Caller should stop when result.NextLink becomes $null.
 
@@ -141,7 +141,7 @@ PS C:\> while ($result.NextLink -ne $Null)
 PS C:\> echo "Total number of domains is $Total"
 ```
 
-### Example 5
+### Example 5: 
 
 List all the Event Grid domains in Azure Subscription without pagination (all domains are returned in one shot)
 
@@ -186,7 +186,7 @@ ProvisioningState : Succeeded
 Tags              :
 ```
 
-### Example 6
+### Example 6: 
 
 List the Event Grid domains (if any) in Azure Subscription that satisfies the $odataFilter query 20 domains at a time. If more results are available, the $result.NextLink will not be $null. In order to get next page(s) of domains, user is expected to re-call Get-AzEventGridDomain and uses result.NextLink obtained from the previous call. Caller should stop when result.NextLink becomes $null.
 

@@ -35,7 +35,7 @@ Deletes a registration assignment.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\Remove-AzManagedServicesAssignment -Id b037e73c-815e-4472-868f-59e51b49b949
 
@@ -46,18 +46,18 @@ b037e73c-815e-4472-868f-59e51b49b949 /subscriptions/38bd4bef-41ff-45b5-b3af-d03e
 
 Deletes the registration assignment under the default scope.
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> Remove-AzManagedServicesAssignment -ResourceId /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationAssignments/88ba878b-9a3c-40c3-80da-015cbe488a2f
 
 Name                                 RegistrationDefinitionId
 ----                                 ------------------------
-88ba878b-9a3c-40c3-80da-015cbe488a2f /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/40be0299-6573-4391-be2f-b41dd4aaf4f9
+### Example 2: 
 ```
 
 Deletes the registration assignment given the fully qualified resource id.
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\> $assignment = New-AzManagedServicesAssignment -RegistrationDefinitionId /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/33974646-9bce-461d-89eb-331f20fca33c
 PS C:\> Remove-AzManagedServicesAssignment -InputObject $assignment

@@ -36,8 +36,8 @@ The **Remove-AzDataShareSynchronizationSetting** cmdlet removes a datashare sync
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Remove-AzDataShareSynchronizationSetting -ResourceGroupName "ADS" -AccountName "WikiAds" -ShareName "AdsShare" -Name "AdsShareSynchronizationSetting"
 
 Are you sure you want to remove synchronization-setting "AdsShareSynchronizationSetting"? 

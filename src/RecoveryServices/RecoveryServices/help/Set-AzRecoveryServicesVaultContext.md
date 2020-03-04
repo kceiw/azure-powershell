@@ -27,7 +27,7 @@ Warning: This cmdlet is being deprecated in a future breaking change release. Th
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 
 ```powershell
 PS C:\> $vault = Get-AzRecoveryServicesVault -ResourceGroupName "resourceGroup" -Name "vaultName"

@@ -22,8 +22,8 @@ The **Get-AzRelayHybridConnection** cmdlet gets a description for the specified 
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\>Get-AzRelayHybridConnection -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name TestHybridConnection
 
 CreatedAt                   : 4/12/2017 3:17:02 AM

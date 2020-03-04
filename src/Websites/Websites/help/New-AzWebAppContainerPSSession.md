@@ -29,8 +29,8 @@ New-AzWebAppContainerPSSession will create new remote PowerShell Session into th
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> $s = New-AzWebAppContainerPSSession -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP"
 PS C:\> Invoke-Command -Session $s -ScriptBlock{Get-Process}
 ```

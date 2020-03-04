@@ -24,7 +24,7 @@ New-AzApplicationGatewayRewriteRuleActionSet
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $action = New-AzApplicationGatewayRewriteRuleActionSet -ResponseHeaderConfiguration $hc
 ```

@@ -35,8 +35,8 @@ If you do not specify a name, this cmdlet gets information about all of the data
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzDataShareAccount -ResourceGroupName "ADS"
 DataShareAccountName    : WikiADS
 ResourceGroupName       : ADS

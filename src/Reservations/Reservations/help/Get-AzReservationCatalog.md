@@ -22,15 +22,15 @@ Get the regions and skus that are available for Reserved Instance purchase for t
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzReservationCatalog -ReservedResourceType VirtualMachines -Location westus
 ```
 
 Get the VirtualMachines catalog in westus for the default subscription
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> Get-AzReservationCatalog -SubscriptionId "1111aaaa-b1b2-c0c2-d0d2-00000fffff" -ReservedResourceType SuseLinux
 ```
 

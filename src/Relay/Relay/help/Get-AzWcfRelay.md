@@ -22,8 +22,8 @@ The **Get-AzWcfRelay** cmdlet returns a description of the specified WcfRelay.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzWcfRelay -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name TestWCFRelay1
 
 RelayType                   : NetTcp

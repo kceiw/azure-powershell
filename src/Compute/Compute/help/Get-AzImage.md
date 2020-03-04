@@ -22,8 +22,8 @@ The **Get-AzImage** cmdlet gets the properties of an image.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01'
 
 ResourceGroupName    : ResourceGroup01
@@ -40,8 +40,8 @@ Tags                 : {}
 
 This command gets the properties of the image named 'Image01' in the resource group 'ResourceGroup01'.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> Get-AzImage -ResourceGroupName 'ResourceGroup01'
 
 ResourceGroupName    : ResourceGroup01
@@ -69,8 +69,8 @@ Tags                 : {}
 
 This command gets the properties of all images in the resource group 'ResourceGroup01'.
 
-### Example 3
-```
+### Example 3: 
+```powershell
 PS C:\> Get-AzImage
 
 ResourceGroupName    : ResourceGroup01
@@ -109,8 +109,8 @@ Tags                 : {}
 
 This command gets the properties of all images under the subscription.
 
-### Example 4
-```
+### Example 4: 
+```powershell
 PS C:\> Get-AzImage -Name "Image*"
 
 ResourceGroupName    : ResourceGroup01

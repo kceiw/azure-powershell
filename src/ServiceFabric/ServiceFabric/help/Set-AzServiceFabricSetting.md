@@ -30,8 +30,8 @@ Use **Set-AzServiceFabricSetting** to add or update Service Fabric settings in a
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS c:\> Set-AzServiceFabricSetting -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster'  -Section 'NamingService' -Parameter 'MaxFileOperationTimeout' -Value 5000
 ```
 

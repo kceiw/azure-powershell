@@ -29,7 +29,7 @@ Gets the Network status of their Api Management service
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS D:\github\azure-powershell> Get-AzApiManagementNetworkStatus -ResourceGroupName powershelltest -Name powershellsdkservice
 

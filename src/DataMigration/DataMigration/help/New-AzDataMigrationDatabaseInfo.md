@@ -22,8 +22,8 @@ The New-AzDataMigrationDatabaseInfo cmdlet creates the DatabaseInfo object that 
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> New-AzDataMigrationDatabaseInfo -SourceDatabaseName 'AdventureWorks2016'
 ```
 

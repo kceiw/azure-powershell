@@ -23,7 +23,7 @@ The Remove-AzAutomationSourceControl cmdlet removes a source control from Azure 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 This command removes the Automation source control named VSTSNative in the account named devAccount.
 This command specifies the *Force* parameter. Therefore, it does not prompt you for confirmation.
 
@@ -33,6 +33,13 @@ PS C:\> Remove-AzAutomationSourceControl -ResourceGroupName "rg1" `
                                               -Name "VSTSNative" `
                                               -Force
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationSourceControl -AutomationAccountName AutomationAccount01 -Name Configuration01 -ResourceGroupName rg1
+```
+
+
 
 ## PARAMETERS
 

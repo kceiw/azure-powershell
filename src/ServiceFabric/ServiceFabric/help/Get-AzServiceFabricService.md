@@ -34,7 +34,7 @@ This cmdlet will get the service details in the specified application and cluste
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"
@@ -45,7 +45,7 @@ PS C:\> Get-AzServiceFabricService -ResourceGroupName $resourceGroupName -Cluste
 
 This example gets the service resource details for the service "testApp~testService".
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"
@@ -54,6 +54,13 @@ PS C:\> Get-AzServiceFabricApplication -ResourceGroupName $resourceGroupName -Cl
 ```
 
 This example gets a list of the services under the application "testApp".
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzServiceFabricService -ApplicationName $appName -ClusterName $clusterName -ResourceGroupName $resourceGroupName
+```
+
+
 
 ## PARAMETERS
 

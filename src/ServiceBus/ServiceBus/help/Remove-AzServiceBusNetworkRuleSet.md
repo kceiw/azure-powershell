@@ -35,7 +35,7 @@ Removes the NetworkRuleSet for the Given Namespace
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Remove-AzServiceBusNetworkRuleSet -ResourceGroupName  v-ajnavtest -Namespace ServiceBus-Namespace1-1375
 ```
@@ -49,7 +49,7 @@ VirtualNetworkRules :
 
 Deletes the NetworkRuleSet for the Given "ServiceBus-Namespace1-1375" namespace 
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> Remove-AzServiceBusNetworkRuleSet -InputObject $result1375
 ```
@@ -62,7 +62,7 @@ VirtualNetworkRules :
 
 Deletes the NetworkRuleSet using InputObject 
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\> Remove-AzServiceBusNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace1-1375
 ```

@@ -21,8 +21,8 @@ The Get-AzNetworkUsage cmdlet gets limits and current usage for Network resource
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzNetworkUsage -Location westcentralus
 
 ResourceType : Virtual Networks

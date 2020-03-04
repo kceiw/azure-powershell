@@ -35,7 +35,7 @@ Update-AzActionRule -InputObject <PSActionRule> [-Status <String>] [-Tag <Hashta
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Update-AzActionRule -ResourceGroupName "test-rg" -Name "Test-ActionRule" -Status "Disabled"
 ```

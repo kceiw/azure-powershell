@@ -37,15 +37,15 @@ To inspect individual operations that a role grants access to, review the Action
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzRoleDefinition -Name Reader
 ```
 
 Get the Reader role definition
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> Get-AzRoleDefinition
 ```
 

@@ -37,22 +37,22 @@ The **New-AzServiceBusAuthorizationRule** cmdlet creates a new authorization rul
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 
 Creates `AuthoRule1` with **Listen** and **Send** rights for the namespace `SB-Example1`.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Queue SBQueue -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 
 Creates `AuthoRule1` with **Listen** and **Send** rights for the queue `SBQueue`.
 
-### Example 3
-```
+### Example 3: 
+```powershell
 PS C:\> New-AzServiceBusAuthorizationRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SB-Example1 -Topic SBTopic -Name AuthoRule1 -Rights @("Listen","Send")
 ```
 

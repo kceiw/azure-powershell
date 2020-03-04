@@ -22,7 +22,7 @@ Creates an Azure Virtual Hub Route Table object.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 
 ```powershell
 PS C:\> $route1 = New-AzVirtualHubRoute -AddressPrefix @("10.0.0.0/16", "11.0.0.0/16") -NextHopIpAddress "12.0.0.5"

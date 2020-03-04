@@ -22,8 +22,8 @@ The **Revoke-AzDiskAccess** cmdlet revokes an access to a disk.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Revoke-AzDiskAccess -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01'
 ```
 

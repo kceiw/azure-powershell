@@ -29,7 +29,7 @@ Sets the pricing of Azure Security Center tier for a scope.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Set-AzSecurityPricing -Name "default" -PricingTier "Standard"
 Id                                                                                                 Name    PricingTier
@@ -39,7 +39,7 @@ Id                                                                              
 
 Sets the subscription Azure Security Center pricing tier to "Standard"
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> Set-AzSecurityPricing -Name "myService1" -ResourceGroupName "myService1" -PricingTier "Standard"
 

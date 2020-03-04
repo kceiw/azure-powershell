@@ -89,23 +89,23 @@ The **Update-AzRecoveryServicesAsrProtectionDirection** cmdlet updates the repli
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -RecoveryPlan $RP -Direction PrimaryToRecovery
 ```
 
 Start the update direction operation for the specified recovery plan and returns the ASR job object used to track the operation.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -AzToAzure -ProtectionContainerMapping $B2ApcmMapping -LogStorageAccountId $cacheStorageId `
  -ReplicationProtectedItem $rpi
 ```
 
 Start the update direction operation for the specified replication protected item in target azure region defined by protection container mapping and using cache storage (in same region as VM).
 
-### Example 3
-```
+### Example 3: 
+```powershell
 PS C:\> $currentJob = Update-AzRecoveryServicesAsrProtectionDirection -AzToAzure -ProtectionContainerMapping $B2ApcmMapping `
  -AzToAzureDiskReplicationConfiguration $disk1,$disk2 -ReplicationProtectedItem  $rpi
 ```

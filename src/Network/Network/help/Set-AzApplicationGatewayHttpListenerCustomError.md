@@ -31,6 +31,13 @@ PS C:\> $updatedlistener = Set-AzApplicationGatewayCustomError -HttpListener $li
 
 This command updates the custom error of http status code 502 in the http listener $listener01, and returns the updated listener.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzApplicationGatewayHttpListenerCustomError -CustomErrorPageUrl $customError502Url -HttpListener $listener -StatusCode HttpStatus502
+```
+
+
+
 ## PARAMETERS
 
 ### -CustomErrorPageUrl

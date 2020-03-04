@@ -22,7 +22,7 @@ Creates a new Azure Event Grid Domain Topic.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 
 Creates an Event Grid Domain Topic \`Topic1\` in Domain \`Domain1\` under resource group \`MyResourceGroupName\`.
 

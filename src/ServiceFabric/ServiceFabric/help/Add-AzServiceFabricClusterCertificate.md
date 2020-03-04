@@ -42,7 +42,7 @@ It will override the secondary cluster if there is any.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 Add-AzServiceFabricClusterCertificate -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' 
 -SecretIdentifier 'https://contoso03vault.vault.azure.net/secrets/contoso03vaultrg/7f7de9131c034172b9df37ccc549524f'
@@ -50,8 +50,8 @@ Add-AzServiceFabricClusterCertificate -ResourceGroupName 'Group1' -Name 'Contoso
 
 This command will add a certificate in the existing Azure key vault as a secondary cluster certificate.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS c:\> $pwd = ConvertTo-SecureString -String "123" -AsPlainText -Force
 PS c:\> add-AzServiceFabricClusterCertificate -ResourceGroupName 'Group2' -Name 'Contoso02SFCluster'  -CertificateSubjectName 'Contoso.com' 
 -CertificateOutputFolder 'c:\test' -CertificatePassword $pwd

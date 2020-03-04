@@ -35,7 +35,7 @@ The **Get-AzSearchQueryKey** cmdlet gets query key(s) of the Azure Search servic
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Get-AzSearchQueryKey -ResourceGroupName "TestAzureSearchPsGroup" -ServiceName "pstestazuresearch01"
 
@@ -44,7 +44,7 @@ Name Key
      896AA09C167541072D404E1BE0442CE9
 ```
 
-The example gets all query key(s) of the Azure Search Service.
+### Example 1: 
 
 ## PARAMETERS
 

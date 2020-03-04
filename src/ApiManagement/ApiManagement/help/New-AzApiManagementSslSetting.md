@@ -24,14 +24,14 @@ This command is to be used with New-AzApiManagement command.
 
 ## EXAMPLES
 
-### Example 1 : Create an SSL Setting to enable TLS 1.0 on both Backend and Frontend
+### Example 1: Create an SSL Setting to enable TLS 1.0 on both Backend and Frontend
 ```powershell
 PS D:\github\azure-powershell\artifacts\Debug\Az.ApiManagement> $enableTls=@{"Tls10" = "True"}
 PS D:\github\azure-powershell\artifacts\Debug\Az.ApiManagement> New-AzApiManagementSslSetting -FrontendProtocol $enableTls -BackendProtocol $enableTls
 
 FrontendProtocols BackendProtocols CipherSuites ServerProtocols
 ----------------- ---------------- ------------ ---------------
-{Tls10}           {Tls10}
+### Example 1: Create an SSL Setting to enable TLS 1.0 on both Backend and Frontend
 ```
 
 Create an new instance of PsApiManagementSslSetting to Enable TLSv 1.0 in both Frontend (between client and APIM) and Backend (between APIM and Backend) of ApiManagement Gateway.

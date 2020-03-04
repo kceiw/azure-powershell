@@ -35,7 +35,7 @@ The **Get-AzCognitiveServicesAccountUsage** cmdlet gets current usages for a Cog
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Get-AzCognitiveServicesAccountUsage -ResourceGroupName TestUsages -Name TestCVUsages_Prediction
 
@@ -48,7 +48,7 @@ QuotaPeriod   : 30.00:00:00
 NextResetTime : 0001-01-01T00:00:00Z
 ```
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\GitHub> $acc = Get-AzCognitiveServicesAccount -ResourceGroupName TestUsages -Name TestCVUsages_Prediction
 
@@ -64,7 +64,7 @@ QuotaPeriod   : 30.00:00:00
 NextResetTime : 0001-01-01T00:00:00Z
 ```
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\GitHub> $acc = Get-AzCognitiveServicesAccount -ResourceGroupName TestUsages -Name TestCVUsages_Prediction
 

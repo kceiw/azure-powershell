@@ -22,8 +22,8 @@ The **New-AzApplicationGatewayConnectionDraining** cmdlet creates a new connecti
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> $connectionDraining = New-AzApplicationGatewayConnectionDraining -Enabled $True -DrainTimeoutInSec 42
 ```
 

@@ -29,8 +29,8 @@ The **Get-AzDataShareSubscription** cmdlet provides information about share subs
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzDataShareSubscription -ResourceGroupName "ADS" -AccountName "WikiAds" -Name "AdsShareSubscription"
 
 CreatedAt               : 7/9/2019 12:32:53 AM

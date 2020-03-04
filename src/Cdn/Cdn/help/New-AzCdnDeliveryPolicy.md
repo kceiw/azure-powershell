@@ -22,7 +22,7 @@ The **New-AzCdnDeliveryPolicy** cmdlet creates a delivery policy for CDN endpoin
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> New-AzCdnDeliveryPolicy -Description "Sample Policy" -Rule $rule
 

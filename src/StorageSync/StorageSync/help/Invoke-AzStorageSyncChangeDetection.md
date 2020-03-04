@@ -55,21 +55,21 @@ Periodically, Azure File Sync checks the namespace inside a syncing Azure file s
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Invoke-AzStorageSyncChangeDetection -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -CloudEndpointName "myCloudEndpointName" -Path "Data","Reporting\Templates"
 ```
 
 In this example, change detection is run in the "Data" and "Reporting\Templates" directories of a syncing Azure file share. All paths are relative to the root of the Azure file share namespace.
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> Invoke-AzStorageSyncChangeDetection -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -CloudEndpointName "myCloudEndpointName" -Path "Data\results.xslx","Reporting\Templates\generated.pptx"
 ```
 
 In this example, change detection is run for a set of files that are known to the command caller to have changed. The goal is to have Azure file sync detect and sync these changes as well.
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\> Invoke-AzStorageSyncChangeDetection -ResourceGroupName "myResourceGroup" -StorageSyncServiceName "myStorageSyncServiceName" -SyncGroupName "mySyncGroupName" -CloudEndpointName "myCloudEndpointName" -DirectoryPath "Examples" -Recursive
 ```

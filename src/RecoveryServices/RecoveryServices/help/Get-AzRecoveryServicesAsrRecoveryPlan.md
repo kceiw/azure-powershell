@@ -34,8 +34,8 @@ The **Get-AzRecoveryServicesAsrRecoveryPlan** cmdlet gets the details of the spe
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> $RP = Get-AzRecoveryServicesAsrRecoveryPlan -Name $RPName
 ```
 

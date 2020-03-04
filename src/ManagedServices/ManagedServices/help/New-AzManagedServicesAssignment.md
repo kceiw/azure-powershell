@@ -35,18 +35,18 @@ Creates or updates a registration assignment.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> New-AzManagedServicesAssignment -RegistrationDefinitionId /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/d4d14a4c-9b54-4dc3-b755-6d0659e0224b
 
 Name                                 RegistrationDefinitionId
 ----                                 ------------------------
-3b3d5411-ec8c-4a52-8972-73f4952724b2 /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/d4d14a4c-9b54-4dc3-b755-6d0659e0224b
+### Example 1: 
 ```
 
 Creates a new registration assignment given the fully qualified resource id of the registration definition.
 
-### Example 2
+### Example 2: 
 ```powershell
 New-AzManagedServicesAssignment -Scope /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/resourceGroups/mygroup1 -RegistrationDefinitionName 47f471b3-ff5f-463c-8a1f-286501b01ddc
 
@@ -57,14 +57,14 @@ Name                                 RegistrationDefinitionId
 
 Creates a the registration assignment given a scope and the registration definition name.
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\> $def = New-AzManagedServicesDefinition -RegistrationDefinitionName asd -ManagedByTenantId "bab3375b-6197-4a15-a44b-16c41faa91d7" -PrincipalId "d6f6c88a-5b7a-455e-ba40-ce146d4d3671" -RoleDefinitionId "acdd72a7-3385-48ef-bd42-f606fba81ae7"
 PS C:\> New-AzManagedServicesAssignment -RegistrationDefinition $def
 
 Name                                 RegistrationDefinitionId
 ----                                 ------------------------
-a25f63d9-605c-4878-99bd-0d315480d46b /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/4a50f8eb-96b3-44c4-a397-e1e57035fe65
+### Example 3: 
 ```
 Creates a the registration assignment given a registration definition object.
 ## PARAMETERS

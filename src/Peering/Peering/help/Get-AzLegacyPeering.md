@@ -22,7 +22,7 @@ The command is used to view legacy Peering resources which all you to convert th
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:> Get-AzLegacyPeering -PeeringLocation "Seattle" -Kind Direct
 

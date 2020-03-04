@@ -21,7 +21,7 @@ The **Get-AzAvailableServiceAlias** cmdlet allows you to retrieve all of the ava
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Get-AzAvailableServiceAliases -Location "westus"
 
@@ -31,6 +31,13 @@ servicesAzure                /subscriptions/61dc4623-b5f8-41a0-acfc-29537dcf6e5d
 servicesAzureManagedInstance /subscriptions/61dc4623-b5f8-41a0-acfc-29537dcf6e5d/providers/Microsoft.Network/AvailableServiceAliases/servicesAzureManagedInstance Microsoft.Network/AvailableServiceAliases /services/Azure/ManagedInstance
 
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzAvailableServiceAlias -Location westus
+```
+
+
 
 ## PARAMETERS
 

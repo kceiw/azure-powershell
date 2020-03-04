@@ -22,7 +22,7 @@ The cmdlet creates a new service fabric application type under the specified res
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"
@@ -31,6 +31,13 @@ PS C:\> $appType = New-AzServiceFabricApplicationType -ResourceGroupName $resour
 ```
 
 This example will create a new application type "testAppType" under the resource group and cluster specified.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzServiceFabricApplicationType -ClusterName $clusterName -Name $appTypeName -ResourceGroupName $resourceGroupName
+```
+
+
 
 ## PARAMETERS
 

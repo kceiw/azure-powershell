@@ -35,7 +35,7 @@ The **Set-AzSearchService** cmdlet modifies an Azure Search service.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Set-AzSearchService -ResourceGroupName "TestAzureSearchPsGroup" -Name "pstestazuresearch01" -PartitionCount 2 -ReplicaCount 2
 
@@ -51,7 +51,7 @@ HostingMode       : Default
 Tags              :
 ```
 
-The example changes partition count and replica count of the Azure Search service to 2.
+### Example 1: 
 
 ## PARAMETERS
 

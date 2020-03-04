@@ -35,7 +35,7 @@ Gets a Virtual Network Connection in a virtual hub or lists all virtual network 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
 PS C:\> $frontendSubnet = New-AzVirtualNetworkSubnetConfig -Name frontendSubnet -AddressPrefix "10.0.1.0/24"
@@ -58,7 +58,7 @@ The above will create a resource group, Virtual WAN, Virtual Network, Virtual Hu
 
 After the hub virtual network connection is created, it gets the hub virtual network connection using its resource group name, the hub name and the connection name.
 
-### Example 2
+### Example 2: 
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
@@ -80,7 +80,7 @@ The above will create a resource group, Virtual WAN, Virtual Network, Virtual Hu
 
 After the hub virtual network connection is created, it lists all the hub virtual network connection using its resource group name and the hub name.
 
-### Example 3
+### Example 3: 
 
 ```powershell
 PS C:\> Get-AzVirtualHubVnetConnection -ResourceGroupName testRG -VirtualHubName westushub -Name test*

@@ -23,8 +23,8 @@ Use **Update-AzServiceFabricDurability** to update durability or SKU of the clus
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS c:> Update-AzServiceFabricDurability -ResourceGroupName 'Group1' -Name 'Contoso01SFCluster' -DurabilityLevel Silver -NodeType nt1
 ```
 

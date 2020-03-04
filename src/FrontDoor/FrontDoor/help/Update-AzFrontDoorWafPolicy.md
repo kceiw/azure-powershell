@@ -41,7 +41,7 @@ The **Update-AzFrontDoorWafPolicy** cmdlet updates an existing WAF policy. If in
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Update-AzFrontDoorWafPolicy -Name $policyName -ResourceGroupName $resourceGroupName -CustomBlockResponseStatusCode 403
 
@@ -52,7 +52,7 @@ Name         PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redirec
 
 Update an existing WAF policy custom status code.
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> Update-AzFrontDoorWafPolicy -Name $policyName -ResourceGroupName $resourceGroupName -Mode Detection
 
@@ -63,7 +63,7 @@ Name         PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redirec
 
 Update an existing WAF policy mode.
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\> Update-AzFrontDoorWafPolicy -Name $policyName -ResourceGroupName $resourceGroupName -Mode Detection -EnabledState Disabled
 
@@ -74,7 +74,7 @@ Name          PolicyMode PolicyEnabledState CustomBlockResponseStatusCode Redire
 
 Update an existing WAF policy enabled state and mode.
 
-### Example 4
+### Example 4: 
 ```powershell
 PS C:\> Get-AzFrontDoorWafPolicy -ResourceGroupName $resourceGroupName | Update-AzFrontDoorWafPolicy -Mode Detection -EnabledState Disabled
 ```

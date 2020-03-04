@@ -35,7 +35,7 @@ This cmdlet removes an application form the cluster. This will remove all the se
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"

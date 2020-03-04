@@ -35,7 +35,7 @@ The Remove-AzAttestation cmdlet deletes the specified attestation.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Remove-AzAttestation -Name example -ResourceGroupName rg1 
 ```

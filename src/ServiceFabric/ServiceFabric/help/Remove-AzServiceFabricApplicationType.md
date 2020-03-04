@@ -35,7 +35,7 @@ This cmdlet removes an application type form the cluster and will remove all typ
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"
@@ -44,6 +44,13 @@ PS C:\> Remove-AzServiceFabricApplicationType -ResourceGroupName $resourceGroupN
 ```
 
 This example will remove the application type "testAppType" and all the version under it. If there are any applications created with this type, the command will throw an exception.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzServiceFabricApplicationType -ClusterName $clusterName -Name $appTypeName -ResourceGroupName $resourceGroupName
+```
+
+
 
 ## PARAMETERS
 

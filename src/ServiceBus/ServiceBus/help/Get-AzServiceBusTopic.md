@@ -22,8 +22,8 @@ The **Get-AzServiceBusTopic** cmdlet returns a topic description for the specifi
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1
 
 Name                                : SB-Topic_example1
@@ -49,15 +49,15 @@ UpdatedAt                           : 10/11/2018 11:51:24 PM
 
 Returns the description of the specified topic for the given Service Bus namespace.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1
 ```
 
 Returns list of topics for given Service Bus namespace. By default 100 topics will be returned, if more than 100 topics to be returned, please use -MaxCount Parameter.
 
-### Example 3
-```
+### Example 3: 
+```powershell
 PS C:\> Get-AzServiceBusTopic -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -MaxCount 150
 ```
 

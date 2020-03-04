@@ -35,7 +35,7 @@ The **Remove-AzNetworkProfile** cmdlet removes a network profile if no container
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 Remove-AzNetworkProfile -Name np1 -ResourceGroupName rg1
 ```

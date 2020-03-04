@@ -22,8 +22,8 @@ The **Get-AzVirtualNetworkUsageList** cmdlet gets per subnet usage for the speci
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzVirtualNetworkUsageList -ResourceGroupName test -Name usagetest
 
 Get-AzVirtualNetworkUsageList -ResourceGroupName test -Name usagetest

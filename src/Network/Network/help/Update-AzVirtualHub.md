@@ -41,7 +41,7 @@ The **Update-AzVirtualHub** cmdlet updates a virtual hub.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
@@ -63,7 +63,7 @@ ProvisioningState         : Succeeded
 
 The above will create a resource group "testRG", a Virtual WAN and a Virtual Hub in West US in that resource group in Azure. The virtual hub will have the address space "10.0.1.0/24".
 
-### Example 2
+### Example 2: 
 
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"

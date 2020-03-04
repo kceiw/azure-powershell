@@ -22,8 +22,8 @@ The **Get-AzRecoveryServicesBackupProperty** cmdlet gets backup properties for a
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzRecoveryServicesBackupProperty -Vault $vault
 ```
 

@@ -22,8 +22,8 @@ The **Get-AzMarketplaceTerms** cmdlet returns terms for given publisher id(Publi
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzMarketplaceTerms -Publisher "microsoft-ads" -Product "windows-data-science-vm" -Name "windows2016"
 Publisher         : microsoft-ads
 Product           : windows-data-science-vm

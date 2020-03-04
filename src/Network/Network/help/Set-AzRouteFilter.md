@@ -22,7 +22,7 @@ The **Set-AzApplicationGateway** cmdlet updates a route filter
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Set-AzRouteFilter -RouteFilter $rf
 ```

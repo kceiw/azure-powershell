@@ -59,8 +59,8 @@ The **New-AzContainerGroup** cmdlets creates a container group.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> New-AzContainerGroup -ResourceGroupName demo -Name mycontainer -Image nginx -OsType Linux -IpAddressType Public -Port @(8000)
 
 ResourceGroupName        : demo
@@ -83,8 +83,8 @@ Events                   : {}
 
 This commands creates a container group using latest nginx image and requests a public IP address with opening port 8000.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> New-AzContainerGroup -ResourceGroupName demo -Name mycontainer -Image alpine -OsType Linux -Command "/bin/sh -c myscript.sh" -EnvironmentVariable @{"env1"="value1";"env2"="value2"}
 
 ResourceGroupName        : demo
@@ -108,7 +108,7 @@ Events                   : {}
 This commands creates a container group and runs a custom script inside the container.
 
 ### Example 3: Creates a run-to-completion container group.
-```
+```powershell
 PS C:\> New-AzContainerGroup -ResourceGroupName demo -Name mycontainer -Image alpine -OsType Linux -Command "echo hello" -RestartPolicy Never
 
 ResourceGroupName        : demo
@@ -132,7 +132,7 @@ Events                   : {}
 This commands creates a container group which prints out 'hello' and stops.
 
 ### Example 4: Creates a container group using image in Azure Container Registry
-```
+```powershell
 PS C:\> $secpasswd = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
 PS C:\> $mycred = New-Object System.Management.Automation.PSCredential ("myacr", $secpasswd)
 PS C:\> New-AzContainerGroup -ResourceGroupName demo -Name mycontainer -Image myacr.azurecr.io/nginx:latest -IpAddressType Public -RegistryCredential $mycred
@@ -158,7 +158,7 @@ Events                   : {}
 This commands creates a container group using a nginx image in Azure Container Registry.
 
 ### Example 5: Creates a container group using image in custom container image registry
-```
+```powershell
 PS C:\> $secpasswd = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
 PS C:\> $mycred = New-Object System.Management.Automation.PSCredential ("username", $secpasswd)
 PS C:\> New-AzContainerGroup -ResourceGroupName MyResourceGroup -Name MyContainer -Image myserver.com/myimage:latest -RegistryServer myserver.com -RegistryCredential $mycred
@@ -184,7 +184,7 @@ Events                   : {}
 This commands creates a container group using a custom image from a custom container image registry.
 
 ### Example 6: Creates a container group that mounts Azure File volume
-```
+```powershell
 PS C:\> $secpasswd = ConvertTo-SecureString "PlainTextPassword" -AsPlainText -Force
 PS C:\> $mycred = New-Object System.Management.Automation.PSCredential ("username", $secpasswd)
 PS C:\> New-AzContainerGroup -ResourceGroupName MyResourceGroup -Name MyContainer -Image alpine -AzFileVolumeShareName myshare -AzFileVolumeAccountKey $mycred -AzFileVolumeMountPath /mnt/azfile
@@ -209,8 +209,8 @@ Events                   : {}
 
 This commands creates a container group that mounts the provided Azure File share to `/mnt/azfile`.
 
-### Example 7
-```
+### Example 7: 
+```powershell
 PS C:\> New-AzContainerGroup -ResourceGroupName demo -Name mycontainer -Image nginx -OsType Linux -IpAddressType Public -Port @(8000) -AssignIdentity
 
 ResourceGroupName        : demo
@@ -234,8 +234,8 @@ Identity                 : Microsoft.Azure.Management.ContainerInstance.Models.C
 
 This commands creates a container group with system assigned identity using latest nginx image and requests a public IP address with opening port 8000.
 
-### Example 8
-```
+### Example 8: 
+```powershell
 PS C:\> New-AzContainerGroup -ResourceGroupName demo -Name mycontainer -Image nginx -OsType Linux -IpAddressType Public -Port @(8000) -IdentityType SystemAssignedUserAssigned -IdentityId /subscriptions/<subscriptionId>/resourceGroups/<resourceGroup>/providers/Microsoft.ManagedIdentity/userAssignedIdentities/<UserIdentityName>
 
 ResourceGroupName        : demo

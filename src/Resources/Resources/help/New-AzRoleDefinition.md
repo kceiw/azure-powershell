@@ -81,7 +81,7 @@ Following is a sample json role definition that can be provided as input
 ## EXAMPLES
 
 ### Create using PSRoleDefinitionObject
-```
+```powershell
 PS C:\> $role = Get-AzRoleDefinition -Name "Virtual Machine Contributor"
           PS C:\> $role.Id = $null
           PS C:\> $role.Name = "Virtual Machine Operator"
@@ -105,7 +105,7 @@ PS C:\> $role = Get-AzRoleDefinition -Name "Virtual Machine Contributor"
 ```
 
 ### Create using JSON file
-```
+```powershell
 PS C:\> New-AzRoleDefinition -InputFile C:\Temp\roleDefinition.json
 ```
 

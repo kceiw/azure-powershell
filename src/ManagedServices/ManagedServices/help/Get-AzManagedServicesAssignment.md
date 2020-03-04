@@ -35,27 +35,27 @@ Gets a list of the registration assignments.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\> Get-AzManagedServicesAssignment
 
 Name                                 RegistrationDefinitionId
 ----                                 ------------------------
-f2e18995-6c79-4ab7-876e-1b1c8393d12c /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/a156aad7-f3ce-4a46-b240-246242b6bd78
+### Example 1: 
 ddd0d277-e120-4de1-8498-52b8f767b699 /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/cae481c0-de7c-42a8-86c1-5b170861caf8
 ```
 
 Gets all registration assignments under the default scope.
 
-### Example 2
+### Example 2: 
 ```powershell
 PS C:\> $assignments = Get-AzManagedServicesAssignment -ExpandRegistrationDefinition
 PS C:\> $assignments
 
 Name                                 RegistrationDefinitionId
 ----                                 ------------------------
-f2e18995-6c79-4ab7-876e-1b1c8393d12c /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/a156aad7-f3ce-4a46-b240-246242b6bd78
-8b6d4693-efb0-4b58-ac94-625b6a321af3 /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/bb2626be-3e11-442f-b0f1-9209508d4f52
+### Example 2: 
+### Example 2: 
 ddd0d277-e120-4de1-8498-52b8f767b699 /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/cae481c0-de7c-42a8-86c1-5b170861caf8
 
 
@@ -71,7 +71,7 @@ Name       : cae481c0-de7c-42a8-86c1-5b170861caf8
 
 Gets all registration assignments with the registration definition details.
 
-### Example 3
+### Example 3: 
 ```powershell
 PS C:\> $assignmnent = Get-AzManagedServicesAssignment -Id ddd0d277-e120-4de1-8498-52b8f767b699
 PS C:\> $assignmnent
@@ -91,7 +91,7 @@ Name       :
 
 Gets a registration assignment without the registration definition details.
 
-### Example 4
+### Example 4: 
 ```powershell
 PS C:\> $assignmnentWithDef = Get-AzManagedServicesAssignment -Id ddd0d277-e120-4de1-8498-52b8f767b699 -ExpandRegistrationDefinition
 PS C:\> $assignmnentWithDef
@@ -113,19 +113,19 @@ Name       : cae481c0-de7c-42a8-86c1-5b170861caf8
 
 Gets a registration assignment with registration definition details.
 
-### Example 5
+### Example 5: 
 ```powershell
 PS C:\> Get-AzManagedServicesAssignment -Scope /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/resourceGroups/newRG
 
 Name                                 RegistrationDefinitionId
 ----                                 ------------------------
 c5deb1ba-8e27-4935-8af5-9242e7dabd24 /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/447b1aff-b0fc-4959-989d-d77dc93f3509
-aa891268-329a-4637-b3f6-2877ea304f8b /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/46b981a7-63ff-4063-9961-9fce4ddea376
+### Example 5: 
 ```
 
 Gets all the registration assignments.
 
-### Example 6
+### Example 6: 
 ```powershell
 PS C:\> $assignments = Get-AzManagedServicesAssignment
 PS C:\> $assignments[0].Id
@@ -134,7 +134,7 @@ PS C:\> Get-AzManagedServicesAssignment -ResourceId $assignments[0].Id
 
 Name                                 RegistrationDefinitionId
 ----                                 ------------------------
-f2e18995-6c79-4ab7-876e-1b1c8393d12c /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/providers/Microsoft.ManagedServices/registrationDefinitions/a156aad7-f3ce-4a46-b240-246242b6bd78
+### Example 6: 
 ```
 
 Gets the registration assignment given the fully qualified resource id.

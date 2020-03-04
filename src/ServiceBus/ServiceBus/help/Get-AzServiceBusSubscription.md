@@ -22,8 +22,8 @@ The **Get-AzServiceBusSubscription** cmdlet returns a subscription description f
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 
+```powershell
 PS C:\> Get-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1 -SubscriptionName SB-TopicSubscription-Example1
 
 Name                                      : SB-TopicSubscription-Example1
@@ -44,15 +44,15 @@ UpdatedAt                                 : 1/20/2017 3:18:54 AM
 
 Returns a subscription description for the specified Service Bus topic.
 
-### Example 2
-```
+### Example 2: 
+```powershell
 PS C:\> Get-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1
 ```
 
 Returns list of subscriptions for specified Service Bus topic. By default 100 subscriptions will be returned, for number of subscriptions please use -MaxCount Parameter
 
-### Example 3
-```
+### Example 3: 
+```powershell
 PS C:\> Get-AzServiceBusSubscription -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -TopicName SB-Topic_exampl1 -MaxCount 150
 ```
 
