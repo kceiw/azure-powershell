@@ -24,7 +24,7 @@ The New-AzAutomationSourceControl cmdlet creates a configuration to link my Azur
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 Create a source control configuration to link my Azure Automation account with my VSTS TFVC project. TFVC projects do not have branches, and therefore, the Branch parameter is not specified.
 
 ```powershell
@@ -44,7 +44,7 @@ Name        SourceType Branch FolderPath AutoSync PublishRunbook RepoUrl
 VSTSNative  VsoTfvc            /Runbooks True     True           https://contoso.visualstudio.com/ContosoProduc...
 ```
 
-### Example 2
+### Example 2: 2
 Create a source control configuration to link my Azure Automation account with my VSTS Git project.
 
 
@@ -66,7 +66,7 @@ Name    SourceType Branch      FolderPath AutoSync PublishRunbook RepoUrl
 VSTSGit VsoGit     Development /          True     True           https://contoso.visualstudio.com/_git/Finan...
 ```
 
-### Example 3
+### Example 3: 3
 Create a source control configuration to link my Azure Automation account with my GitHub project.
 
 

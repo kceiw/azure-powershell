@@ -35,7 +35,7 @@ The Get-AzSqlInstanceTransparentDataEncryptionProtector cmdlet gets the TDE prot
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzSqlInstanceTransparentDataEncryptionProtector -ResourceGroupName 'ContosoResourceGroup' -InstanceName 'ContosoManagedInstanceName'
 

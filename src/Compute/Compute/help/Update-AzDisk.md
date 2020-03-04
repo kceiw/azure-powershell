@@ -29,8 +29,8 @@ The **Update-AzDisk** cmdlet updates a disk.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $diskupdateconfig = New-AzDiskUpdateConfig -DiskSizeGB 10 -AccountType PremiumLRS -OsType Windows -CreateOption Empty -EncryptionSettingsEnabled $true;
 PS C:\> $secretUrl = https://myvault.vault-int.azure-int.net/secrets/123/;
 PS C:\> $secretId = '/subscriptions/0000000-0000-0000-0000-000000000000/resourceGroups/ResourceGroup01/providers/Microsoft.KeyVault/vaults/TestVault123';
@@ -45,15 +45,15 @@ The first command creates a local empty disk update object with size 10GB in Pre
 The second and third commands set the disk encryption key and key encryption key settings for the disk update object.
 The last command takes the disk update object and updates an existing disk with name 'Disk01' in resource group 'ResourceGroup01'.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> New-AzDiskUpdateConfig -DiskSizeGB 10 | Update-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01';
 ```
 
 This command updates an existing disk with name 'Disk01' in resource group 'ResourceGroup01' to 10 GB disk size.
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> $disk = Get-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01';
 PS C:\> $disk.DiskSizeGB = 10;
 PS C:\> Update-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Disk $disk;

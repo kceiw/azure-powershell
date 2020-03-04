@@ -22,7 +22,7 @@ The **Set-AzApplicationGatewayIdentity** cmdlet updates an identity assigned to 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\>$appgw = Get-AzApplicationGateway -Name $appgwName -ResourceGroupName $rgName
 PS C:\>$identity = New-AzUserAssignedIdentity -Name $identityName -ResourceGroupName $rgName -Location $location
@@ -32,6 +32,13 @@ PS C:\>$updatedAppGw = Set-AzApplicationGateway -ApplicationGateway $appgw
 
 In this example, we assign a user assigned identity to an existing application gateway.
 Note: This identity should have access to the keyvault from which the certificates/secrets will be referenced.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzApplicationGatewayIdentity -ApplicationGateway $appgw -UserAssignedIdentityId $identity.Id
+```
+
+
 
 ## PARAMETERS
 

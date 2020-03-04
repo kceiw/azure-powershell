@@ -22,7 +22,7 @@ Retrieve artifacts from a blueprint definition. If a blueprint definition versio
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $bp = Get-AzBlueprint -Name SimpleBlueprint
 PS C:\> Get-AzBlueprintArtifact -Blueprint $bp 

@@ -35,7 +35,7 @@ Gets a list of the registration assignments.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzManagedServicesAssignment
 
@@ -47,7 +47,7 @@ ddd0d277-e120-4de1-8498-52b8f767b699 /subscriptions/38bd4bef-41ff-45b5-b3af-d03e
 
 Gets all registration assignments under the default scope.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> $assignments = Get-AzManagedServicesAssignment -ExpandRegistrationDefinition
 PS C:\> $assignments
@@ -71,7 +71,7 @@ Name       : cae481c0-de7c-42a8-86c1-5b170861caf8
 
 Gets all registration assignments with the registration definition details.
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\> $assignmnent = Get-AzManagedServicesAssignment -Id ddd0d277-e120-4de1-8498-52b8f767b699
 PS C:\> $assignmnent
@@ -91,7 +91,7 @@ Name       :
 
 Gets a registration assignment without the registration definition details.
 
-### Example 4
+### Example 4: 4
 ```powershell
 PS C:\> $assignmnentWithDef = Get-AzManagedServicesAssignment -Id ddd0d277-e120-4de1-8498-52b8f767b699 -ExpandRegistrationDefinition
 PS C:\> $assignmnentWithDef
@@ -113,7 +113,7 @@ Name       : cae481c0-de7c-42a8-86c1-5b170861caf8
 
 Gets a registration assignment with registration definition details.
 
-### Example 5
+### Example 5: 5
 ```powershell
 PS C:\> Get-AzManagedServicesAssignment -Scope /subscriptions/38bd4bef-41ff-45b5-b3af-d03e55a4ca15/resourceGroups/newRG
 
@@ -125,7 +125,7 @@ aa891268-329a-4637-b3f6-2877ea304f8b /subscriptions/38bd4bef-41ff-45b5-b3af-d03e
 
 Gets all the registration assignments.
 
-### Example 6
+### Example 6: 6
 ```powershell
 PS C:\> $assignments = Get-AzManagedServicesAssignment
 PS C:\> $assignments[0].Id

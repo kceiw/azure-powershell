@@ -29,15 +29,15 @@ The **Get-AzRecoveryServicesAsrProtectionContainerMapping** cmdlet gets informat
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $ProtectionContainerMappings = Get-AzRecoveryServicesAsrProtectionContainerMapping -ProtectionContainer $Container
 ```
 
 List of protection container mappings for container.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> $ProtectionContainerMappings = Get-AzRecoveryServicesAsrProtectionContainerMapping -ProtectionContainer $Container -Name $PrimaryProtectionContainerMapping
 
 Name                                  : pcmmapping

@@ -22,12 +22,19 @@ A storage sync service is the top level resource for Azure File Sync. This comma
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> New-AzStorageSyncService -ResourceGroupName "myResourceGroup" -Location "myLocation" -StorageSyncServiceName "myStorageSyncServiceName"
 ```
 
 This command will create a storage sync service.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzStorageSyncService -Location myLocation -Name myStorageSyncServiceName -ResourceGroupName myResourceGroup
+```
+
+
 
 ## PARAMETERS
 

@@ -29,7 +29,7 @@ Get one or more blueprint assignments. Blueprint assignments exist at the subscr
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzBlueprintAssignment -SubscriptionId "00000000-1111-0000-1111-000000000000"
 
@@ -45,7 +45,7 @@ ResourceGroups    : ResourceGroup
 
 Get the blueprint assignments within the specified subscription.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Get-AzBlueprintAssignment -SubscriptionId "00000000-1111-0000-1111-000000000000" -Name "myAssignmentName"
 ```

@@ -33,7 +33,7 @@ The New-AzDataLakeAnalyticsCatalogCredential cmdlet creates a new credential to 
 ## EXAMPLES
 
 ### Example 1: Create a credential for a catalog specifying host and port
-```
+```powershell
 PS C:\> New-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAccount" `
                   -DatabaseName "databaseName" `
                   -CredentialName "exampleDbCred" `
@@ -44,7 +44,7 @@ PS C:\> New-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAccount
 This command creates the specified credential for the specified account, database, host and port using https protocol.
 
 ### Example 2: Create a credential for a catalog specifying full URI
-```
+```powershell
 PS C:\> New-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAccount" `
                   -DatabaseName "databaseName" `
                   -CredentialName "exampleDbCred" `
@@ -53,6 +53,13 @@ PS C:\> New-AzDataLakeAnalyticsCatalogCredential -AccountName "ContosoAdlAccount
 ```
 
 This command creates the specified credential for the specified account, database and external data source URI.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzDataLakeAnalyticsCatalogCredential -Account ContosoAdlAccount -Credential {Credential} -CredentialName {CredentialName} -DatabaseHost {DatabaseHost} -DatabaseName databaseName -Port {Port}
+```
+
+
 
 ## PARAMETERS
 

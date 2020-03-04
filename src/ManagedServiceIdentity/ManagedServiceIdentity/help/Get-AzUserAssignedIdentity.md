@@ -28,7 +28,7 @@ The **Get-AzUserAssignedIdentity** gets existing user assigned identities.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 This example cmdlet gets the User Assigned Identity with name **ID1** under the resource group **PSRG**
 
 ```powershell
@@ -53,7 +53,7 @@ ClientSecretUrl   : https://control-westus.identity.azure.net/subscriptions/586d
 Type              : Microsoft.ManagedIdentity/userAssignedIdentities
 ```
 
-### Example 2
+### Example 2: 2
 This example cmdlet gets all the User Assigned Identities under the resource group **PSRG**
 
 ```powershell
@@ -97,7 +97,7 @@ ClientSecretUrl   : https://control-westus.identity.azure.net/subscriptions/586d
 Type              : Microsoft.ManagedIdentity/userAssignedIdentities
 ```
 
-### Example 3
+### Example 3: 3
 This example cmdlet gets all the User Assigned Identities under the subscription.
 
 ```powershell

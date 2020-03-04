@@ -35,7 +35,7 @@ Gets the Peering Facilities where users can connect with ARM.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:> Get-AzPeeringLocation -Kind Direct
 
@@ -58,7 +58,7 @@ BandwidthOffers       : {10Gbps, 100Gbps}
 
 Its a long list of locations. Gets the all the Direct Peering Facilities.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:> Get-AzPeeringLocation -Kind Exchange -PeeringLocation "Honolulu" 
 
@@ -75,7 +75,7 @@ FacilityIPv6Prefix    : 2606:7c80:3375:50::/64
 
 Gets the exchange peering location for Honolulu. 
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:> Get-AzPeeringLocation -Kind Exchange -PeeringDbFacilityId 71 
 

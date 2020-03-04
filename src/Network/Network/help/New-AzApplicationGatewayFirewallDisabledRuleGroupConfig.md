@@ -22,8 +22,8 @@ The **New-AzApplicationGatewayFirewallDisabledRuleGroupConfig** cmdlet creates a
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $disabledRuleGroup1 = New-AzApplicationGatewayFirewallDisabledRuleGroupConfig -RuleGroupName "REQUEST-942-APPLICATION-ATTACK-SQLI" -Rules 942130,942140
 ```
 

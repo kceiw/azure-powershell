@@ -22,8 +22,8 @@ The **New-AzDisk** cmdlet creates a managed disk.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $diskconfig = New-AzDiskConfig -Location 'Central US' -DiskSizeGB 5 -AccountType Standard_LRS -OsType Windows -CreateOption Empty -EncryptionSettingsEnabled $true;
 PS C:\> $secretUrl = https://myvault.vault-int.azure-int.net/secrets/123/;
 PS C:\> $secretId = '/subscriptions/0000000-0000-0000-0000-000000000000/resourceGroups/ResourceGroup01/providers/Microsoft.KeyVault/vaults/TestVault123';
@@ -38,8 +38,8 @@ The first command creates a local empty disk object with size 5GB in Standard_LR
 The second and third commands set the disk encryption key and key encryption key settings for the disk object.
 The last command takes the disk object and creates a disk with name 'Disk01' in resource group 'ResourceGroup01'.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> $diskconfig = New-AzDiskConfig -Location 'Central US' -DiskSizeGB 5 -AccountType Standard_LRS -OsType Windows -CreateOption Empty -EncryptionSettingsEnabled $true;
 PS C:\> $diskConfig.EncryptionSettingsCollection = New-Object Microsoft.Azure.Management.Compute.Models.EncryptionSettingsCollection
 

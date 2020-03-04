@@ -29,8 +29,8 @@ The **Get-AzRecoveryServicesAsrRecoveryPoint** cmdlet gets the list of available
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $RecoveryPoints = Get-AzRecoveryServicesAsrRecoveryPoint -ReplicationProtectedItem $ReplicationProtectedItem
 ```
 

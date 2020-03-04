@@ -29,8 +29,8 @@ This cmdlet will get or list Proximity Placement Group resource(s).
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzureRmProximityPlacementGroup -ResourceGroupName $resourceGroupName -Name $proximityPlacementGroupName
 
 ResourceGroupName           : rg0
@@ -47,8 +47,8 @@ Tags                        : {[key1, val1]}
 
 This command gets the proximity placement group
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzureRmProximityPlacementGroup -ResourceGroupName $resourceGroupName
 
 ResourceGroupName            Name      Location     Type
@@ -59,8 +59,8 @@ rg0                          ppg1 westcentralus Standard
 
 This command list all proximity placement groups under the given resource group.
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> Get-AzureRmProximityPlacementGroup
 
 ResourceGroupName            Name      Location     Type

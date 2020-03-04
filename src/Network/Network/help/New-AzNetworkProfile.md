@@ -23,7 +23,7 @@ The **New-AzNetworkProfile** cmdlet creates a new network profile top level reso
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 $networkProfile = New-AzNetworkProfile -Name np1 -ResourceGroupName rg1 -Location westus
 ```

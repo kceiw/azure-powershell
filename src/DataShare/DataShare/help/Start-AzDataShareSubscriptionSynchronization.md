@@ -36,8 +36,8 @@ The **Start-AzDataShareSubscriptionSynchronization** cmdlet initiates synchroniz
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Start-AzDataShareSubscriptionSynchronization -ResourceGroupName "ADS" -AccountName "WikiAds" -ShareSubscriptionName "AdsShareSubscription" -SynchronizationMode Incremental
 
 Confirm

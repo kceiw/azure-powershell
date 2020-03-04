@@ -23,7 +23,7 @@ The Remove-AzAutomationHybridWorkerGroup cmdlet removes a hybrid worker group fr
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 This command removes a hybrid worker by name.
 
 ```powershell
@@ -32,6 +32,13 @@ PS C:\> Remove-AzAutomationHybridWorkerGroup -ResourceGroupName "rg1" `
                                                   -Name "GroupName" `
                                                   -Force
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationHybridWorkerGroup -AutomationAccountName AutomationAccount01 -Name Configuration01 -ResourceGroupName rg1
+```
+
+
 
 ## PARAMETERS
 

@@ -22,8 +22,8 @@ The **Get-AzStreamAnalyticsQuota** cmdlet gets information about the Streaming U
 
 ## EXAMPLES
 
-### EXAMPLE 1: Get information about the Streaming Unit quota for a region
-```
+### Example 1: Get information about the Streaming Unit quota for a region
+```powershell
 PS C:\>Get-AzStreamAnalyticsQuota -Location "West US"
 ```
 

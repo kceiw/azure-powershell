@@ -40,7 +40,7 @@ The **Get-Bastion** cmdlet gets one or more bastions in a resource group or subs
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 Get-AzBastion
 
@@ -158,7 +158,7 @@ IpConfigurationsText : [
                        ]
 ```
 
-### Example 2
+### Example 2: 2
 ```powershell
 Get-AzBastion -ResourceGroupName "BastionPowershellTest" -Name "testBastion"
 

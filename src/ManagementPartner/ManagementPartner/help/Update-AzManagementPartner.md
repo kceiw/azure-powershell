@@ -22,7 +22,7 @@ Updates the Microsoft Partner Network(MPN) ID of the current authenticated user 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Update-AzManagementPartner -PartnerId 4977985
 PartnerId   : 4977985

@@ -22,7 +22,7 @@ Associates a Microsoft Partner Network(MPN) ID to the current authenticated user
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> New-AzManagementPartner -PartnerId 4977985
 PartnerId   : 4977985

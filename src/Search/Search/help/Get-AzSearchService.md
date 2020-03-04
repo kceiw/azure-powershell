@@ -28,7 +28,7 @@ The **Get-AzSearchService** cmdlet gets the specified Azure Search service.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzSearchService -ResourceGroupName felixwa-01
 

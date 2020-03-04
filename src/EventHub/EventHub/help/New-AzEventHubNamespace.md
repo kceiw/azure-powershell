@@ -32,8 +32,8 @@ The New-AzEventHubNamespace cmdlet creates a new namespace of type Event Hubs.
 
 ## EXAMPLES
 
-### Example 1			 								
-```
+### Example 1: 1
+```powershell
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation
 
 Name                   : MyNamespaceName
@@ -54,8 +54,8 @@ MaximumThroughputUnits : 0
 
 Creates an Event Hubs namespace \`MyNamespaceName\` in the specified geographic location \`MyLocation\`, in resource group \`MyResourceGroupName\`.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -MaximumThroughputUnits 10
 
 Name                   : MyNamespaceName
@@ -76,8 +76,8 @@ MaximumThroughputUnits : 10
 
 Creates an Event Hubs namespace \`MyNamespaceName\` in the specified geographic location \`MyLocation\`, in resource group \`MyResourceGroupName\` and AutoInflate is enabled with MaximumThroughputUnits 10.
 
-### Example 3 - Kafka enabled namespace
-```
+### Example 3: - Kafka enabled namespace
+```powershell
 PS C:\> New-AzEventHubNamespace -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -Location MyLocation -EnableAutoInflate -EnableKafka
 
 Name                   : MyNamespaceName

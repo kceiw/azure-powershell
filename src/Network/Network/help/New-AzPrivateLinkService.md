@@ -25,8 +25,8 @@ The **New-AzPrivateLinkService** cmdlet creates a private link service
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 $vnet = Get-AzVirtualNetwork -ResourceName "myvnet" -ResourceGroupName "myresourcegroup"
 $IPConfig = New-AzPrivateLinkServiceIpConfig -Name "IP-Config" -Subnet $vnet.subnets[1] -PrivateIpAddress "10.0.0.5"
 $publicip = Get-AzPublicIpAddress -ResourceGroupName "myresourcegroup"

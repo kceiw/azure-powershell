@@ -35,7 +35,7 @@ The **Get-AzSqlInstanceActiveDirectoryAdministrator** cmdlet gets information ab
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\>Get-AzSqlInstanceActiveDirectoryAdministrator -ResourceGroupName "ResourceGroup01" -InstanceName "ManagedInstance01"
 ResourceGroupName InstanceName      DisplayName ObjectId 
@@ -45,7 +45,7 @@ ResourceGroup01   ManagedInstance01 DBAs        40b79501-b343-44ed-9ce7-da4c8cc7
 
 This command gets information about an Azure AD administrator for a managed instance named ManagedInstance01 that is associated with a resource group named ResourceGroup01.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\>Get-AzSqlInstance -ResourceGroupName "ResourceGroup01" -Name "ManagedInstance1" | Get-AzSqlInstanceActiveDirectoryAdministrator
 ResourceGroupName InstanceName      DisplayName ObjectId 
@@ -55,7 +55,7 @@ ResourceGroup01   ManagedInstance01 DBAs        40b79501-b343-44ed-9ce7-da4c8cc7
 
 This command gets information about an Azure AD administrator from a managed instance object.
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\>Get-AzSqlInstance -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ResourceGroup01/providers/Microsoft.Sql/managedInstances/ManagedInstance1" | Get-AzSqlInstanceActiveDirectoryAdministrator
 ResourceGroupName InstanceName      DisplayName ObjectId 

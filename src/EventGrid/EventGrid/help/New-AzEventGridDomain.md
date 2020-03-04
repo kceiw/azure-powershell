@@ -22,7 +22,7 @@ Creates a new Azure Event Grid Domain. Once the domain is created, an applicatio
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 
 Creates an Event Grid domain \`Domain1\` in the specified geographic location \`westus2\`, in resource group \`MyResourceGroupName\`.
 
@@ -39,7 +39,7 @@ ProvisioningState : Succeeded
 Tags              :
 ```
 
-### Example 2
+### Example 2: 2
 
 Creates an Event Grid domain \`Domain1\` in the specified geographic location \`westus2\`, in resource group \`MyResourceGroupName\` with the specified tags "Department" and "Environment".
 

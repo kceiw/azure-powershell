@@ -22,8 +22,8 @@ The **New-AzImage** cmdlet creates an image.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $imageConfig = New-AzImageConfig -Location 'West US';
 PS C:\> $osDiskVhdUri = "https://contoso.blob.core.windows.net/test/os.vhd"
 PS C:\> $dataDiskVhdUri1 = "https://contoso.blob.core.windows.net/test/data1.vhd"

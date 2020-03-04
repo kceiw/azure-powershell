@@ -35,7 +35,7 @@ Use this cmdlet to get the application type details in the specified resource gr
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"
@@ -45,7 +45,7 @@ PS C:\> Get-AzServiceFabricApplicationType -ResourceGroupName $resourceGroupName
 
 This example will get the application type details with the parameters specified, if it doesn't find the resource it will throw an exception.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> $resourceGroupName = "testRG"
 PS C:\> $clusterName = "testCluster"

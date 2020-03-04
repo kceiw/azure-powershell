@@ -23,7 +23,7 @@ Creates an object that represent an Azure Storage path to be mounted inside a We
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $storagePath1 = New-AzWebAppAzureStoragePath -Name "RemoteStorageAccount1" -AccountName "myaccount.files.core.windows.net" -Type AzureFiles -ShareName "someShareName" -AccessKey "some access key"
 -MountPath "C:\myFolderInsideTheContainerWebApp" 

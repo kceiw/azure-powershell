@@ -35,8 +35,8 @@ The **Get-AzRecoveryServicesAsrNetwork** cmdlet gets information about Azure Sit
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $Networks = Get-AzRecoveryServicesAsrNetwork -Fabric $Fabric
 ```
 

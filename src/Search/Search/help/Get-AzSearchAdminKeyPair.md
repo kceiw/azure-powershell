@@ -35,7 +35,7 @@ The **Get-AzSearchAdminKeyPair** cmdlet gets the admin key pair of the Azure Sea
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzSearchAdminKeyPair -ResourceGroupName felixwa-01 -ServiceName felixwa-basic-search
 

@@ -36,8 +36,8 @@ The **Set-AzServiceBusGeoDRConfigurationBreakPair** cmdlet disables the Disaster
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Set-AzServiceBusGeoDRConfigurationBreakPair -ResourceGroupName "SampleResourceGroup" -Namespace "SampleNamespace_Primary" -Name "SampleDRConfigName"
 ```
 

@@ -24,7 +24,7 @@ For example, even if you specify `-Location eastus2` you will get the list of se
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $serviceTags = Get-AzNetworkServiceTag -Location eastus2
 PS C:\> $serviceTags

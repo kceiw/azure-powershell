@@ -22,8 +22,8 @@ The **New-AzApplicationSecurityGroup** cmdlet creates an application security gr
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> New-AzApplicationSecurityGroup -ResourceGroupName "MyResourceGroup" -Name "MyApplicationSecurityGroup" -Location "West US"
 ```
 

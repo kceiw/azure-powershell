@@ -22,7 +22,7 @@ The New-AzSqlVMConfig cmdlet creates a new configuration object for a sql virtua
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $config = New-AzSqlVMConfig -LicenseType "PAYG"
 PS C:\> New-AzSqlVM -ResourceGroupName "ResourceGroup01" -Name "vm" -SqlVM $config

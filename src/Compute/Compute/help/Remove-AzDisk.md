@@ -22,8 +22,8 @@ The **Remove-AzDisk** cmdlet removes a disk.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Remove-AzDisk -ResourceGroupName 'ResourceGroup01' -DiskName 'Disk01' -Force;
 ```
 

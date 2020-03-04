@@ -35,7 +35,7 @@ For a detailed explanation of message enrichments in Azure IoT Hub, see https://
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\>  Get-AzIotHubMessageEnrichment -ResourceGroupName "myresourcegroup" -Name "myiothub"
 
@@ -47,7 +47,7 @@ key2 value2  {endpoint3, endpoint4}
 
 List all message enrichments in MyIotHub
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\>  Get-AzIotHubMessageEnrichment -ResourceGroupName "myresourcegroup" -Name "myiothub" -Key "newKey"
 

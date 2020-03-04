@@ -28,7 +28,7 @@ The Get-AzAttestation cmdlet gets information about the attestation in a subscri
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzAttestation -Name example -ResourceGroupName rg1 
 Id                  : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx/resourceGroups/rg1/providers/Microsoft.Attestation/attestationProviders/example

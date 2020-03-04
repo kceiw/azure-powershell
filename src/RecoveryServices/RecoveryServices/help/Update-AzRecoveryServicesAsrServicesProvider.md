@@ -22,8 +22,8 @@ The **Update-AzRecoveryServicesAsrServicesProvider** cmdlet updates the informat
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $currentJob = Update-AzRecoveryServicesAsrServicesProvider -InputObject $ServicesProvider
 ```
 

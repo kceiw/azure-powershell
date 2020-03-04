@@ -24,8 +24,8 @@ Either region in the Instance Failover Group may be used to execute the command.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> $failoverGroups = Get-AzSqlDatabaseInstanceFailoverGroup -ResourceGroupName rg -Location location
 Output:
 {
@@ -47,8 +47,8 @@ Output:
 
 Lists all Failover Groups in the region
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> $failoverGroup = Get-AzSqlDatabaseInstanceFailoverGroup -ResourceGroupName rg -Location location -Name fg
 Output:
 ResourceGroupName                     : rg

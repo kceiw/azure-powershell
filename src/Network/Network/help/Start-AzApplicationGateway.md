@@ -24,7 +24,7 @@ The **Start-AzApplicationGateway** cmdlet starts an Azure application gateway
 ## EXAMPLES
 
 ### Example1: Start an application gateway
-```
+```powershell
 PS C:\>$AppGw = Start-AzApplicationGateway -ApplicationGateway $AppGw
 ```
 

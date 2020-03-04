@@ -29,8 +29,8 @@ Get-AzWebAppContainerContinuousDeploymentUrl will return container continuous de
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzWebAppContainerContinuousDeploymentUrl -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP"
 ```
 

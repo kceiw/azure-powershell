@@ -29,7 +29,7 @@ The **Get-AzCdnProfileSupportedOptimizationType** cmdlet gets the supported opti
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzCdnProfileSupportedOptimizationType -ProfileName $profileName -ResourceGroupName $resourceGroupName
 OptimizationType: GeneralWebDelivery

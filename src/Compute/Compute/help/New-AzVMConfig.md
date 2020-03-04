@@ -45,7 +45,7 @@ Other cmdlets can be used to configure a virtual machine object, such as Set-AzV
 ## EXAMPLES
 
 ### Example 1: Create a virtual machine object
-```
+```powershell
 PS C:\> $AvailabilitySet = Get-AzAvailabilitySet -ResourceGroupName "ResourceGroup11" -Name "AvailabilitySet03"
 PS C:\> $VirtualMachine = New-AzVMConfig -VMName "VirtualMachine07" -VMSize "Standard_A1" -AvailabilitySetID $AvailabilitySet.Id
 ```
@@ -54,6 +54,13 @@ The first command gets the availability set named AvailabilitySet03 in the resou
 The second command creates a virtual machine object, and then stores it in the $VirtualMachine variable.
 The command assigns a name and size to the virtual machine.
 The virtual machine belongs to the availability set stored in $AvailabilitySet.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzVMConfig -VMName VirtualMachine07 -VMSize Standard_A1
+```
+
+
 
 ## PARAMETERS
 

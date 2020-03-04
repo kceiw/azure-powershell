@@ -35,17 +35,17 @@ Removes a bastion resource.Example1 deletes the bastion using its ResourceGroupN
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 Remove-AzBastion -ResourceGroupName "BastionPowershellTest" -Name "testBastion2"
 ```
 
-### Example 2
+### Example 2: 2
 ```powershell
 Get-AzBastion -ResourceGroupName "BastionPowershellTest" -Name "testBastion" | Remove-AzBastion
  ```
 
-### Example 3
+### Example 3: 3
 ```powershell
 $bastion = Get-AzBastion -ResourceGroupName "BastionPowershellTest" -Name "testBastion"
 Remove-AzBastion -InputObject $bastion

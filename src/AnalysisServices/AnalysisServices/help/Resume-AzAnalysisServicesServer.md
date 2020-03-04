@@ -22,8 +22,8 @@ The Resume-AzAnalysisServicesServer cmdlet resumes an instance of Analysis Servi
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Resume-AzAnalysisServicesServer -Name "testserver" -ResourceGroupName "testgroup"
 ```
 

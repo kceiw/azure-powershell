@@ -37,7 +37,7 @@ Update the NetwrokruleSet of the given Namespace in the current Azure subscripti
 
 ## EXAMPLES
 
-### Example 1 
+### Example 1: 1
 ```powershell
 PS C:\> $IpRules = @([Microsoft.Azure.Commands.ServiceBus.Models.PSNWRuleSetIpRulesAttributes] @{IpMask = "4.4.4.4";Action = "Allow"},[Microsoft.Azure.Commands.ServiceBus.Models.PSNWRuleSetIpRulesAttributes] @{IpMask = "3.3.3.3";Action = "Allow"})
 PS C:\> $VirtualNetworkRules = @([Microsoft.Azure.Commands.ServiceBus.Models.PSNWRuleSetVirtualNetworkRulesAttributes]@{Subnet=@{Id="/subscriptions/subscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.Network/virtualNetworks/sbehvnettest1/subnets/default"};IgnoreMissingVnetServiceEndpoint=$True})
@@ -54,7 +54,7 @@ VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGrou
 
 Update the NetworkRuleSet using -IPRule and -VirtualNetworkRule parameters
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> $getresult = Get-AzServiceBusNetworkRuleSet -ResourceGroupName v-ajnavtest -Namespace ServiceBus-Namespace1-1375
 PS C:\> Set-AzServiceBusNetworkRuleSet -ResourceGroupName v-ajnavtest -Namespace ServiceBus-Namespace1-1375 -InputObject $getresult
@@ -70,7 +70,7 @@ VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/ResourceGrou
 Update the NetworkRuleSet using -InputObject
 
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\> Set-AzServiceBusNetworkRuleSet -ResourceGroupName v-ajnavtest -Namespace ServiceBus-Namespace1-1375 -ResourceId /subscriptions/SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace1-1375
 ```

@@ -23,22 +23,22 @@ The **Get-AzServiceBusRule** cmdlet gets the description of the specified rule i
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription -Name SBRule
 ```
 
 Returns the specified rule description for a specified subscription.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription
 ```
 
 Returns list of rule descriptions for a specified subscription.  By default 100 rule will be returned, if more than 100 rule to be returned, please use -MaxCount Parameter.
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> Get-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription -MaxCount 150
 ```
 

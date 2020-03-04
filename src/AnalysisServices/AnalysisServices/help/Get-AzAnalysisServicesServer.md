@@ -22,15 +22,15 @@ The Get-AzAnalysisServicesServer cmdlet gets the details of an Analysis Services
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\>Get-AzAnalysisServicesServer -ResourceGroupName "ResourceGroup03"
 ```
 
 This command gets all Azure Analysis Services servers in the resource group named ResourceGroup03.
 
 ### Example 2: Get a server
-```
+```powershell
 PS C:\>Get-AzAnalysisServicesServer -ResourceGroupName "ResourceGroup03" -Name "testserver"
 ```
 

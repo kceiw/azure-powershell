@@ -35,14 +35,14 @@ Deletes a service instance.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Remove-AzHealthcareApisService -Name MyService -ResourceGroupName MyResourceGroup
 ```
 
 Deletes the existing HealthcareApis service with the provided name within a provided resource group.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> $ResourceId = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/MyResourceGroup/providers/Microsoft.HealthcareApis/services/MyService
 PS C:\> Remove-AzHealthcareApisService -ResourceId $ResourceId
@@ -50,7 +50,7 @@ PS C:\> Remove-AzHealthcareApisService -ResourceId $ResourceId
 
 Deletes the existing HealthcareApis service with the provided ResourceId.
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\> Get-AzHealthcareApisService -ResourceGroupName MyResourceGroup -Name MyService | Remove-AzHealthcareApisService
 ```

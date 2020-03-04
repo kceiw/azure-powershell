@@ -29,8 +29,8 @@ If the Web App Slot is in a stopped state, use the Start-AzWebAppSlot cmdlet.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Restart-AzWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "Slot001"
 ```
 

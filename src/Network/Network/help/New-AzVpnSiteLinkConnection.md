@@ -24,7 +24,7 @@ Creates an Azure VpnSiteLinkConnection object.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> New-AzResourceGroup -Location "West US" -Name "testRG"
 PS C:\> $virtualWan = New-AzVirtualWan -ResourceGroupName testRG -Name myVirtualWAN -Location "West US"

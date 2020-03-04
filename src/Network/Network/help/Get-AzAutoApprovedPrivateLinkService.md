@@ -23,11 +23,18 @@ The **Get-AzAutoApprovedPrivateLinkService** gets an array of private link servi
 ## EXAMPLES
 
 ### Example
-```
+```powershell
 Get-AzAutoApprovedPrivateLinkService -Location westus -ResourceGroupName TestResourceGroup
 ```
 
 This example return an array of private link service id that can be linked to a private end point with auto approved.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzAutoApprovedPrivateLinkService -Location westus
+```
+
+
 
 ## PARAMETERS
 

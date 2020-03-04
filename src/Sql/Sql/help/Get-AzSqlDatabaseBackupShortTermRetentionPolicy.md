@@ -36,7 +36,7 @@ The policy is the retention period, in days, for point-in-time restore backups.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzSqlDatabaseBackupShortTermRetentionPolicy -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01
 
@@ -47,7 +47,7 @@ resourcegroup01   server01    database01   35
 
 This command gets the short term retention policy for database01.
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Get-AzSqlDatabase -ResourceGroupName resourcegroup01 -ServerName server01 -DatabaseName database01 | Get-AzSqlDatabaseBackupShortTermRetentionPolicy
 

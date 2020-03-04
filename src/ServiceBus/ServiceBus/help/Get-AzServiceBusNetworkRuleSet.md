@@ -35,7 +35,7 @@ Gets the details of an Event Hubs NetworkruleSet of namespace in the current Azu
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Get-AzServiceBusNetworkRuleSet -ResourceGroupName  v-ajnavtest -Namespace ServiceBus-Namespace-1122
 ```
@@ -48,7 +48,7 @@ VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/
 
 Get the details of Event Hubs NetworkruleSet of namespace using ResourceGroup and Namespace parameters. 
 
-### Example 2
+### Example 2: 2
 ```powershell
 PS C:\> Get-AzServiceBusNetworkRuleSet -Namespace ServiceBus-Namespace-1122
 ```
@@ -61,7 +61,7 @@ VirtualNetworkRules : {/subscriptions/subscriptionId/resourcegroups/v-ajnavtest/
 
 Get the details of Event Hubs NetworkruleSet of namespace using  Namespace which is in the current subscription.
 
-### Example 3
+### Example 3: 3
 ```powershell
 PS C:\> Get-AzServiceBusNetworkRuleSet -ResourceId /SubscriptionId/resourcegroups/ResourceGroup/providers/Microsoft.ServiceBus/namespaces/ServiceBus-Namespace-2389
 ```

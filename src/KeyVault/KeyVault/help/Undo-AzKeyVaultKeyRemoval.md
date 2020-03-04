@@ -31,7 +31,7 @@ Caller needs to have 'recover' permission in order to perform this operation.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> Undo-AzKeyVaultKeyRemoval -VaultName 'MyKeyVault' -Name 'MyKey'
 

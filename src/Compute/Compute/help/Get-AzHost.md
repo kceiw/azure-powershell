@@ -30,8 +30,8 @@ This cmdlet also lists all hosts in a host group if a host name is not given.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> Get-AzHost -ResourceGroupName $resourceGroupName -HostGroupName $hostGroupName -Name $hostName
 
 ResourceGroupName    : myrg01
@@ -54,8 +54,8 @@ Tags                 : {"key1":"val2"}
 
 This command returns a host.
 
-### Example 2
-```
+### Example 2: 2
+```powershell
 PS C:\> Get-AzHost -ResourceGroupName $resourceGroupName -HostGroupName $hostGroupName -Name $hostName -InstanceView
 
 ResourceGroupName      : myrg01
@@ -95,8 +95,8 @@ Tags                   : {"key1":"val2"}
 
 This command returns the instance view of a host.
 
-### Example 3
-```
+### Example 3: 3
+```powershell
 PS C:\> Get-AzHost -ResourceGroupName $resourceGroupName -HostGroupName $hostGroupName
 
 ResourceGroupName       Name Location           Tags        Sku FD

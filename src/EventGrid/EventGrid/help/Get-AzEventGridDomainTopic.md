@@ -38,7 +38,7 @@ Finally, ODataQuery parameter is used to perform filtering for the search result
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 
 Gets the details of Event Grid domain topic \`DomainTopic1\` under Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\`.
 
@@ -53,7 +53,7 @@ Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
 ```
 
-### Example 2
+### Example 2: 2
 
 Gets the details of Event Grid domain topic \`DomainTopic1\` under Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\` using the ResourceId option.
 
@@ -68,7 +68,7 @@ Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
 ```
 
-### Example 3
+### Example 3: 3
 
 List all the Event Grid domain topics under Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\` without pagination (all results are returned in one shot).
 
@@ -101,7 +101,7 @@ Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
 ```
 
-### Example 4
+### Example 4: 4
 
 List all the Event Grid domain topics under Event Grid domain \`Domain1\` in resource group \`MyResourceGroupName\` without pagination (all results are returned in one shot) using ResourceId option
 
@@ -134,7 +134,7 @@ Type              : Microsoft.EventGrid/domains/topics
 ProvisioningState : Succeeded
 ```
 
-### Example 5
+### Example 5: 5
 
 List the Event Grid domain topics (if any) under domain \`Domain1\` in resource group \`MyResourceGroupName\` that satisfies the $odataFilter query 10 domain topics at a time. If more results are available, the $result.NextLink will not be $null. In order to get next page(s) of domain topics, user is expected to re-call Get-AzEventGridDomainTopic and uses result.NextLink obtained from the previous call. Caller should stop when result.NextLink becomes $null.
 

@@ -23,8 +23,8 @@ The **New-AzSubscription** cmdlet creates an Azure subscription.
 
 ## EXAMPLES
 
-### Example 1
-```
+### Example 1: 1
+```powershell
 PS C:\> New-AzSubscription -Name "My Subscription" -EnrollmentAccountObjectId ((Get-AzEnrollmentAccount)[0].ObjectId) -OfferType MS-AZR-0017P
 
 Name        : My Subscription

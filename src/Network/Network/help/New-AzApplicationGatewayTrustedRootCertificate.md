@@ -22,7 +22,7 @@ The **New-AzApplicationGatewayTrustedRootCertificate** cmdlet creates a Trusted 
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 1
 ```powershell
 PS C:\> $certFilePath = ".\rootCA.cer"
 PS C:\> $trc = New-AzApplicationGatewayTrustedRootCertificate -Name "trc1" -CertificateFile $certFilePath
