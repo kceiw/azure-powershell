@@ -36,7 +36,7 @@ PS C:\>New-AzApiManagementApi -Context $ApiMgmtContext -Name "Echo api" -Service
 
 This command creates an API named EchoApi with the specified URL.
 
-### Example 1: Create an API by copying all operation, Tags, Products and Policies from echo-api and into an ApiVersionSet
+### Example 2: Create an API by copying all operation, Tags, Products and Policies from echo-api and into an ApiVersionSet
 ```powershell
 PS D:\github\azure-powershell>$context = New-AzApiManagementContext -ResourceId /subscriptions/subid/resourceGroups/Api-Default-West-US/providers/Microsoft.ApiManagement/service/contoso
 PS D:\github\azure-powershell>$versionSet = Get-AzApiManagementApiVersionSet -Context $context -ApiVersionSetId "xmsVersionSet"

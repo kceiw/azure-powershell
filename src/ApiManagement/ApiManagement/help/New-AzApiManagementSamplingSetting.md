@@ -22,7 +22,7 @@ The cmdlet **New-AzApiManagementSamplingSetting** creates a new sampling setting
 
 ## EXAMPLES
 
-### Example 1 : Create a basic Sampling setting
+### Example 1: Create a basic Sampling setting
 ```powershell
 PS C:\> New-AzApiManagementSamplingSetting -SamplingType fixed -Percentage 100
 

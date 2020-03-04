@@ -23,7 +23,7 @@ The **New-AzApiManagementApiVersionSet** cmdlet creates an API Version set entit
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\> New-AzApiManagementApiVersionSet -Context $ApiMgmtContext  -Name "newversion" -Scheme Header -HeaderName "x-ms-version" -Description "version by xmsversion"

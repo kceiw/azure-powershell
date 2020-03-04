@@ -34,7 +34,7 @@ The **Set-AzApiManagementApiVersionSet** cmdlet modifies an Azure API Management
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: 
 ```powershell
 PS C:\>$ApiMgmtContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\>Set-AzApiManagementApiVersionSet -Context $ApiMgmtContext -ApiVersionSetId "query-verion-set" -Scheme Header -HeaderName "api-version" -Description "Azure version header string"

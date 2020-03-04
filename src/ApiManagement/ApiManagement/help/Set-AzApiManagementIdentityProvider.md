@@ -34,7 +34,7 @@ Updates the Configuration of an existing Identity Provider.
 
 ## EXAMPLES
 
-### Example 1 : Update the facebook Identity Provider
+### Example 1: Update the facebook Identity Provider
 ```powershell
 PS C:\>$apimContext = New-AzApiManagementContext -ResourceGroupName "Api-Default-WestUS" -ServiceName "contoso"
 PS C:\> Set-AzApiManagementIdentityProvider -Context $apimContext -Type Facebook -ClientSecret "updatedSecret" -PassThru
