@@ -30,8 +30,8 @@ If there are multiple keys with the same name the first one in the list is remov
 
 ## EXAMPLES
 
-### Example 1 Delete an IotHub
-```
+### Example 1: Delete an IotHub
+```powershell
 PS C:\> Remove-AzIotHubKey -ResourceGroupName "myresourcegroup" -Name "myiothub" -KeyName "iothubowner1"
 ```
 

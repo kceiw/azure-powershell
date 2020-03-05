@@ -23,13 +23,20 @@ The New-AzDataMigrationFileShare cmdlet creates the FileShare object that specif
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> New-AzDmsFileShare -Path $fileSharePath -Credential $fileShareCred
 
 UserName    Password     Path
 --------    --------     ----
 domain\user testadmin123 \\fileshare\folder1
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzDataMigrationFileShare -Credential <PSCredential> -Path <String>
+```
+
+
 
 ## PARAMETERS
 

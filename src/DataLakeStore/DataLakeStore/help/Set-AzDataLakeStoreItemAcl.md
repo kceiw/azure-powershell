@@ -25,7 +25,7 @@ The **Set-AzDataLakeStoreItemAcl** cmdlet modifies the access control list (ACL)
 ## EXAMPLES
 
 ### Example 1: Set the ACL for a file and a folder
-```
+```powershell
 PS C:\>$ACL = Get-AzDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path /
 PS C:\> Set-AzDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/MyFiles/Test.txt" -Acl $ACL
 ```
@@ -34,13 +34,20 @@ The first command gets the ACL for the root directory of the ContosoADL account,
 The second command sets the ACL for the file Test.txt to the one in $ACL.
 
 ### Example 2: Set the ACL for folder recursively
-```
+```powershell
 PS C:\>$ACL = Get-AzDataLakeStoreItemAclEntry -AccountName "ContosoADL" -Path /Folder1
 PS C:\> Set-AzDataLakeStoreItemAcl -AccountName "ContosoADL" -Path "/Folder2" -Acl $ACL -Recurse -Concurrency 128
 ```
 
 The first command gets the ACL for the directory Folder1 of the ContosoADL account, and then stores it in the $ACL variable.
 The second command sets the ACL recursively to Folder2 and its sub directories and files to the one in $ACL.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzDataLakeStoreItemAcl -Account ContosoADL -Acl $ACL -Concurrency 128 -Path /Folder2 -Recurse 
+```
+
+
 
 ## PARAMETERS
 

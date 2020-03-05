@@ -23,7 +23,7 @@ Creates new Azure SQL Server DNS Alias that is pointing to specified server.
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $serverDNSAlias = New-AzSqlServerDnsAlias -ResourceGroupName rg -ServerName serverName -DnsAliasName aliasName
 
 ResourceGroupName  ServerName   DnsAliasName
@@ -32,6 +32,13 @@ rgname             servername   dnsaliasname
 ```
 
 This command creates Azure SQL Server DNS Alias with the name aliasName that is pointing to server serverName
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzSqlServerDnsAlias -Name aliasName -ResourceGroupName rg -ServerName serverName
+```
+
+
 
 ## PARAMETERS
 

@@ -25,11 +25,18 @@ This command needs to be issued while logged into subscription where new server 
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Set-AzSqlServerDnsAlias -ResourceGroupName rg -DnsAliasName aliasName -TargetServerName newServer -SourceServerName oldServer -SourceServerResourceGroupName SourceServerRG -SourceServerSubscriptionId 0000-0000-0000-0000
 ```
 
 This command is updating alias which was previously pointing to oldServer to point to server newServer
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzSqlServerDnsAlias -Name aliasName -ResourceGroupName rg -SourceServerName oldServer -SourceServerResourceGroupName SourceServerRG -SourceServerSubscriptionId 0000-0000-0000-0000 -TargetServerName newServer
+```
+
+
 
 ## PARAMETERS
 

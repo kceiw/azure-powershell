@@ -29,6 +29,13 @@ PS C:\> Invoke-AzVMReimage -ResourceGroupName "ResourceGroup11" -Name "VirtualMa
 
 This command reimages the virtual machine named VirtualMachine07 in ResourceGroup11.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Invoke-AzVMReimage -ResourceGroupName ResourceGroup11 -VMName VirtualMachine07
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

@@ -35,7 +35,7 @@ You can deploy virtual machines from your captured image.
 ## EXAMPLES
 
 ### Example 1: Capture a virtual machine
-```
+```powershell
 PS C:\> Set-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Generalized 
 PS C:\> Save-AzVMImage -ResourceGroupName "ResourceGroup11" -VMName "VirtualMachine07" -DestinationContainerName "VMContainer01" -VHDNamePrefix "VM07"
 ```
@@ -43,6 +43,13 @@ PS C:\> Save-AzVMImage -ResourceGroupName "ResourceGroup11" -VMName "VirtualMach
 The first command marks the virtual machine named VirtualMachine07 as generalized.
 The second command captures a virtual machine named VirtualMachine07 as a VMImage.
 The **Output** property returns a JSON template.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Save-AzVMImage -DestinationContainerName VMContainer01 -Name VirtualMachine07 -ResourceGroupName ResourceGroup11 -VHDNamePrefix VM07
+```
+
+
 
 ## PARAMETERS
 
