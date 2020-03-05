@@ -23,11 +23,18 @@ The **Remove-AzRecoveryServicesAsrNetworkMapping** cmdlet deletes the specified 
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $currentJob = Remove-AzRecoveryServicesAsrNetworkMapping -NetworkMapping $networkmapping
 ```
 
 Starts the deletion of specified ASR network mapping and returns the ASR job used to track the operation.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzRecoveryServicesAsrNetworkMapping -InputObject $networkmapping
+```
+
+
 
 ## PARAMETERS
 

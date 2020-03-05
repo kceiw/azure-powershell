@@ -24,11 +24,18 @@ The **Grant-AzSnapshotAccess** cmdlet grants an access to a snapshot.
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Grant-AzDiskAccess -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01' -Access 'Read' -DurationInSecond 60;
 ```
 
 Grant 'Read' access to the snapshot named 'Snapshot01' in the resource group named 'ResourceGroup01' for 60 seconds.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Grant-AzSnapshotAccess -Access Read -DurationInSecond 60 -ResourceGroupName ResourceGroup01 -SnapshotName Snapshot01
+```
+
+
 
 ## PARAMETERS
 

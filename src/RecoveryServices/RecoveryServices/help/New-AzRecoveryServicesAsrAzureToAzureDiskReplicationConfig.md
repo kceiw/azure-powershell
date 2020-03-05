@@ -33,11 +33,18 @@ Creates a disk mapping object that maps an Azure virtual machine disk to the cac
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig -VhdUri  $vhdUri -RecoveryAzureStorageAccountId $recoveryStorageAccountId -LogStorageAccountId $logStorageAccountId
 ```
 
 Create a disk mapping object for Azure virtual machine disks to be replicated.Used during Azure to Azure EnableDr and reprotect operation.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig -DiskId $diskId -LogStorageAccountId $logStorageAccountId -ManagedDisk  -RecoveryReplicaDiskAccountType Premium_LRS -RecoveryResourceGroupId $RecoveryResourceGroupId -RecoveryTargetDiskAccountType Premium_LRS
+```
+
+
 
 ## PARAMETERS
 

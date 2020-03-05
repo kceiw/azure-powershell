@@ -24,13 +24,20 @@ The **Remove-AzLoadBalancerBackendAddressPoolConfig** cmdlet removes a backend a
 ## EXAMPLES
 
 ### Example 1: Remove a backend address pool configuration from a load balancer
-```
+```powershell
 PS C:\>Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup" | Remove-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" | Set-AzLoadBalancer
 ```
 
 This command gets the load balancer named MyLoadBalancer and passes it to **Remove-AzLoadBalancerBackendAddressPoolConfig**, which removes the BackendAddressPool02 configuration from MyLoadBalancer.
 Finally, the Set-AzLoadBalancer cmdlet updates MyLoadBalancer.
 Note that a backend address pool configuration must exist before you can delete it.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzLoadBalancerBackendAddressPoolConfig -Name cert01
+```
+
+
 
 ## PARAMETERS
 

@@ -35,17 +35,17 @@ Deletes an existing Kusto cluster.
 
 ## EXAMPLES
 
-### Example 1 - Delete an existing Kusto cluster by name
+### Example 1: Delete an existing Kusto cluster by name
 
-```
+```powershell
 PS C:\> Remove-AzKustoCluster -ResourceGroupName testrg -Name mykustocluster
 ```
 
 The above command deletes the Kusto cluster named "mykustocluster" in the resource group "testrg".
 
-### Example 2 - Delete an existing Kusto cluster by piping
+### Example 2: Delete an existing Kusto cluster by piping
 
-```
+```powershell
 PS C:\> Get-AzKustoCluster -ResourceGroupName testrg -Name mykustocluster | Remove-AzKustoCluster
 ```
 
