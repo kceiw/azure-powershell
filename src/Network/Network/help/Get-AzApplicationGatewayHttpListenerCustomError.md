@@ -37,6 +37,13 @@ PS C:\> $ces = Get-AzApplicationGatewayCustomError -HttpListener $listener01
 
 This command gets and returns the list of all custom errors from the http listener $listener01.
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzApplicationGatewayHttpListenerCustomError -HttpListener $listener -StatusCode HttpStatus502
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -24,11 +24,18 @@ The Set-AzEventHubConsumerGroup cmdlet updates the specified Event Hubs consumer
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Set-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName -UserMetadata "Testing"
 ```
 
 Sets the user metadata of the consumer group \`MyConsumerGroupName\` to "Testing."
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzEventHubConsumerGroup -EventHub MyEventHubName -Name MyConsumerGroupName -Namespace MyNamespaceName -ResourceGroupName MyResourceGroupName -UserMetadata Testing
+```
+
+
 
 ## PARAMETERS
 

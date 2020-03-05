@@ -42,11 +42,18 @@ The **Remove-AzStorageAccountManagementPolicy** cmdlet removes the management po
 ## EXAMPLES
 
 ### Example 1: Remove the management policy of a Storage account.
-```
+```powershell
 PS C:\>Remove-AzStorageAccountManagementPolicy -ResourceGroupName "MyResourceGroup" -AccountName "mystorageaccount"
 ```
 
 This command removes the management policy of a Storage account.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzStorageAccountManagementPolicy -ResourceGroupName MyResourceGroup -StorageAccountName mystorageaccount
+```
+
+
 
 ## PARAMETERS
 

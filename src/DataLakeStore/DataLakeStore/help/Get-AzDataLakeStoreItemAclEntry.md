@@ -24,11 +24,18 @@ The **Get-AzDataLakeStoreItemAclEntry** cmdlet gets an entry (ACE) in the access
 ## EXAMPLES
 
 ### Example 1: Get the ACL for a folder
-```
+```powershell
 PS C:\> Get-AzDataLakeStoreItemAclEntry -AccountName 'ContosoADL' -Path '/'
 ```
 
 This command gets the ACL for the root directory of the specified Data Lake Store account
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeStoreItemAclEntry -Account ContosoADL -Path /
+```
+
+
 
 ## PARAMETERS
 

@@ -24,11 +24,18 @@ The **Get-AzDataLakeStoreItem** cmdlet gets the details of a file or folder in D
 ## EXAMPLES
 
 ### Example 1: Get details of a file from the Data Lake Store
-```
+```powershell
 PS C:\>Get-AzDataLakeStoreItem -AccountName "ContosoADL" -Path "/MyFiles/Test.csv"
 ```
 
 This command gets the details of the file Test.csv from the Data Lake Store.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeStoreItem -Account ContosoADL -Path /MyFiles/Test.csv
+```
+
+
 
 ## PARAMETERS
 

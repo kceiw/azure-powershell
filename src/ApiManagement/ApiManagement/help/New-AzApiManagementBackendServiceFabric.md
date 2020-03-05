@@ -37,6 +37,13 @@ PS C:\>$backend = New-AzApiManagementBackend -Context  $apimContext -BackendId 1
 
 Creates a Backend Service Fabric Contract
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzApiManagementBackendServiceFabric -ClientCertificateThumbprint 33CC47C6FCA848DC9B14A6F071C1EF7C -ManagementEndpoint $ManagementEndpoints -ServerX509Name {ServerX509Name}
+```
+
+The New-AzApiManagementBackendServiceFabric cmdlet creates an object of PsApiManagementServiceFabric to be used in cmdlet
+
 ## PARAMETERS
 
 ### -ClientCertificateThumbprint

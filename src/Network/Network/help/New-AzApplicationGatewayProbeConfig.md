@@ -24,8 +24,8 @@ The New-AzApplicationGatewayProbeConfig cmdlet creates a health probe.
 
 ## EXAMPLES
 
-### Example1: Create a health probe
-```
+### Example 1: Example1: Create a health probe
+```powershell
 PS C:\>New-AzApplicationGatewayProbeConfig -Name "Probe03" -Protocol Http -HostName "contoso.com" -Path "/path/custompath.htm" -Interval 30 -Timeout 120 -UnhealthyThreshold 8
 ```
 
