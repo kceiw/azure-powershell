@@ -24,13 +24,20 @@ The **Set-AzServiceBusRule** cmdlet updates the description for the specified ru
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $getRule = Get-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription -Name SBRule
 PS C:\> $getRule.SqlFilter.SqlExpression = "mysqlexpression='condition'"
 PS C:\> $setRule = Set-AzServiceBusRule -ResourceGroup Default-ServiceBus-WestUS -Namespace SBExample1 -Topic SBTopic -Subscription SBSubscription -Name SBRule -InputObject $getRule
 ```
 
 Updates the sql expression **mysqlexpression='condition'** of the rule `SBRule` of the subscription `SBSubscription` in Topic `SBTopic`
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzServiceBusRule -InputObject $getRule -Name SBRule -Namespace SBExample1 -ResourceGroupName Default-ServiceBus-WestUS -Subscription SBSubscription -Topic SBTopic
+```
+
+
 
 ## PARAMETERS
 

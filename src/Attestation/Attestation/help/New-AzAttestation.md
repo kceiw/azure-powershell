@@ -36,6 +36,13 @@ SubscriptionId      : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx
 
 Create a new Attestation "example" in current Subscription, Resource Group "rg1"
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzAttestation -AttestationPolicy SgxDisableDebugMode -Name example -ResourceGroupName rg1
+```
+
+
+
 ## PARAMETERS
 
 ### -AttestationPolicy

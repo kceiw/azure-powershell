@@ -30,6 +30,13 @@ PS C:\> $updatedlistener = Remove-AzApplicationGatewayCustomError -HttpListener 
 
 This command removes the custom error of http status code 502 from the http listener $listener01, and return the updated listener.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzApplicationGatewayHttpListenerCustomError -HttpListener $listener -StatusCode HttpStatus502
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

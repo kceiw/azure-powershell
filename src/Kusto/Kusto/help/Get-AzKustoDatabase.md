@@ -35,9 +35,9 @@ List all Kusto databases in a cluster or get a specific Kusto database.
 
 ## EXAMPLES
 
-### Example 1 - List all Kusto databases in a cluster by name
+### Example 1: List all Kusto databases in a cluster by name
 
-```
+```powershell
 PS C:\> Get-AzKustoDatabase -ResourceGroupName testrg -ClusterName mykustocluster
 
 Name                   : mykustocluster/mykustodatabase1
@@ -59,9 +59,9 @@ Type                   : Microsoft.Kusto/Clusters/Databases
 
 The above command returns all Kusto databases in the cluster "mykustocluster" found in the resource group "testrg".
 
-### Example 2 - List all Kusto databases in a cluster by piping
+### Example 2: List all Kusto databases in a cluster by piping
 
-```
+```powershell
 PS C:\> Get-AzKustoCluster -ResourceGroupName testrg -Name mykustocluster | Get-AzKustoDatabase
 Name                   : mykustocluster/mykustodatabase1
 SoftDeletePeriodInDays : 3650
@@ -82,9 +82,9 @@ Type                   : Microsoft.Kusto/Clusters/Databases
 
 The above command will get the Kusto cluster named "mykustocluster" found in the resource group "testrg" using the `Get-AzKustoCluster` cmdlet, and pipe the result to the `Get-AzKustoDatabase` cmdlet to list all databases in that cluster.
 
-### Example 3 - Get a specific Kusto database by name
+### Example 3: Get a specific Kusto database by name
 
-```
+```powershell
 PS C:\> Get-AzKustoDatabase -ResourceGroupName testrg -ClusterName mykustocluster -Name mykustodatabase
 
 Name                   : mykustocluster/mykustodatabase

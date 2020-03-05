@@ -22,8 +22,8 @@ Gets the rewrite rule set of an application gateway.
 
 ## EXAMPLES
 
-### Example 1 : Get a specific rewrite rule set
-```
+### Example 1: Get a specific rewrite rule set
+```powershell
 PS C:\> $AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
 PS C:\> $Rule = Get-AzApplicationGatewayRewriteRuleSet -Name "RuleSet01" -ApplicationGateway $AppGW
 ```

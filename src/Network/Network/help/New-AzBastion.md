@@ -157,6 +157,13 @@ Etag                 : W/"7460e5f6-ad41-438b-a595-a63346ed8f16"
 Id                   : /subscriptions/359a08a9-ff1b-463c-92d7-6df8d946f25c/resourceGroups/BastionPowershellTest/providers/Microsoft.Network/bastionHosts/testBastion2
 ```
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzBastion -Name testBastion2 -PublicIpAddress $publicip -ResourceGroupName BastionPowershellTest -VirtualNetwork $vnet
+```
+
+
+
 ## PARAMETERS
 
 ### -AsJob

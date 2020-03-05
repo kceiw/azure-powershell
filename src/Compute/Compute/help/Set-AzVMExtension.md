@@ -35,7 +35,7 @@ The **Set-AzVMExtension** cmdlet updates properties for existing Virtual Machine
 ## EXAMPLES
 
 ### Example 1: Modify settings by using hash tables
-```
+```powershell
 PS C:\> $Settings = @{"fileUris" = "[]"; "commandToExecute" = ""};
 PS C:\> $ProtectedSettings = @{"storageAccountName" = $stoname; "storageAccountKey" = $stokey};
 PS C:\> Set-AzVMExtension -ResourceGroupName "ResourceGroup11" -Location "West US" -VMName "VirtualMachine22" -Name "ContosoTest" -Publisher "Contoso.Compute" -Type "CustomScriptExtension" -TypeHandlerVersion "1.1" -Settings $Settings -ProtectedSettings $ProtectedSettings;
@@ -48,7 +48,7 @@ The final command modifies an extension of the virtual machine named VirtualMach
 The command specifies other required information that includes the publisher and the extension type.
 
 ### Example 2: Modify settings by using strings
-```
+```powershell
 PS C:\> $SettingsString = '{"fileUris":[],"commandToExecute":""}';
 PS C:\> $ProtectedSettingsString = '{"storageAccountName":"' + $stoname + '","storageAccountKey":"' + $stokey + '"}';
 PS C:\> Set-AzVMExtension -ResourceGroupName "ResourceGroup11" -Location "West US" -VMName "VirtualMachine22" -Name "CustomScriptExtension" -Publisher "Contoso.Compute" -Type "CustomScriptExtension" -TypeHandlerVersion "1.1" -SettingString $SettingsString -ProtectedSettingString $ProtectedSettingsString ;
@@ -57,6 +57,13 @@ PS C:\> Set-AzVMExtension -ResourceGroupName "ResourceGroup11" -Location "West U
 The first two commands create strings that contain settings, and then stores them in the $SettingsString and $ProtectedSettingsString variables.
 The final command modifies an extension of the virtual machine named VirtualMachine22 in ResourceGroup11 according to the contents of $SettingsString and $ProtectedSettingsString.
 The command specifies other required information that includes the publisher and the extension type.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzVMExtension -ExtensionType CustomScriptExtension -Location West US -Name ContosoTest -ProtectedSettings $ProtectedSettings -Publisher Contoso.Compute -ResourceGroupName ResourceGroup11 -Settings $Settings -TypeHandlerVersion 1.1 -VMName VirtualMachine22
+```
+
+
 
 ## PARAMETERS
 

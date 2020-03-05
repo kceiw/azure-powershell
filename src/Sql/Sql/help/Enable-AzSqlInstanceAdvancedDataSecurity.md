@@ -24,7 +24,7 @@ The **Enable-AzSqlInstanceAdvancedDataSecurity** cmdlet enables Advanced Data Se
 
 ## EXAMPLES
 
-### Example 1 - Enable managed instance Advanced Data Security
+### Example 1: Enable managed instance Advanced Data Security
 ```powershell
 PS C:\>  Enable-AzSqlInstanceAdvancedDataSecurity `
             -ResourceGroupName "ResourceGroup01" `
@@ -35,7 +35,7 @@ ManagedInstanceName		     : ManagedInstance01
 IsEnabled		             : True
 ```
 
-### Example 2 - Enable managed instance Advanced Data Security from server resource
+### Example 2: Enable managed instance Advanced Data Security from server resource
 ```powershell
 PS C:\>  Get-AzSqlInstance `
            -ResourceGroupName "ResourceGroup01" `
@@ -46,6 +46,13 @@ ResourceGroupName	         : ResourceGroup01
 ManagedInstanceName		     : ManagedInstance01
 IsEnabled		             : True
 ```
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Enable-AzSqlInstanceAdvancedDataSecurity -InstanceName ContosoManagedInstanceName -ResourceGroupName MyResourceGroup
+```
+
+
 
 ## PARAMETERS
 

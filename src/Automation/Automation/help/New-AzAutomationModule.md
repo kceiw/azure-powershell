@@ -35,12 +35,19 @@ Check the **ProvisioningState** property for a value of Succeeded.
 ## EXAMPLES
 
 ### Example 1: Import a module
-```
+```powershell
 PS C:\>New-AzAutomationModule -AutomationAccountName "Contoso17" -Name "ContosoModule" -ContentLink "http://contosostorage.blob.core.windows.net/modules/ContosoModule.zip" -ResourceGroupName "ResourceGroup01"
 ```
 
 This command imports a module named ContosoModule into the Automation account named Contoso17.
 The module is stored in an Azure blob in a storage account named contosostorage and a container named modules.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzAutomationModule -AutomationAccountName Contoso17 -ContentLinkUri http://contosostorage.blob.core.windows.net/modules/ContosoModule.zip -Name ContosoModule -ResourceGroupName ResourceGroup01
+```
+
+
 
 ## PARAMETERS
 

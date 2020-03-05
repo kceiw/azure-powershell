@@ -37,7 +37,7 @@ The **Update-AzStorageBlobServiceProperty** cmdlet modifies the service properti
 ## EXAMPLES
 
 ### Example 1: Set Blob service DefaultServiceVersion to 2018-03-28
-```
+```powershell
 C:\PS> Update-AzStorageBlobServiceProperty -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -DefaultServiceVersion 2018-03-28 
 
 StorageAccountName ResourceGroupName DefaultServiceVersion DeleteRetentionPolicy.Enabled DeleteRetentionPolicy.Days
@@ -46,6 +46,13 @@ myresourcegroup    mystorageaccount  2018-03-28            False
 ```
 
 This command sets the DefaultServiceVersion of Blob Service to 2018-03-28.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Update-AzStorageBlobServiceProperty -DefaultServiceVersion 2018-03-28 -ResourceGroupName myresourcegroup -StorageAccountName mystorageaccount
+```
+
+
 
 ## PARAMETERS
 

@@ -37,9 +37,9 @@ Creates a new Kusto database in an existing cluster.
 
 ## EXAMPLES
 
-### Example 1 - Create a new Kusto database by name
+### Example 1: Create a new Kusto database by name
 
-```
+```powershell
 PS C:\> New-AzKustoDatabase -ResourceGroupName testrg -ClusterName mykustocluster -Name mykustodatabase -SoftDeletePeriodInDays 4 -HotCachePeriodInDays 2
 
 Name                   : mykustocluster/mykustodatabase

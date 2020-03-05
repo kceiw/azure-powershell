@@ -36,11 +36,18 @@ This commands remove Azure SQL Server DNS Alias from the server leaving server i
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Remove-AzSqlServerDnsAlias -DnsAliasName aliasName -ServerName serverName -ResourceGroupName rg
 ```
 
 Removes Azure SQL Server DNS Alias with the name aliasName from the server with the name serverName
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzSqlServerDnsAlias -Name aliasName -ResourceGroupName rg -ServerName serverName
+```
+
+
 
 ## PARAMETERS
 

@@ -35,17 +35,17 @@ Deletes an existing Kusto database.
 
 ## EXAMPLES
 
-### Example 1 - Delete an existing Kusto database by name
+### Example 1: Delete an existing Kusto database by name
 
-```
+```powershell
 PS C:\> Remove-AzKustoDatabase -ResourceGroupName testrg -ClusterName mykustocluster -Name mykustodatabase
 ```
 
 The above command deletes the Kusto database named "mykustodatabase" in the cluster "mykustocluster" found in the resource group "testrg".
 
-### Example 2 - Delete an existing Kusto database by piping
+### Example 2: Delete an existing Kusto database by piping
 
-```
+```powershell
 PS C:\> Get-AzKustoDatabase -ResourceGroupName testrg -ClusterName mykustocluster -Name mykustodatabase | Remove-AzKustoDatabase
 ```
 
