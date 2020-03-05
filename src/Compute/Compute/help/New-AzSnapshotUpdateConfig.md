@@ -25,7 +25,7 @@ The **New-AzSnapshotUpdateConfig** cmdlet creates a configurable snapshot update
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $snapshotupdateconfig = New-AzSnapshotUpdateConfig -DiskSizeGB 10 -AccountType PremiumLRS -OsType Windows -CreateOption Empty -EncryptionSettingsEnabled $true;
 PS C:\> $secretUrl = https://myvault.vault-int.azure-int.net/secrets/123/;
 PS C:\> $secretId = '/subscriptions/0000000-0000-0000-0000-000000000000/resourceGroups/ResourceGroup01/providers/Microsoft.KeyVault/vaults/TestVault123';
@@ -43,12 +43,19 @@ object. The last command takes the snapshot update object and updates an existin
 name 'Snapshot01' in resource group 'ResourceGroup01'.
 
 ### Example 2
-```
+```powershell
 PS C:\> New-AzSnapshotUpdateConfig -DiskSizeGB 10 | Update-AzSnapshot -ResourceGroupName 'ResourceGroup01' -SnapshotName 'Snapshot01';
 ```
 
 This command updates an existing snapshot with name 'Snapshot01' in resource group
 'ResourceGroup01' to 10 GB disk size.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzSnapshotUpdateConfig -DiskSizeGB 10
+```
+
+
 
 ## PARAMETERS
 

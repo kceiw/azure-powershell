@@ -25,19 +25,26 @@ If this workspace was linked to an existing account via the *CustomerId* paramet
 ## EXAMPLES
 
 ### Example 1: Remove a workspace by name
-```
+```powershell
 PS C:\>Remove-AzOperationalInsightsWorkspace -ResourceGroupName "ContosResourceGroup" -Name "MyWorkspace"
 ```
 
 This command removes the workspace named MyWorkspace from the resource group named ContosoResourceGroup.
 
 ### Example 2: Remove a workspace by using the pipeline and without confirmation
-```
+```powershell
 PS C:\>Get-AzOperationalInsightsWorkspace -ResourceGroupName "ContosResourceGroup" -Name "MyWorkspace" | Remove-AzOperationalInsightsWorkspace -Force
 ```
 
 This command uses the Get-AzOperationalInsightsWorkspace cmdlet to get the workspace named MyWorkspace, and then passes it to the **Remove-AzOperationalInsightsWorkspace** cmdlet by using the pipeline operator to remove it.
 Since the *Force* parameter is specified, the command does not prompt you before removing the workspace.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzOperationalInsightsWorkspace -Force  -Name MyWorkspace -ResourceGroupName ContosResourceGroup
+```
+
+
 
 ## PARAMETERS
 

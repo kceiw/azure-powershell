@@ -117,9 +117,9 @@ The cmdlet also implicitly creates an application and sets its properties (if th
 
 ## EXAMPLES
 
-### Example 1 - Simple AD service principal creation
+### Example 1: Simple AD service principal creation
 
-```
+```powershell
 PS C:\> New-AzADServicePrincipal
 
 Secret                : System.Security.SecureString
@@ -132,9 +132,9 @@ Type                  : ServicePrincipal
 
 The above command creates an AD service principal using default values for parameters not provided. Since an application id was not provided, an application was created for the service principal. Since no values were provided for `Role` or `Scope`, the created service principal does not have any permissions.
 
-### Example 2 - Simple AD service principal creation with a specified role and default scope
+### Example 2: Simple AD service principal creation with a specified role and default scope
 
-```
+```powershell
 PS C:\> New-AzADServicePrincipal -Role Reader
 
 Secret                : System.Security.SecureString
@@ -149,9 +149,9 @@ WARNING: Assigning role 'Reader' over scope '/subscriptions/zzzzzzzz-zzzz-zzzz-z
 
 The above command creates an AD service principal using the default values for parameters not provided. Since the application id was not provided, an application was created for the service principal. The service principal was created with "Reader" permissions over the current subscription (since no value was provided for the `Scope` parameter).
 
-### Example 3 - Simple AD service principal creation with a specified scope and default role
+### Example 3: Simple AD service principal creation with a specified scope and default role
 
-```
+```powershell
 PS C:\> New-AzADServicePrincipal -Scope /subscriptions/zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz/resourceGroups/myResourceGroup
 
 Secret                : System.Security.SecureString
@@ -166,9 +166,9 @@ WARNING: Assigning role 'Contributor' over scope '/subscriptions/zzzzzzzz-zzzz-z
 
 The above command creates an AD service principal using the default values for parameters not provided. Since the application id was not provided, an application was created for the service principal. The service principal was created with "Contributor" permissions (since no value was provided for the `Role` parameter) over the provided resource group scope.
 
-### Example 4 - Simple AD service principal creation with a specified scope and role
+### Example 4: Simple AD service principal creation with a specified scope and role
 
-```
+```powershell
 PS C:\> New-AzADServicePrincipal -Role Reader -Scope /subscriptions/zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz/resourceGroups/myResourceGroup
 
 Secret                : System.Security.SecureString
@@ -183,9 +183,9 @@ WARNING: Assigning role 'Reader' over scope '/subscriptions/zzzzzzzz-zzzz-zzzz-z
 
 The above command creates an AD service principal using the default values for parameters not provided. Since the application id was not provided, an application was created for the service principal. The service principal was created with "Reader" permissions over the provided resource group scope.
 
-### Example 5 - Create a new AD service principal using application id with role assignment
+### Example 5: Create a new AD service principal using application id with role assignment
 
-```
+```powershell
 PS C:\> New-AzADServicePrincipal -ApplicationId 34a28ad2-dec4-4a41-bc3b-d22ddf90000e
 
 ServicePrincipalNames : {34a28ad2-dec4-4a41-bc3b-d22ddf90000e, http://my-temp-app}
@@ -197,9 +197,9 @@ Type                  : ServicePrincipal
 
 Creates a new AD service principal for the application with application id '34a28ad2-dec4-4a41-bc3b-d22ddf90000e'. Since no values were provided for `Role` or `Scope`, the created service principal does not have any permissions.
 
-### Example 6 - Create a new AD service principal using piping
+### Example 6: Create a new AD service principal using piping
 
-```
+```powershell
 PS C:\> Get-AzADApplication -ObjectId 3ede3c26-b443-4e0b-9efc-b05e68338dc3 | New-AzADServicePrincipal
 ```
 

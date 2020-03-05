@@ -23,8 +23,8 @@ The **Remove-AzStreamAnalyticsOutput** cmdlet asynchronously deletes an output f
 
 ## EXAMPLES
 
-### EXAMPLE 1: Remove an output from a job
-```
+### Example 1: Remove an output from a job
+```powershell
 PS C:\>Remove-AzStreamAnalyticsOutput -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -Name "Output"
 ```
 

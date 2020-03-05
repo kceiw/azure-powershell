@@ -31,6 +31,13 @@ PS C:\> $gateway = New-AzApplicationGateway -Name "AppGateway01" -ResourceGroupN
 
 In this example, we create a user assigned identity and then reference it in identity object used with Application Gateway.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzApplicationGatewayIdentity -UserAssignedIdentityId $Identity.Id
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

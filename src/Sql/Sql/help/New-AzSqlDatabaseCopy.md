@@ -38,6 +38,13 @@ This cmdlet is also supported by the SQL Server Stretch Database service on Azur
 
 ## EXAMPLES
 
+### Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzSqlDatabaseCopy -CopyDatabaseName {CopyDatabaseName} -CopyResourceGroupName {CopyResourceGroupName} -CopyServerName {CopyServerName} -DatabaseName db1 -ElasticPoolName ep1 -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
+The New-AzSqlDatabaseCopy cmdlet creates a copy of an Azure SQL Database that uses the
+
 ## PARAMETERS
 
 ### -AsJob
