@@ -67,18 +67,18 @@ The application is identified by supplying either the application object id or a
 
 ## EXAMPLES
 
-### Example 1 - Create a new application credential using a password
+### Example 1: Create a new application credential using a password
 
-```
+```powershell
 PS C:\> $SecureStringPassword = ConvertTo-SecureString -String "password" -AsPlainText -Force
 PS C:\> New-AzADAppCredential -ObjectId 1f89cf81-0146-4f4e-beae-2007d0668416 -Password $SecureStringPassword
 ```
 
 A new password credential is added to the existing application with object id '1f89cf81-0146-4f4e-beae-2007d0668416'.
 
-### Example 2 - Create a new application credential using a certificate
+### Example 2: Create a new application credential using a certificate
 
-```
+```powershell
 PS C:\> $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
 PS C:\> $cer.Import("C:\myapp.cer")
 PS C:\> $binCert = $cer.GetRawCertData()
@@ -88,9 +88,9 @@ PS C:\> New-AzADAppCredential -ApplicationId 4589cd6b-3d79-4bb4-93b8-a0b99f3bfc5
 
 The supplied base64 encoded public X509 certificate ("myapp.cer") is added to the existing application with application id '4589cd6b-3d79-4bb4-93b8-a0b99f3bfc58'.
 
-### Example 3 - Create a new application credential using piping
+### Example 3: Create a new application credential using piping
 
-```
+```powershell
 PS C:\> $SecureStringPassword = ConvertTo-SecureString -String "password" -AsPlainText -Force
 PS C:\> Get-AzADApplication -ObjectId 1f89cf81-0146-4f4e-beae-2007d0668416 | New-AzADAppCredential -Password $SecureStringPassword
 ```

@@ -24,11 +24,18 @@ The **Get-AzDataLakeStoreItemPermission** cmdlet gets the permission octal of a 
 ## EXAMPLES
 
 ### Example 1: Set the permission octal for a file
-```
+```powershell
 PS C:\>Get-AzDataLakeStoreItemPermission -AccountName "ContosoADL" -Path "/file.txt"
 ```
 
 This command gets the permission octal for a file.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeStoreItemPermission -Account ContosoADL -Path /file.txt
+```
+
+
 
 ## PARAMETERS
 

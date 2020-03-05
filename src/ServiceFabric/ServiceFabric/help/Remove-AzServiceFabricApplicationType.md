@@ -45,6 +45,13 @@ PS C:\> Remove-AzServiceFabricApplicationType -ResourceGroupName $resourceGroupN
 
 This example will remove the application type "testAppType" and all the version under it. If there are any applications created with this type, the command will throw an exception.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzServiceFabricApplicationType -ClusterName $clusterName -Name $appTypeName -ResourceGroupName $resourceGroupName
+```
+
+
+
 ## PARAMETERS
 
 ### -ClusterName

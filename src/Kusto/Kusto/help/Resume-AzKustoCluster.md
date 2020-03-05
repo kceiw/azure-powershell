@@ -35,17 +35,17 @@ Resume a suspended Kusto cluster.
 
 ## EXAMPLES
 
-### Example 1 - Resume a suspended Kusto cluster by name
+### Example 1: Resume a suspended Kusto cluster by name
 
-```
+```powershell
 PS C:\> Resume-AzKustoCluster -ResourceGroupName testrg -Name mykustocluster
 ```
 
 The above command resumes the suspended Kusto cluster named "mykustocluster" found in the resource group "testrg".
 
-### Example 2 - Resume a suspended Kusto cluster by piping
+### Example 2: Resume a suspended Kusto cluster by piping
 
-```
+```powershell
 PS C:\> Get-AzKustoCluster -ResourceGroupName testrg -Name mykustocluster | Resume-AzKustoCluster
 ```
 

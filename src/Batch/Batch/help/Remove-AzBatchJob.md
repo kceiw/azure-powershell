@@ -25,7 +25,7 @@ This cmdlet prompts you for confirmation before it removes a job, unless you spe
 ## EXAMPLES
 
 ### Example 1: Delete a Batch job
-```
+```powershell
 PS C:\>Remove-AzBatchJob -Id "Job-000001" -BatchContext $Context
 ```
 
@@ -34,7 +34,7 @@ The command prompts you for confirmation before it deletes the job.
 Use the Get-AzBatchAccountKeys cmdlet to assign a context to the $Context variable.
 
 ### Example 2: Delete a Batch job without confirmation by using the pipeline
-```
+```powershell
 PS C:\>Get-AzBatchJob -Id "Job-000002" -BatchContext $Context | Remove-AzBatchJob -Force -BatchContext $Context
 ```
 
@@ -42,6 +42,13 @@ This command gets the job that has the ID Job-000002 by using the Get-AzBatchJob
 The command passes that job to the current cmdlet by using the pipeline operator.
 The command deletes that job.
 Because the command includes the *Force* parameter, it does not prompt you for confirmation.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzBatchJob -BatchContext $Context -Force  -Id Job-000001
+```
+
+
 
 ## PARAMETERS
 

@@ -24,11 +24,18 @@ The **Test-AzDataLakeStoreItem** cmdlet tests the existence of a file or folder 
 ## EXAMPLES
 
 ### Example 1: Test a file
-```
+```powershell
 PS C:\>Test-AzDataLakeStoreItem -AccountName "ContosoADL" -Path "/MyFiles/Test.csv"
 ```
 
 This command tests whether the file Test.csv exists in the ContosoADL account.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Test-AzDataLakeStoreItem -Account ContosoADL -Path /MyFiles/Test.csv
+```
+
+
 
 ## PARAMETERS
 

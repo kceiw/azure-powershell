@@ -33,6 +33,13 @@ MyResourceGroup   MyAccount   /subscriptions/21a9967a-e8a9-4656-a70b-96ff1c4d05a
 
 Creates a new Azure Maps account named MyAccount in the resource group MyResourceGroup with the SKU S0 and a tag.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzMapsAccount -Name MyAccount -ResourceGroupName MyResourceGroup -SkuName S0 -Tag @{Name=test;Value=true}
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

@@ -34,6 +34,13 @@ SourceControlSyncJobId               SyncType Status  StartTime EndTime
 b51aed78-bef6-40d4-a966-cd45fd5af576 FullSync Running
 ```
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Start-AzAutomationSourceControlSyncJob -AutomationAccountName AutomationAccount01 -ResourceGroupName rg1 -SourceControlName <String>
+```
+
+
+
 ## PARAMETERS
 
 ### -AutomationAccountName
