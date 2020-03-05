@@ -24,13 +24,20 @@ The **Get-AzApplicationGatewayAuthenticationCertificate** cmdlet gets an authent
 ## EXAMPLES
 
 ### Example 1: Get a specified authentication certificate
-```
+```powershell
 PS C:\> $appgw = Get-AzApplicationGateway -ResourceGroupName "rg" -Name "appGwName"
 PS C:\> $pool = Get-AzApplicationGatewayBackendAddressPool -Name "pool01" -ApplicationGateway $appgw
 ```
 
 The first command gets the application gateway named appGwName and stores it in the $appgw variable.
 The second command gets the authentication certificate named pool01 and stores it in the $pool variable.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzApplicationGatewayAuthenticationCertificate -ApplicationGateway $appgw -Name cert01
+```
+
+
 
 ## PARAMETERS
 

@@ -22,12 +22,19 @@ Gets all the eventhub consumergroups for the different EventHubs used by IotHub.
 
 ## EXAMPLES
 
-### Example 1 Gets all the eventhub consumergroups for the telemetry eventhub
-```
+### Example 1: Gets all the eventhub consumergroups for the telemetry eventhub
+```powershell
 PS C:\> Get-AzIotHubEventHubConsumerGroup -ResourceGroupName "myresourcegroup" -Name "myiothub" -EventHubEndpointName "events"
 ```
 
 Gets all the eventhub consumergroups for the telemetry eventhub for the iothub named myiothub
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzIotHubEventHubConsumerGroup -Name myiothub -ResourceGroupName myresourcegroup
+```
+
+
 
 ## PARAMETERS
 

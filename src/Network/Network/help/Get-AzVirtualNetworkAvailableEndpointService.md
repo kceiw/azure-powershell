@@ -23,7 +23,7 @@ Get-AzVirtualNetworkAvailableEndpointService lists endpoint services available i
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Get-AzVirtualNetworkAvailableEndpointService -Location westus
 
 -Name              Id                                                                                             Type
@@ -32,6 +32,13 @@ PS C:\> Get-AzVirtualNetworkAvailableEndpointService -Location westus
 ```
 
 Gets available endpoint services in westus region.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzVirtualNetworkAvailableEndpointService -Location westus
+```
+
+
 
 ## PARAMETERS
 

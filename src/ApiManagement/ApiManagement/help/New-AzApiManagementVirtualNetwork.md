@@ -43,6 +43,13 @@ PS C:\> New-AzApiManagement -ResourceGroupName "ContosoGroup" -Location "West US
 
 This example creates a new APIM service into a Virtual Network in `External` mode
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzApiManagementVirtualNetwork -SubnetResourceId /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/ContosoGroup/providers/Microsoft.Network/virtualNetworks/westUsVirtualNetwork/subnets/backendSubnet
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile

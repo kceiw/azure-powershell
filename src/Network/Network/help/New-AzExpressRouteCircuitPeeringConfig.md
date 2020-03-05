@@ -48,7 +48,7 @@ by using a connectivity provider instead of the public Internet.
 ## EXAMPLES
 
 ### Example 1: Create a new ExpressRoute circuit with a peering configuration
-```
+```powershell
 $parameters = @{
     Name = 'AzurePrivatePeering'
     Circuit = $circuit
@@ -73,6 +73,13 @@ $parameters = @{
 }
 New-AzExpressRouteCircuit @parameters
 ```
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzExpressRouteCircuitPeeringConfig -Name cert01 -PeerASN 100 -PeeringType AzurePrivatePeering -PrimaryPeerAddressPrefix 123.0.0.0/30 -SecondaryPeerAddressPrefix 123.0.0.4/30 -VlanId 300
+```
+
+The New-AzExpressRouteCircuitPeeringConfig cmdlet adds a peering configuration to an
 
 ## PARAMETERS
 

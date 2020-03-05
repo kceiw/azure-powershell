@@ -47,6 +47,13 @@ PS C:\> Remove-AzServiceFabricApplicationTypeVersion -ResourceGroupName $resourc
 
 This example will remove the version "v1" under the type "testAppType". It there are any applications under this resource the command will throw an exception.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzServiceFabricApplicationTypeVersion -ClusterName $clusterName -Force  -Name $appTypeName -PassThru  -ResourceGroupName $resourceGroupName -Version $version
+```
+
+
+
 ## PARAMETERS
 
 ### -ClusterName

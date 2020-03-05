@@ -23,11 +23,18 @@ The **Remove-AzRecoveryServicesAsrPolicy** cmdlet deleted the specified replicat
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $currentJob = Remove-AzRecoveryServicesAsrPolicy -Policy $Policy
 ```
 
 Starts the deletion of the specified replication policy and returns the ASR job used to track the operation.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzRecoveryServicesAsrPolicy -InputObject $Policy
+```
+
+
 
 ## PARAMETERS
 

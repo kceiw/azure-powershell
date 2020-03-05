@@ -42,11 +42,18 @@ The New-AzDataMigrationProject cmdlet creates a new Azure Database Migration Ser
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> New-AzDataMigrationProject -ResourceGroupName MyResourceGroup -ServiceName TestService -ProjectName MyDMSProject -Location "central us"  -SourceType SQL -TargetType SQLDB -SourceConnection $sourceConnInfo -TargetConnection $targetConnInfo -DatabaseInfo $dbList
 ```
 
 The above example shows how to create new project named MyDMSProject located in Central US region under the Azure Database Migration Service instance named TestService.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzDataMigrationProject -DatabaseInfo $dbList -Location central us -Name MyDMSProject -ResourceGroupName MyResourceGroup -ServiceName TestService -SourceConnection $sourceConnInfo -SourceType SQL -TargetConnection $targetConnInfo -TargetType SQLDB
+```
+
+
 
 ## PARAMETERS
 
