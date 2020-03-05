@@ -106,6 +106,13 @@ Tags                             :
 This command creates a key vault, just like the previous example. However, it specifies a value of
 Premium for the *SKU* parameter to create a Premium key vault.
 
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzKeyVault -Location East US -Name Contoso03Vault -ResourceGroupName Group14
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile
