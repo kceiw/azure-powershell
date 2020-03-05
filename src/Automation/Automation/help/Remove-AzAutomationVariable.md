@@ -24,13 +24,20 @@ The **Remove-AzAutomationVariable** cmdlet removes a variable from Azure Automat
 ## EXAMPLES
 
 ### Example 1: Remove a variable
-```
+```powershell
 PS C:\>Remove-AzAutomationVariable -AutomationAccountName "Contoso17" -Name "StringVariable22" -Force -ResourceGroupName "ResourceGroup01"
 ```
 
 This command removes a variable named StringVariable22 in the Automation account named Contoso17.
 This command specifies the *Force* parameter.
 Therefore, it does not prompt you for confirmation.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzAutomationVariable -AutomationAccountName Contoso17 -Name StringVariable22 -ResourceGroupName ResourceGroup01
+```
+
+
 
 ## PARAMETERS
 

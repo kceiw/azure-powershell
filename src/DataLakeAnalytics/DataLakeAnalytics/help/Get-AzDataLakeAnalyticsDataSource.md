@@ -37,18 +37,25 @@ The **Get-AzDataLakeAnalyticsDataSource** cmdlet gets an Azure Data Lake Analyti
 ## EXAMPLES
 
 ### Example 1: Get a data source from an account
-```
+```powershell
 PS C:\>Get-AzDataLakeAnalyticsDataSource -AccountName "ContosoAdlA" -DataLakeStore "ContosoAdls"
 ```
 
 This command gets a Data Lake Store data source named ContosoAdls from a Data Lake Analytics account.
 
 ### Example 2: Get the list of Data Lake Store accounts in a Data Lake Analytics account
-```
+```powershell
 PS C:\>Get-AzDataLakeAnalyticsDataSource -AccountName "ContosoAdlA" -DataSource "DataLakeStore"
 ```
 
 This command gets all Data Lake Store accounts from a Data Lake Analytics account.
+
+### Example 3
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzDataLakeAnalyticsDataSource -Account ContosoAdlA
+```
+
+
 
 ## PARAMETERS
 

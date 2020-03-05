@@ -23,11 +23,18 @@ The **Enable-AzDataLakeStoreKeyVault** cmdlet attempts to enable a user managed 
 ## EXAMPLES
 
 ### Example 1: Enable the Key Vault for the ContosoADLS account
-```
+```powershell
 PS C:\>Enable-AzDataLakeStoreKeyVault -Name "ContosoADLS"
 ```
 
 This command attempts to enable the user managed Key Vault for the Data Lake Store account named ContosoADLS.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Enable-AzDataLakeStoreKeyVault -Account ContosoADLS
+```
+
+
 
 ## PARAMETERS
 

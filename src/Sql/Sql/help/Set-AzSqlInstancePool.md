@@ -35,7 +35,7 @@ The **Set-AzSqlInstancePool** cmdlet modifies properties of an Azure SQL Instanc
 
 ## EXAMPLES
 
-### Example 1 : Set an instance pool license type
+### Example 1: Set an instance pool license type
 ```powershell
 PS C:\> Set-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancePool0 -LicenseType LicenseIncluded
 ResourceGroupName : resourcegroup01
@@ -54,7 +54,7 @@ LicenseType       : LicenseIncluded
 
 This command sets the license type and/or tags for an instance pool named instancePool0.
 
-### Example 2 : Set an instance pool license type using an instance pool object
+### Example 2: Set an instance pool license type using an instance pool object
 ```powershell
 PS C:\> $instancePool = Get-AzSqlInstancePool -ResourceGroupName resourcegroup01 -Name instancePool0
 PS C:\> Set-AzSqlInstancePool -InputObject $instancePool -LicenseType LicenseIncluded
@@ -74,7 +74,7 @@ LicenseType       : LicenseIncluded
 
 This command sets the license type and/or tags for an instance pool using an instance pool object.
 
-### Example 3 : Set an instance pool license type using an instance pool resource id
+### Example 3: Set an instance pool license type using an instance pool resource id
 ```powershell
 PS C:\> Set-AzSqlInstancePool -ResourceId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/resourcegroup01/providers/Microsoft.Sql/instancePools/instancePool0" -LicenseType LicenseIncluded
 ResourceGroupName : resourcegroup01
