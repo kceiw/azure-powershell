@@ -50,6 +50,13 @@ ProvisioningState : Succeeded
 Tags              :
 ```
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzCognitiveServicesAccount -ResourceGroupName TestUsages
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile
