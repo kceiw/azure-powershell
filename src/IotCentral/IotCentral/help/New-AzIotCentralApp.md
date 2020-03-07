@@ -23,7 +23,7 @@ Creates a new IoT Central Application with the provided properties and metadata.
 
 ## EXAMPLES
 
-### Example 1 Create simple IoT Central Application.
+### Example 1: Create simple IoT Central Application.
 ```powershell
 PS C:\> New-AzIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -Subdomain "MyAppSubdomain"
 ```
@@ -46,7 +46,7 @@ ResourceGroupName : MyResourceGroupName
 
 Create an IoT Central application in the standard pricing tier S1, in the region of the resource group.
 
-### Example 2 Create simple IoT Central Application.
+### Example 2: Create simple IoT Central Application.
 ```powershell
 PS C:\> New-AzIotCentralApp -ResourceGroupName "MyResourceGroupName" -Name "MyAppResourceName" -Subdomain "MyAppSubdomain" -Sku "S1" -DisplayName "My Custom Display Name" -Template "iotc-default" -Location "westus"
 ```
