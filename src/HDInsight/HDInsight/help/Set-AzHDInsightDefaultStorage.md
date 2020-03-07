@@ -25,7 +25,7 @@ The **Set-AzHDInsightDefaultStorage** cmdlet sets the default Storage account se
 ## EXAMPLES
 
 ### Example 1: Set the default storage account for the cluster configuration object
-```
+```powershell
 PS C:\># Primary storage account info
 PS C:\> $storageAccountResourceGroupName = "Group"
 PS C:\> $storageAccountName = "yourstorageacct001"
@@ -60,6 +60,13 @@ PS C:\> New-AzHDInsightClusterConfig `
 ```
 
 This command sets the default Storage account for a cluster configuration object.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzHDInsightDefaultStorage -StorageAccountKey {StorageAccountKey} -StorageAccountName {StorageAccountName}
+```
+
+
 
 ## PARAMETERS
 

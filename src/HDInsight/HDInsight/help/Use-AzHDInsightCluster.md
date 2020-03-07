@@ -24,7 +24,7 @@ The **Use-AzHDInsightCluster** cmdlet selects the Azure HDInsight cluster for th
 ## EXAMPLES
 
 ### Example 1: Select a cluster for Hive query submission
-```
+```powershell
 PS C:\># Cluster info
 PS C:\>$clusterName = "your-hadoop-001"
 PS C:\>$clusterCreds = Get-Credential
@@ -35,6 +35,13 @@ PS C:\>Use-AzHDInsightCluster `
 ```
 
 This command selects a cluster for a Hive query submission.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Use-AzHDInsightCluster -ClusterName $clusterName -HttpCredential $clusterCreds
+```
+
+
 
 ## PARAMETERS
 
