@@ -29,6 +29,13 @@ PS C:\> New-AzStorageSyncService -ResourceGroupName "myResourceGroup" -Location 
 
 This command will create a storage sync service.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> New-AzStorageSyncService -Location myLocation -Name myStorageSyncServiceName -ResourceGroupName myResourceGroup
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile
