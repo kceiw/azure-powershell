@@ -42,6 +42,13 @@ PS C:\> Remove-AzIntegrationAccountAssembly -ResourceGroupName "sampleResourceGr
 
 Removes the assembly named "sampleAssembly" located in the integration account "sampleIntegrationAccount".
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzIntegrationAccountAssembly -Name sampleAssembly -ParentName sampleIntegrationAccount -ResourceGroupName sampleResourceGroup
+```
+
+
+
 ## PARAMETERS
 
 ### -DefaultProfile
