@@ -23,8 +23,8 @@ The **Remove-AzStreamAnalyticsInput** cmdlet asynchronously deletes an input fro
 
 ## EXAMPLES
 
-### EXAMPLE 1: Remove an input stream from a job
-```
+### Example 1: Remove an input stream from a job
+```powershell
 PS C:\>Remove-AzStreamAnalyticsInput -ResourceGroupName "StreamAnalytics-Default-West-US" -JobName "StreamingJob" -Name "EventStream"
 ```
 
