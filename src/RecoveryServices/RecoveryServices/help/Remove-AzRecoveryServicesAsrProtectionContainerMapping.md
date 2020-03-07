@@ -23,11 +23,18 @@ The **Remove-AzRecoveryServicesAsrProtectionContainerMapping** cmdlet deletes th
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $currentJob = Remove-AzRecoveryServicesAsrProtectionContainerMapping -ProtectionContainerMapping $ProtectionContainerMapping
 ```
 
 Starts the deletion of specified protection container mapping and returns the ASR job used to track the operation.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzRecoveryServicesAsrProtectionContainerMapping -InputObject $ProtectionContainerMapping
+```
+
+
 
 ## PARAMETERS
 
