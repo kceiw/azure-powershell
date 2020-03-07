@@ -23,7 +23,7 @@ The cmdlet **New-AzApiManagementUserToken** generates a Shared Access Token for 
 
 ## EXAMPLES
 
-### Example 1 : Generate a Shared Access Token for Git User
+### Example 1: Generate a Shared Access Token for Git User
 ```powershell
 PS D:\github\azure-powershell> $context = New-AzApiManagementContext -ResourceGroupName powershelltest -ServiceName
 powershellsdkservice

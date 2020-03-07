@@ -38,6 +38,13 @@ PS C:\>Remove-AzAzureRmApiManagementApiRelease -Context $apimContext -ApiId "ech
 
 This command removes the API Release with the specified ApiId and ReleaseId.
 
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzApiManagementApiRelease -ApiId 0001 -Context $ApiMgmtContext -ReleaseId 5afccaf6b89fd067426d402e
+```
+
+
+
 ## PARAMETERS
 
 ### -ApiId
