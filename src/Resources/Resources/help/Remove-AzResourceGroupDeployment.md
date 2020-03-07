@@ -30,6 +30,13 @@ The **Remove-AzResourceGroupDeployment** cmdlet removes an Azure resource group 
 
 ## EXAMPLES
 
+### Example 1
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Remove-AzResourceGroupDeployment -Name testDeployment1 -ResourceGroupName testGroup
+```
+
+
+
 ## PARAMETERS
 
 ### -ApiVersion

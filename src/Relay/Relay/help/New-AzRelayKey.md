@@ -37,8 +37,8 @@ The **New-AzRelayKey** cmdlet generates the primary and secondary connection str
 
 ## EXAMPLES
 
-### Example 1 - Namespace
-```
+### Example 1: Namespace
+```powershell
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -RegenerateKeys PrimaryKey
 
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -RegenerateKeys SecondaryKey
@@ -52,8 +52,8 @@ KeyName                   : AuthoRule1
 
 Regenerates the primary or secondary connection strings for the given Relay-Namespace entity.
 
-### Example 1.1 - Namespace  KeyValue Provided
-```
+### Example 2: Namespace  KeyValue Provided
+```powershell
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -RegenerateKeys PrimaryKey -KeyValue ###############
 
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -RegenerateKeys SecondaryKey -KeyValue ###############
@@ -67,8 +67,8 @@ KeyName                   : AuthoRule1
 
 generates the primary or secondary connection strings for the given Relay-Namespace entity with Key Value Provided
 
-### Example 2 - WcfRelay
-```
+### Example 3: WcfRelay
+```powershell
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -WcfRelay TestWCFRelay1 -RegenerateKeys PrimaryKey
 
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -WcfRelay TestWCFRelay1 -RegenerateKeys SecondaryKey
@@ -82,8 +82,8 @@ KeyName                   : AuthoRule1
 
 Regenerates the primary or secondary connection strings for the given Relay-WcfRelay entity.
 
-### Example 2.1 - WcfRelay  KeyValue Provided
-```
+### Example 4: WcfRelay  KeyValue Provided
+```powershell
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -WcfRelay TestWCFRelay1 -RegenerateKeys PrimaryKey -KeyValue ############### 
 
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -WcfRelay TestWCFRelay1 -RegenerateKeys SecondaryKey -KeyValue ############### 
@@ -97,8 +97,8 @@ KeyName                   : AuthoRule1
 
 generates the primary or secondary connection strings for the given Relay-WcfRelay entity with Key Value Provided
 
-### Example 3 - HybridConnection
-```
+### Example 5: HybridConnection
+```powershell
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -HybridConnection TestHybridConnection -RegenerateKeys PrimaryKey
 
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -HybridConnection TestHybridConnection -RegenerateKeys SecondaryKey
@@ -112,8 +112,8 @@ KeyName                   : AuthoRule1
 
 Regenerates the primary or secondary connection strings for the given Relay entities (Namespace/WcfRelay/HybridConnection).
 
-### Example 3.1 - HybridConnection KeyValue Provided
-```
+### Example 6: HybridConnection KeyValue Provided
+```powershell
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -HybridConnection TestHybridConnection -RegenerateKeys PrimaryKey -KeyValue ############### 
 
 PS C:\> New-AzRelayKey -ResourceGroupName Default-ServiceBus-WestUS -Namespace TestNameSpace-Relay1 -Name AuthoRule1 -HybridConnection TestHybridConnection -RegenerateKeys SecondaryKey -KeyValue ############### 
