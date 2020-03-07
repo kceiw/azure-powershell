@@ -24,7 +24,7 @@ The **Set-AzServiceBusQueue** cmdlet updates the description for the Service Bus
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $QueueObj = Get-AzServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -NamespaceName SB-Example1 -QueueName SB-Queue_example1
 
 PS C:\> $QueueObj.DeadLetteringOnMessageExpiration = $True
@@ -58,6 +58,13 @@ EnableBatchedOperations             : False
 ```
 
 Updates the specified queue with a new description in the specified namespace. This example updates the **DeadLetteringOnMessageExpiration** property to **true** and **SupportOrdering** to **true**.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzServiceBusQueue -InputObject $QueueObj -Name SB-Queue_example1 -Namespace SB-Example1 -ResourceGroupName Default-ServiceBus-WestUS
+```
+
+
 
 ## PARAMETERS
 

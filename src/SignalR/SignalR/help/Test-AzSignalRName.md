@@ -22,14 +22,14 @@ Check the availability of a name. Alias: Test-AzSignal.
 
 ## EXAMPLES
 
-### Check an existed name.
+### Example 1: Check an existed name.
 ```powershell
 PS C:\> Test-AzSignalRName -Name existedsignalr -Location eastus
 False
 ```
 
-### Check an unexisted name.
-```
+### Example 2: Check an unexisted name.
+```powershell
 powershell
 PS C:\> Test-AzSignalR unexistedsignalr eastus
 True
