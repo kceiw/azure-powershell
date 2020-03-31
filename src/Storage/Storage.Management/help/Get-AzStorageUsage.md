@@ -23,7 +23,7 @@ The **Get-AzStorageUsage** cmdlet gets the resource usage for Azure Storage for 
 ## EXAMPLES
 
 ### Example 1: Get the storage resources usage of specified location
-```
+```powershell
 PS C:\>Get-AzStorageUsage -Location 'West US'
 
 LocalizedName : Storage Accounts
@@ -34,6 +34,13 @@ Limit         : 250
 ```
 
 This command gets the Storage resources usage of specified location under the current subscription.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Get-AzStorageUsage -Location 'West US'
+```
+
+
 
 ## PARAMETERS
 
