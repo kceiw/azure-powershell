@@ -23,7 +23,7 @@ The Set-AzDefault cmdlet adds or changes the defaults in the current context.
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Set-AzDefault -ResourceGroupName myResourceGroup
 
 Id         : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/myResourceGroup
@@ -35,6 +35,13 @@ Tags       :
 ```
 
 This command sets the default resource group to the resource group specified by the user.
+
+### Example 2
+```powershell <!-- Aladdin Generated Example --> 
+PS C:> Set-AzDefault -ResourceGroupName myResourceGroup
+```
+
+
 
 ## PARAMETERS
 
