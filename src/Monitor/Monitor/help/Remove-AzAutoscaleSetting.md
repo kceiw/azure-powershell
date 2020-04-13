@@ -25,6 +25,12 @@ This cmdlet implements the ShouldProcess pattern, i.e. it might request confirma
 
 ## EXAMPLES
 
+### Example 1
+
+```powershell <!-- Aladdin Generated Example --> 
+Remove-AzAutoscaleSetting -Name 'MySetting' -ResourceGroupName MyResourceGroup
+```
+
 ## PARAMETERS
 
 ### -DefaultProfile

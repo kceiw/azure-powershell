@@ -22,12 +22,18 @@ Allow the azure credential, account and subscription information to be saved and
 
 ## EXAMPLES
 
-### Enable autosaving credentials for the current user
-```
+### Example 1: Enable autosaving credentials for the current user
+```powershell
 PS C:\> Enable-AzContextAutosave
 ```
 
 Turn on credential autosave for the current user.  Whenever a powershell window is opened, your current context will be remembered without logging in.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Enable-AzContextAutosave -Scope Process
+```
 
 ## PARAMETERS
 
