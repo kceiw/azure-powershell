@@ -71,6 +71,12 @@ Updated                         :
 
 This command creates a certificate policy that is valid for six months and reuses the key to renew the certificate.
 
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+New-AzKeyVaultCertificatePolicy -IssuerName 'Self' -KeyType RSA -RenewAtNumberOfDaysBeforeExpiry <System.Int32> -SecretContentType application/x-pkcs12 -SubjectName 'CN=contoso.com' -ValidityInMonths 6
+```
+
 ## PARAMETERS
 
 ### -CertificateTransparency
