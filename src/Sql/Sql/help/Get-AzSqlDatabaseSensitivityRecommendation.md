@@ -86,6 +86,12 @@ SensitivityLabels : {{
                     }}
 ```
 
+### Example 3
+
+```powershell <!-- Aladdin Generated Example --> 
+Get-AzSqlDatabaseSensitivityRecommendation -DatabaseName database -ResourceGroupName resourceGroup -ServerName server
+```
+
 ## PARAMETERS
 
 ### -AsJob

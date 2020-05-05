@@ -91,6 +91,12 @@ Id                   : /subscriptions/00000000-0000-0000-0000-000000000000/resou
                        2168670000
 ```
 
+### Example 3
+
+```powershell <!-- Aladdin Generated Example --> 
+Get-AzSqlDeletedInstanceDatabaseBackup -InstanceName 'ContosoServer' -ResourceGroupName 'ContosoResourceGroup'
+```
+
 ## PARAMETERS
 
 ### -DatabaseName
