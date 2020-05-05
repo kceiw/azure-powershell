@@ -58,6 +58,12 @@ resourcegroup01   server01    database01   35
 
 This command gets the short term retention policy for database01 via piping in a database object.
 
+### Example 3
+
+```powershell <!-- Aladdin Generated Example --> 
+Get-AzSqlDatabaseBackupShortTermRetentionPolicy -DatabaseName database01 -ResourceGroupName resourcegroup01 -ServerName server01
+```
+
 ## PARAMETERS
 
 ### -AzureSqlDatabaseObject

@@ -58,6 +58,12 @@ resourcegroup01   server01    database01   35
 
 This command sets the short term retention policy for database01 to 35 days via piping in a database object.
 
+### Example 3
+
+```powershell <!-- Aladdin Generated Example --> 
+Set-AzSqlDatabaseBackupShortTermRetentionPolicy -DatabaseName database01 -ResourceGroupName resourcegroup01 -RetentionDays 35 -ServerName server01
+```
+
 ## PARAMETERS
 
 ### -AzureSqlDatabaseObject

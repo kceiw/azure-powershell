@@ -41,6 +41,12 @@ Location            :
 
 Gets the current version of the long term retention policy for the database
 
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Get-AzSqlInstanceDatabaseBackupLongTermRetentionPolicy -DatabaseName test -InstanceName testInstance -ResourceGroupName testResourceGroup
+```
+
 ## PARAMETERS
 
 ### -DatabaseName
