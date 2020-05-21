@@ -23,14 +23,14 @@ Disables AzureRm prefix aliases for Az modules. If -Module is specified, only mo
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Disable-AzureRmAlias
 ```
 
 Disables all AzureRm prefixes for the current PowerShell session.
 
-### Example 1
-```
+### Example 2
+```powershell
 PS C:\> Disable-AzureRmAlias -Module Az.Accounts -Scope CurrentUser
 ```
 
