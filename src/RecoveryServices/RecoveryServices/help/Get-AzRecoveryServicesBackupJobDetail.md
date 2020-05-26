@@ -48,6 +48,12 @@ The first command gets an array of failed jobs in the vault, and then stores the
 The second command gets the job details for the failed jobs in $Jobs, and then stores them in the $JobDetails variable.
 The final command displays error details for the failed jobs.
 
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Get-AzRecoveryServicesBackupJobDetail -Job $Jobs[0] -VaultId $vault.ID
+```
+
 ## PARAMETERS
 
 ### -DefaultProfile

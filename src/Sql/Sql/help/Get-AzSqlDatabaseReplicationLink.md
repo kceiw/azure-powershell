@@ -25,6 +25,12 @@ It gets all geo-replication links between the specified Azure SQL Database and a
 
 ## EXAMPLES
 
+### Example 1
+
+```powershell <!-- Aladdin Generated Example --> 
+Get-AzSqlDatabaseReplicationLink -DatabaseName db1 -PartnerResourceGroupName rg2 -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
 ## PARAMETERS
 
 ### -DatabaseName

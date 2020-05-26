@@ -24,11 +24,17 @@ the cmdlet enquires for specific workloads within a container. This triggers an 
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Initialize-AzRecoveryServicesProtectableItem -Container $Container -WorkloadType "MSSQL"
 ```
 
 The cmdlet executes a discovery operation for new protectable items.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Initialize-AzRecoveryServicesBackupProtectableItem -Container $Cont[0] -VaultId $vault.ID -WorkloadType AzureVM
+```
 
 ## PARAMETERS
 

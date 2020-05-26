@@ -24,6 +24,12 @@ This is an Azure Backup resource that is used to define backup storage policy.
 
 ## EXAMPLES
 
+### Example 1
+
+```powershell <!-- Aladdin Generated Example --> 
+Get-AzSqlDatabaseGeoBackupPolicy -DatabaseName db1 -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
 ## PARAMETERS
 
 ### -DatabaseName

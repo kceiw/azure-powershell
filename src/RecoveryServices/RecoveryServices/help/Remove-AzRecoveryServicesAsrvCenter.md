@@ -36,11 +36,17 @@ The **Remove-AzRecoveryServicesAsrvCenter** cmdlet removes the vCenter server fr
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> Remove-AzRecoveryServicesAsrvCenterServer -InputObject $vCenter
 ```
 
 Removes the vCenter server from the ASR fabric.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Remove-AzRecoveryServicesAsrvCenter -InputObject $rpi
+```
 
 ## PARAMETERS
 
