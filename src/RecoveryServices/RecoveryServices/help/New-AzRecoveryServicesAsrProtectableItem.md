@@ -24,11 +24,17 @@ The **New-AzRecoveryServicesAsrProtectableItem** adds a new protectable item to 
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> New-AzRecoveryServicesAsrProtectableItem -ProtectionContainer $pc -Name $name -IPAddress $ipaddresss -OSType $OsType
 ```
 
 Add or Discover new Azure Recovery Service ProtectableItem.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+New-AzRecoveryServicesAsrProtectableItem -FriendlyName XXXXXXXXXX -IPAddress $ipaddresss -OSType Windows -ProtectionContainer $pc
+```
 
 ## PARAMETERS
 

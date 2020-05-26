@@ -42,11 +42,17 @@ The **Get-AzRecoveryServicesAsrReplicationProtectedItem** cmdlet gets the proper
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $ReplicationProtectedItems = Get-AzRecoveryServicesAsrReplicationProtectedItem -ProtectionContainer $PrimaryContainer
 ```
 
 Lists all replication protected items in the specified ASR protection container.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Get-AzRecoveryServicesAsrReplicationProtectedItem -FriendlyName XXXXXXXXXX -ProtectionContainer $PrimaryContainer
+```
 
 ## PARAMETERS
 

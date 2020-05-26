@@ -22,12 +22,18 @@ The **New-AzWebAppDatabaseBackupSetting** cmdlet creates a new Azure Web App Bac
 
 ## EXAMPLES
 
-### 1:
-```
+### Example 1
+```powershell
 PS C:\> New-AzWebAppDatabaseBackupSetting -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -ConnectionString "MyConnectionString" -DatabaseType "SqlAzure"
 ```
 
 Creates a database backup setting (connection string) of type SqlAzure for the specified app ContosoWebApp that is within resource group Default-Web-WestUS.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+New-AzWebAppDatabaseBackupSetting -ConnectionString 'MyConnectionString' -ConnectionStringName <String> -DatabaseType 'SqlAzure' -Name 'ContosoWebApp'
+```
 
 ## PARAMETERS
 

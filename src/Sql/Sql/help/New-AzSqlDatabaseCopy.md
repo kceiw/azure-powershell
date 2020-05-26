@@ -38,6 +38,12 @@ This cmdlet is also supported by the SQL Server Stretch Database service on Azur
 
 ## EXAMPLES
 
+### Example 1
+
+```powershell <!-- Aladdin Generated Example --> 
+New-AzSqlDatabaseCopy -CopyDatabaseName <String> -CopyResourceGroupName <String> -CopyServerName <String> -DatabaseName db1 -ResourceGroupName MyResourceGroup -ServerName s1
+```
+
 ## PARAMETERS
 
 ### -AsJob

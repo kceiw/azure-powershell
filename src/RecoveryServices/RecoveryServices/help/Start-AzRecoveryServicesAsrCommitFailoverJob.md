@@ -30,11 +30,17 @@ The **Start-AzRecoveryServicesAsrCommitFailoverJob** cmdlet starts the commit fa
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> $currentJob = Start-AzRecoveryServicesAsrCommitFailoverJob -RecoveryPlan $RP
 ```
 
 Starts the commit failover for the specified recovery plan and returns the ASR job used to track the operation.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Start-AzRecoveryServicesAsrCommitFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem
+```
 
 ## PARAMETERS
 

@@ -31,13 +31,19 @@ The **Set-AzAppServicePlan** cmdlet sets an Azure App Service plan.
 
 ## EXAMPLES
 
-### 1: Modify an App Service plan
-```
+### Example 1: Modify an App Service plan
+```powershell
 PS C:\>Set-AzAppServicePlan -ResourceGroupName "Default-Web-WestUS" -Name "ContosoASP" -PerSiteScaling $true
 ```
 
 This command sets the PerSiteScaling option to true on the App Service plan named ContosoASP 
     that belongs to the resource group named Default-Web-WestUS.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Set-AzAppServicePlan -Name 'ContosoASP' -ResourceGroupName 'Default-Web-WestUS' -Tier Free -WorkerSize Small
+```
 
 ## PARAMETERS
 

@@ -95,6 +95,12 @@ The third command gets a list of recovery points for the specific backup item.
 The fourth command spceifies which files to restore and stores it in $files variable.
 The last command restores the specified files to its original location.
 
+### Example 3
+
+```powershell <!-- Aladdin Generated Example --> 
+Restore-AzRecoveryServicesBackupItem -VaultId $vault.ID -WLRecoveryConfig <RecoveryConfigBase>
+```
+
 ## PARAMETERS
 
 ### -DefaultProfile
