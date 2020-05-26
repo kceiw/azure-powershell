@@ -24,11 +24,17 @@ Creates a new consumer group for the specified Event Hub.
 ## EXAMPLES
 
 ### Example 1
-```
+```powershell
 PS C:\> New-AzEventHubConsumerGroup -ResourceGroupName MyResourceGroupName -NamespaceName MyNamespaceName -EventHubName MyEventHubName -ConsumerGroupName MyConsumerGroupName
 ```
 
 Creates the consumer group \`MyConsumerGroupName\` in the Event Hub \`MyEventHubName\`, scoped to the namespace \`MyNamespaceName\`, with resource group \`MyResourceGroupName\`.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+New-AzEventHubConsumerGroup -EventHub MyEventHubName -Name MyConsumerGroupName -Namespace MyNamespaceName -ResourceGroupName MyResourceGroupName
+```
 
 ## PARAMETERS
 
