@@ -67,6 +67,12 @@ ServiceName                   : sdktestapim4163
 
 This command creates an API Revision `5` of the `echo-api` API.
 
+### Example 3
+
+```powershell <!-- Aladdin Generated Example --> 
+New-AzApiManagementApiRevision -ApiId 'echo-api' -ApiRevision '5' -Context $context
+```
+
 ## PARAMETERS
 
 ### -ApiId
