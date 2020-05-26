@@ -53,6 +53,12 @@ Tags                :
 Updates the Key Vault managed Azure Storage Account active key to 'key2'. 'key2' will be used to
 generate SAS tokens after this update.
 
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Update-AzKeyVaultManagedStorageAccount -AccountName 'mystorageaccount' -AutoRegenerateKey $false -RegenerationPeriod $regenerationPeriod -VaultName 'myvault'
+```
+
 ## PARAMETERS
 
 ### -AccountName

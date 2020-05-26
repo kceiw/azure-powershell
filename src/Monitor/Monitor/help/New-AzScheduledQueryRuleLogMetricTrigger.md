@@ -29,6 +29,12 @@ This is the trigger condition for metric query rule, to be used when you need to
 PS C:\> $metricTrigger = New-AzScheduledQueryRuleLogMetricTrigger -ThresholdOperator "GreaterThan" -Threshold 5 -MetricTriggerType "Consecutive" -MetricColumn "Computer"
 ```
 
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+New-AzScheduledQueryRuleLogMetricTrigger -MetricColumn 'Computer' -MetricTriggerType 'Consecutive' -Threshold 5 -ThresholdOperator 'GreaterThan'
+```
+
 ## PARAMETERS
 
 ### -DefaultProfile

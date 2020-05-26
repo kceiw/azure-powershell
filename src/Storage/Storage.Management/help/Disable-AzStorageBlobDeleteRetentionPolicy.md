@@ -36,7 +36,7 @@ The **Disable-AzStorageBlobDeleteRetentionPolicy** cmdlet disables delete retent
 ## EXAMPLES
 
 ### Example 1: Disable delete retention policy for the Blob service
-```
+```powershell
 C:\PS>Disable-AzStorageBlobDeleteRetentionPolicy -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -PassThru
 
 Enabled Days
@@ -45,6 +45,12 @@ Enabled Days
 ```
 
 This command disables delete retention policy for the Blob service.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Disable-AzStorageBlobDeleteRetentionPolicy -PassThru -ResourceGroupName 'myresourcegroup' -StorageAccountName 'mystorageaccount'
+```
 
 ## PARAMETERS
 
