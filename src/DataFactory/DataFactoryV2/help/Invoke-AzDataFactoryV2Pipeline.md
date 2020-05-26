@@ -44,12 +44,18 @@ The **Invoke-AzDataFactoryV2Pipeline** command starts a run on the specified pip
 ## EXAMPLES
 
 ### Example 1: Invoke a pipeline to start a run
-```
+```powershell
 PS C:\> Invoke-AzDataFactoryV2Pipeline -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -PipelineName "DPWikisample"
 867d9d9f-1efc-4fee-974d-d8e6320bfbcb
 ```
 
 This command starts a run for "DPWikisample" pipeline in the "WikiADF" factory.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Invoke-AzDataFactoryV2Pipeline -DataFactoryName 'WikiADF' -Parameter <Hashtable> -PipelineName 'DPWikisample' -ResourceGroupName 'ADF'
+```
 
 ## PARAMETERS
 
