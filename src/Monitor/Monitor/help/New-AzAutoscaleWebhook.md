@@ -23,6 +23,12 @@ The **New-AzAutoscaleWebhook** cmdlet creates an Autoscale webhook.
 
 ## EXAMPLES
 
+### Example 1
+
+```powershell <!-- Aladdin Generated Example --> 
+New-AzAutoscaleWebhook -ServiceUri 'https://contoso.com'
+```
+
 ## PARAMETERS
 
 ### -DefaultProfile
