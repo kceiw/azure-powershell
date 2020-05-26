@@ -37,11 +37,17 @@ The **Sync-AzDataFactoryV2IntegrationRuntimeCredential** cmdlet synchronizes on-
 ## EXAMPLES
 
 ### Example 1: Sync an integration runtime credential
-```
+```powershell
 PS C:\> Sync-AzDataFactoryV2IntegrationRuntimeCredential -ResourceGroupName 'rg-test-dfv2' -DataFactoryName 'test-df-eu2' -Name 'test-selfhost-ir'
 ```
 
 The cmdlet synchronizes credentials among integration runtime nodes.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Sync-AzDataFactoryV2IntegrationRuntimeCredential -DataFactoryName 'test-df-eu2' -IntegrationRuntimeName 'test-selfhost-ir' -ResourceGroupName 'rg-test-dfv2'
+```
 
 ## PARAMETERS
 
