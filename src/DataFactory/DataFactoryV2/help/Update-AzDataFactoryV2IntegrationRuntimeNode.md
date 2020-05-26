@@ -38,7 +38,7 @@ The **Update-AzDataFactoryV2IntegrationRuntimeNode** cmdlet updates properties o
 ## EXAMPLES
 
 ### Example 1: Updates self-hosted integration runtime node
-```
+```powershell
 PS C:\> Update-AzDataFactoryV2IntegrationRuntimeNode `
     -ResourceGroupName 'rg-test-dfv2' `
     -DataFactoryName 'test-df-eu2' `
@@ -48,6 +48,12 @@ PS C:\> Update-AzDataFactoryV2IntegrationRuntimeNode `
 ```
 
 The cmdlet updates 'ConcurrentJobsLimit' to 3 for node 'Node_1' in self-hosted integration runtime 'test-selfhost-ir'.
+
+### Example 2
+
+```powershell <!-- Aladdin Generated Example --> 
+Update-AzDataFactoryV2IntegrationRuntimeNode -ConcurrentJobsLimit 3 -DataFactoryName 'test-df-eu2' -IntegrationRuntimeName 'test-selfhost-ir' -Name 'Node_1' -ResourceGroupName 'rg-test-dfv2'
+```
 
 ## PARAMETERS
 
