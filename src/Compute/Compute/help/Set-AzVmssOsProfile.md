@@ -29,12 +29,20 @@ The **Set-AzVmssOsProfile** cmdlet sets the Virtual Machine Scale Set operating 
 ## EXAMPLES
 
 ### Example 1: Set the operating system profile properties for a VMSS
-```
+```powershell
 PS C:\> Set-AzVmssOSProfile -VirtualMachineScaleSet "ContosoVMSS" -ComputerNamePrefix "Test" -AdminUsername $AdminUsername -AdminPassword $AdminPassword
 ```
 
 This command sets operating system profile properties for the virtual machines that belong to the VMSS named ContosoVMSS.
 The command sets the computer name prefix for all the virtual machine instances in the VMSS to Test and supplies the administrator username and password.
+
+### Example 2
+
+This command sets operating system profile properties for the virtual machines that belong to the VMSS named ContosoVMSS.
+
+```powershell <!-- Aladdin Generated Example --> 
+Set-AzVmssOsProfile -AdminPassword <String> -AdminUsername 'AcsLinuxAdmin' -ComputerNamePrefix <String> -VirtualMachineScaleSet <PSVirtualMachineScaleSet>
+```
 
 ## PARAMETERS
 
