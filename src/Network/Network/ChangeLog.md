@@ -19,11 +19,29 @@
 --->
 
 ## Upcoming Release
+* Fixed parameters swap in VWan HubVnet connection
+* Added new cmdlets for Azure Network Virtual Appliance Sites
+    - `Get-AzVirtualApplianceSite`
+    - `New-AzVirtualApplianceSite`
+    - `Remove-AzVirtualApplianceSite`
+    - `Update-AzVirtualApplianceSite`
+    - `New-AzOffice365PolicyProperty`
+* Added new cmdlets for Azure Network Virtual Appliance
+    - `Get-AzNetworkVirtualAppliance`
+    - `New-AzNetworkVirtualAppliance`
+    - `Remove-AzNetworkVirtualAppliance`
+    - `Update-AzNetworkVirtualAppliance`
+    - `Get-AzNetworkVirtualApplianceSku`
+    - `New-AzVirtualApplianceSkuProperty`
+* Onboard Application Gateway to Private Link Common Cmdlets
+* Onboard StorageSync to Private Link Common Cmdlets
+
+## Version 3.1.0
 * Added support for AddressPrefixType parameter to `Remove-AzExpressRouteCircuitConnectionConfig`
 * Added new cmdlets for Azure FirewallPolicy
-    - New-AzFirewallPolicyDnsSetting
+    - `New-AzFirewallPolicyDnsSetting`
     - Support for Destination FQDN in Network Rules for Firewall Policy
- Added support for backend address pool operations
+* Added support for backend address pool operations
     - `New-AzLoadBalancerBackendAddressConfig`
     - `New-AzLoadBalancerBackendAddressPool`
     - `Set-AzLoadBalancerBackendAddressPool`
@@ -42,7 +60,10 @@
 * Updated below things based on recent swagger change for Firewall Policy
     - Changes names for RuleGroup, RuleCollectionGroup and RuleType
     - Added support for Firewall Policy NAT Rule Collections to support multiple NAT Rule Collection
-* Added Support for IpGroups in AzureFirewallPolicy Application, Network, and NAT Rules.
+* [Breaking Change] Added mandatory parameter `SourceIpGroup` for `New-AzFirewallPolicyApplicationRule` and `New-AzFirewallPolicyNetworkRule`.
+* [Breaking Change] Fixed `New-AzFirewallPolicyApplicationRule`, parameter `SourceAddress` to be mandatory.
+* [Breaking Change] Fixed `New-AzFirewallPolicyApplicationRule`, parameter `SourceAddress` to be mandatory.
+* [Breaking Change] Removed mandatory parameters: `TranslatedAddress`, `TranslatedPort` for `New-AzFirewallPolicyNatRuleCollection`.
 * Added new cmdlets to support PrivateLink On Application Gateway
     - `New-AzApplicationGatewayPrivateLinkConfiguration`
     - `Get-AzApplicationGatewayPrivateLinkConfiguration`
@@ -50,6 +71,21 @@
     - `Set-AzApplicationGatewayPrivateLinkConfiguration`
     - `Remove-AzApplicationGatewayPrivateLinkConfiguration`
     - `New-AzApplicationGatewayPrivateLinkIpConfiguration`
+* Added new cmdlets for HubRouteTables child resource of VirtualHub.
+    - `New-AzVHubRoute`
+    - `New-AzVHubRouteTable`
+    - `Get-AzVHubRouteTable`
+    - `Update-AzVHubRouteTable`
+    - `Remove-AzVHubRouteTable`
+* Updated existing cmdlets to support optional RoutingConfiguration input parameter for custom routing in VirtualWan.
+    - `New-AzExpressRouteConnection`
+    - `Set-AzExpressRouteConnection`
+    - `New-AzVirtualHubVnetConnection`
+    - `Update-AzVirtualHubVnetConnection`
+    - `New-AzVpnConnection`
+    - `Update-AzVpnConnection`
+    - `New-AzP2sVpnGateway`
+    - `Update-AzP2sVpnGateway`
 
 ## Version 3.0.0
 * Added breaking change attribute to notify that Zone default behaviour will be changed
