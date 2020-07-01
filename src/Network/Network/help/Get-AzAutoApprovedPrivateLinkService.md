@@ -22,8 +22,8 @@ The **Get-AzAutoApprovedPrivateLinkService** gets an array of private link servi
 
 ## EXAMPLES
 
-### Example
-```
+### Example 1
+```powershell
 Get-AzAutoApprovedPrivateLinkService -Location westus -ResourceGroupName TestResourceGroup
 ```
 
