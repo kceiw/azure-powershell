@@ -30,8 +30,8 @@ The **Get-AzVirtualNetwork** cmdlet gets one or more virtual networks n a resour
 
 ## EXAMPLES
 
-### 1: Retrieve a virtual network
-```
+### Example 1: Retrieve a virtual network
+```powershell
 Get-AzVirtualNetwork -Name MyVirtualNetwork -ResourceGroupName TestResourceGroup
 
 Name                   : MyVirtualNetwork1
@@ -57,8 +57,8 @@ DdosProtectionPlan     : null
 
 This command gets the virtual network named MyVirtualNetwork in the resource group TestResourceGroup
 
-### 2: List virtual networks using filter
-```
+### Example 2: List virtual networks using filter
+```powershell
 Get-AzVirtualNetwork -Name MyVirtualNetwork*
 
 Name                   : MyVirtualNetwork1
